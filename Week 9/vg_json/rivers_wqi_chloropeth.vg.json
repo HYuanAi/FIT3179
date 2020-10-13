@@ -4,7 +4,7 @@
     "width": 800,
     "height": 600,
     "data": {
-      "url": "https://raw.githubusercontent.com/HYuanAi/FIT3179/blob/main/Week 9/vg_json/malaysian_states.json",
+      "url": "https://raw.githubusercontent.com/HYuanAi/FIT3179/master/Week%209/vg_json/malaysian_states.json",
       "format": {
             "type": "topojson",
             "feature": "malaysian_states"
@@ -14,7 +14,7 @@
         "lookup": "properties.name",
         "from": {
           "data": {
-            "url": "https://raw.githubusercontent.com/HYuanAi/FIT3179/blob/main/Week 9/data/Rivers_WQI.csv"
+            "url": "https://raw.githubusercontent.com/HYuanAi/FIT3179/master/Week%209/data/Rivers_WQI.csv"
           },
           "key": "State",
           "fields": ["WQI_2017"]
