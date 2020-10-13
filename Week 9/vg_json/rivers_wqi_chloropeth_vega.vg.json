@@ -1,0 +1,101 @@
+{
+    "$schema": "https://vega.github.io/schema/vega/v5.json",
+    "background": "white",
+    "padding": 5,
+    "width": 1000,
+    "height": 600,
+    "title": {
+      "text": "Average Water Quality Index (WQI) of Rivers by State in Malaysia in 2017",
+      "frame": "group"
+    },
+    "style": "cell",
+    "data": [
+      {
+        "name": "source_1",
+        "url": "https://raw.githubusercontent.com/HYuanAi/FIT3179/master/Week%209/data/Rivers_WQI.csv",
+        "format": {"type": "csv", "delimiter": ","},
+        "transform": [
+          {
+            "type": "aggregate",
+            "fields": ["WQI_2017"],
+            "ops": ["average"],
+            "groupby": ["State"],
+            "as": ["mean_WQI"]
+          },
+          {
+            "type": "filter",
+            "expr": "isValid(datum[\"mean_WQI\"]) && isFinite(+datum[\"mean_WQI\"])"
+          }
+        ]
+      },
+      {
+        "name": "source_0",
+        "url": "https://raw.githubusercontent.com/HYuanAi/FIT3179/master/Week%209/vg_json/malaysian_states.json",
+        "format": {
+          "type": "topojson",
+          "feature": "malaysian_states",
+          "parse": {}
+        },
+        "transform": [
+          {
+            "type": "formula",
+            "expr": "datum[\"properties\"] && datum[\"properties\"][\"name\"]",
+            "as": "properties.name"
+          },
+          {
+            "type": "lookup",
+            "from": "source_1",
+            "key": "State",
+            "fields": ["properties.name"],
+            "values": ["mean_WQI"]
+          }
+        ]
+      }
+    ],
+    "projections": [
+      {
+        "name": "projection",
+        "size": {"signal": "[width, height]"},
+        "fit": {"signal": "data('source_0')"},
+        "type": "equirectangular"
+      }
+    ],
+    "marks": [
+      {
+        "name": "marks",
+        "type": "shape",
+        "style": ["geoshape"],
+        "from": {"data": "source_0"},
+        "encode": {
+          "update": {
+            "fill": {"scale": "color", "field": "mean_WQI"},
+            "tooltip": {
+              "signal": "{\"State\": isValid(datum[\"properties.name\"]) ? datum[\"properties.name\"] : \"\"+datum[\"properties.name\"], \"Average WQI\": format(datum[\"mean_WQI\"], \"\")}"
+            },
+            "ariaRoleDescription": {"value": "geoshape"},
+            "description": {
+              "signal": "\"WQI: \" + (format(datum[\"mean_WQI\"], \"\")) + \"; State: \" + (isValid(datum[\"properties.name\"]) ? datum[\"properties.name\"] : \"\"+datum[\"properties.name\"])"
+            }
+          }
+        },
+        "transform": [{"type": "geoshape", "projection": "projection"}]
+      }
+    ],
+    "scales": [
+      {
+        "name": "color",
+        "type": "linear",
+        "domain": {"data": "source_0", "field": "mean_WQI"},
+        "range": "heatmap",
+        "interpolate": "hcl",
+        "zero": false
+      }
+    ],
+    "legends": [
+      {
+        "fill": "color",
+        "gradientLength": {"signal": "clamp(height, 64, 200)"},
+        "title": "mean_WQI"
+      }
+    ]
+  }
