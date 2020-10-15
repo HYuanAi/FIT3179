@@ -1,7 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "width": 900,
-  "height": 500,
+  "background": "#E4E4E9",
+  "width": 960,
+  "height": 350,
   "config": {"view": {"stroke": "transparent"}},
   "layer": [
     {
@@ -10,8 +11,8 @@
         "format": {"type": "topojson", "feature": "malaysian_states"}
       },
       "projection": {"type": "equirectangular"},
-      "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 2},
-      "encoding": {"color": {"value": "#F4F4F9"}}
+      "mark": {"type": "geoshape", "stroke": "#E4E4E9", "strokeWidth": 2},
+      "encoding": {"color": {"value": "white"}}
     },
     {
       "data": {
@@ -31,7 +32,7 @@
         },
         {"calculate": "datum.Category_2017", "as": "Category"}
       ],
-      "mark": {"type": "geoshape", "filled": false, "strokeWidth": 1},
+      "mark": {"type": "geoshape", "filled": false, "strokeWidth": 1.5},
       "encoding": {
         "color": {
           "field": "Category",
@@ -48,9 +49,9 @@
               "Polluted"
             ],
             "range": [
-              "#B8DBD9",
-              "#586F7C",
-              "#2F4550"
+              "#208AAE",
+              "#898B80",
+              "#60492C"
             ]
           }
         }
