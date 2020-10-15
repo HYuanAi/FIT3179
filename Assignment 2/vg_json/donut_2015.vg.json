@@ -1,0 +1,13 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "description": "Proportion of rivers in 2015",
+    "data": {
+        "url": "https://raw.githubusercontent.com/HYuanAi/FIT3179/master/Assignment 2/data/Rivers_WQI.csv"
+    },
+    "mark": {"type": "arc", "innerRadius": 60},
+    "encoding": {
+      "theta": {"aggregate": "count", "field": "value", "type": "quantitative"},
+      "color": {"field": "Category_2015", "type": "nominal"}
+    },
+    "view": {"stroke": null}
+  }
