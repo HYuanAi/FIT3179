@@ -1,0 +1,101 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "width": 900,
+    "height": 500,
+    "config": {
+      "view": {
+        "stroke": "transparent"
+      }
+    },
+    "layer": [
+      {
+        "data": {
+          "url": "vg_json/malaysian_states.json",
+          "format": {
+            "type": "topojson",
+            "feature": "malaysian_states"
+          }
+        },
+        "projection": {
+          "type": "equirectangular"
+        },
+        "mark": {
+          "type": "geoshape",
+          "stroke": "white",
+          "strokeWidth": 2
+        },
+        "encoding": {
+          "color": {
+            "value": "#F4F4F9"
+          }
+        }
+      },
+      {
+        "data": {
+          "url": "vg_json/msian_rivers.json",
+          "format": {
+            "type": "topojson",
+            "feature": "line"
+          }
+        },
+        "transform": [{
+            "lookup": "properties.name",
+            "from": {
+              "data": {
+                "url": "data/Rivers_WQI.json"
+              },
+              "key": "River",
+              "fields": ["WQI_2017"]
+            }
+          },
+          {"calculate": "datum.WQI_2017", "as": "WQI"}
+        ],
+        "mark": {
+          "type": "geoshape",
+          "filled": false,
+          "strokeWidth": 2
+        },
+        "encoding": {
+          "color": {
+            "field": "id",
+            "type": "nominal",
+            "legend": {
+              "title": null,
+              "orient": "bottom-right",
+              "offset": 0
+            },
+            "scale": {
+              "domain": [
+                "Bakerloo",
+                "Central",
+                "Circle",
+                "District",
+                "DLR",
+                "Hammersmith & City",
+                "Jubilee",
+                "Metropolitan",
+                "Northern",
+                "Piccadilly",
+                "Victoria",
+                "Waterloo & City"
+              ],
+              "range": [
+                "rgb(137,78,36)",
+                "rgb(220,36,30)",
+                "rgb(255,206,0)",
+                "rgb(1,114,41)",
+                "rgb(0,175,173)",
+                "rgb(215,153,175)",
+                "rgb(106,114,120)",
+                "rgb(114,17,84)",
+                "rgb(0,0,0)",
+                "rgb(0,24,168)",
+                "rgb(0,160,226)",
+                "rgb(106,187,170)"
+              ]
+            }
+          }
+        }
+      }
+    ]
+  }

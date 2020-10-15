@@ -1,0 +1,477 @@
+State,River_Basin,River,Count,WQI_2015,Category_2015,Class_2015,WQ1_2016,Category_2016,Class_2016,WQI_2017,Category_2017,Class_2017
+Perlis,Sungai Perlis,Sungai Wang Kelian,1,89,Clean,II,89,Clean,II,89,Clean,II
+Perlis,Sungai Perlis,Sungai Pelarit,1,93,Clean,I,88,Clean,II,81,Clean,II
+Perlis,Sungai Perlis,Sungai Jarum,1,74,Slightly Polluted,III,82,Clean,II,89,Clean,II
+Perlis,Sungai Perlis,Sungai Bukit Jernih,1,85,Clean,II,82,Clean,II,82,Clean,II
+Kedah,Sungai Kisap,Sungai Kisap,1,93,Clean,I,90,Clean,II,91,Clean,II
+Kedah,Sungai Kisap,Sungai Petang,1,93,Clean,I,91,Clean,II,92,Clean,II
+Kedah,Sungai Kedah,Sungai Janing,1,93,Clean,I,91,Clean,II,91,Clean,II
+Kedah,Sungai Kedah,Sungai Pedu,1,86,Clean,II,88,Clean,II,88,Clean,II
+Kedah,Sungai Kedah,Sungai Padang Terap,3,84,Clean,II,84,Clean,II,84,Clean,II
+Kedah,Sungai Merbok,Sungai Tupah,1,93,Clean,I,91,Clean,II,91,Clean,II
+Kedah,Sungai Merbok,Sungai Tok Pawang,1,85,Clean,II,88,Clean,II,80,Slightly Polluted,II
+Kedah,Sungai Muda,Sungai Chepir,1,85,Clean,II,89,Clean,II,86,Clean,II
+Kedah,Sungai Muda,Sungai Ketil,2,81,Clean,II,85,Clean,II,83,Clean,II
+Kedah,Sungai Muda,Sungai Karangan,1,88,Clean,II,84,Clean,II,81,Clean,II
+Kedah,Sungai Muda,Sungai Muda,4,85,Clean,II,84,Clean,II,81,Clean,II
+Kedah,Sungai Muda,Sungai Sedim,1,85,Clean,II,78,Slightly Polluted,II,78,Slightly Polluted,II
+Kedah,Sungai Muda,Sungai Pegang,1,92,Clean,II,76,Slightly Polluted,III,76,Slightly Polluted,III
+Pulau Pinang,Sungai Jawi,Sungai Junjong,1,90,Clean,II,90,Clean,II,70,Slightly Polluted,III
+Pulau Pinang,Sungai Pinang,Sungai Air Terjun,1,87,Clean,II,89,Clean,II,92,Clean,II
+Pulau Pinang,Sungai Kluang,Sungai Ara,2,87,Clean,II,84,Clean,II,80,Slightly Polluted,II
+Pulau Pinang,Sungai Kerian,Sungai Kechil,1,90,Clean,II,86,Clean,II,84,Clean,II
+Kedah,Sungai Kerian,Sungai Kerian,4,84,Clean,II,81,Clean,II,81,Clean,II
+Perak,Sungai Beruas,Sungai Rotan,1,92,Clean,II,89,Clean,II,87,Clean,II
+Perak,Sungai Beruas,Sungai Dandang,1,88,Clean,II,87,Clean,II,88,Clean,II
+Perak,Sungai Beruas,Sungai Beruas,3,85,Clean,II,82,Clean,II,83,Clean,II
+Perak,Sungai Kurau,Sungai Ara,2,92,Clean,II,89,Clean,II,88,Clean,II
+Perak,Sungai Perak,Sungai Chepor,1,91,Clean,II,90,Clean,II,90,Clean,II
+Perak,Sungai Perak,Sungai Kinjang,1,88,Clean,II,90,Clean,II,92,Clean,II
+Perak,Sungai Perak,Sungai Chenderiang,1,81,Clean,II,87,Clean,II,87,Clean,II
+Perak,Sungai Perak,Sungai Kuang,1,84,Clean,II,79,Slightly Polluted,II,83,Clean,II
+Perak,Sungai Perak,Sungai Klah,1,88,Clean,II,86,Clean,II,89,Clean,II
+Perak,Sungai Perak,Sungai Sungkai,2,86,Clean,II,86,Clean,II,85,Clean,II
+Perak,Sungai Perak,Sungai Bidor,3,83,Clean,II,85,Clean,II,82,Clean,II
+Perak,Sungai Perak,Sungai Kampar,2,88,Clean,II,85,Clean,II,86,Clean,II
+Perak,Sungai Perak,Sungai Batang Padang,3,84,Clean,II,82,Clean,II,82,Clean,II
+Perak,Sungai Perak,Sungai Kangsar,1,82,Clean,II,73,Slightly Polluted,III,81,Clean,II
+Perak,Sungai Perak,Sungai Perak,8,84,Clean,II,82,Clean,II,85,Clean,II
+Perak,Sungai Perak,Sungai Raya,2,88,Clean,II,81,Clean,II,81,Clean,II
+Perak,Sungai Raja Hitam,Sungai Nyior,1,90,Clean,II,92,Clean,II,93,Clean,I
+Perak,Sungai Sepetang,Sungai Jana,1,93,Clean,I,93,Clean,I,84,Clean,II
+Perak,Sungai Sepetang,Sungai Sepetang,1,90,Clean,II,87,Clean,II,86,Clean,II
+Perak,Sungai Sepetang,Sungai Temerloh,2,89,Clean,II,87,Clean,II,89,Clean,II
+Perak,Sungai Sepetang,Sungai Air Putih,1,92,Clean,II,86,Clean,II,89,Clean,II
+Perak,Sungai Sepetang,Sungai Larut,3,87,Clean,II,85,Clean,II,83,Clean,II
+Perak,Sungai Bernam,Sungai Inki,1,90,Clean,II,90,Clean,II,91,Clean,II
+Perak,Sungai Bernam,Sungai Trolak,1,89,Clean,II,88,Clean,II,88,Clean,II
+Perak,Sungai Bernam,Sungai Slim,2,87,Clean,II,86,Clean,II,85,Clean,II
+Perak,Sungai Bernam,Sungai Bernam,4,86,Clean,II,84,Clean,II,82,Clean,II
+Selangor,Sungai Selangor,Sungai Kerling,1,88,Clean,II,89,Clean,II,86,Clean,II
+Selangor,Sungai Selangor,Sungai Kanching,1,90,Clean,II,88,Clean,II,85,Clean,II
+Selangor,Sungai Selangor,Sungai Serendah,1,88,Clean,II,87,Clean,II,86,Clean,II
+Selangor,Sungai Selangor,Sungai Batang Kali,1,87,Clean,II,84,Clean,II,82,Clean,II
+Selangor,Sungai Selangor,Sungai Selangor,4,80,Slightly Polluted,II,83,Clean,II,79,Slightly Polluted,II
+Selangor,Sungai Sepang,Sungai Sepang,2,76,Slightly Polluted,III,81,Clean,II,77,Slightly Polluted,II
+Selangor,Sungai Klang,Sungai Penchala,1,88,Clean,II,85,Clean,II,82,Clean,II
+Selangor,Sungai Langat,Sungai Lui,1,90,Clean,II,89,Clean,II,89,Clean,II
+Selangor,Sungai Langat,Sungai Langat,2,88,Clean,II,86,Clean,II,87,Clean,II
+Negeri Sembilan,Sungai Melaka,Sungai Tampin,1,89,Clean,II,89,Clean,II,86,Clean,II
+Melaka,Sungai Melaka,Sungai Batang Melaka,2,82,Clean,II,81,Clean,II,81,Clean,II
+Melaka,Sungai Melaka,Sungai Dusun,1,85,Clean,II,80,Slightly Polluted,II,86,Clean,II
+Negeri Sembilan,Sungai Melaka,Sungai Kemunting,1,85,Clean,II,81,Clean,II,85,Clean,II
+Negeri Sembilan,Sungai Linggi,Sungai Batang Penar,1,90,Clean,II,89,Clean,II,82,Clean,II
+Negeri Sembilan,Sungai Linggi,Sungai Pedas,1,84,Clean,II,87,Clean,II,84,Clean,II
+Negeri Sembilan,Sungai Linggi,Sungai Kundur Besar,1,82,Clean,II,86,Clean,II,86,Clean,II
+Negeri Sembilan,Sungai Linggi,Sungai Rembau,2,84,Clean,II,86,Clean,II,85,Clean,II
+Melaka,Sungai Linggi,Sungai Siput,1,83,Clean,II,84,Clean,II,79,Slightly Polluted,II
+Negeri Sembilan,Sungai Linggi,Sungai Chembong,1,75,Slightly Polluted,III,83,Clean,II,82,Clean,II
+Melaka,Sungai Kesang,Sungai Chohong,2,87,Clean,II,86,Clean,II,84,Clean,II
+Melaka,Sungai Duyong,Sungai Gapam,1,90,Clean,II,84,Clean,II,82,Clean,II
+Johor,Sungai Batu Pahat,Sungai Bantang,1,93,Clean,I,92,Clean,II,92,Clean,II
+Johor,Sungai Batu Pahat,Sungai Merek,1,85,Clean,II,85,Clean,II,79,Slightly Polluted,II
+Johor,Sungai Batu Pahat,Sungai Chaah,1,83,Clean,II,82,Clean,II,91,Clean,II
+Johor,Sungai Johor,Sungai Bukit Besar,1,82,Clean,II,89,Clean,II,75,Slightly Polluted,III
+Johor,Sungai Johor,Sungai Pelepah,2,88,Clean,II,89,Clean,II,89,Clean,II
+Johor,Sungai Johor,Sungai Telor,1,88,Clean,II,88,Clean,II,86,Clean,II
+Johor,Sungai Johor,Sungai Layang,1,87,Clean,II,87,Clean,II,87,Clean,II
+Johor,Sungai Johor,Sungai Remis,1,88,Clean,II,87,Clean,II,85,Clean,II
+Johor,Sungai Johor,Sungai Semangar,1,88,Clean,II,87,Clean,II,84,Clean,II
+Johor,Sungai Johor,Sungai Linggiu,1,86,Clean,II,85,Clean,II,84,Clean,II
+Johor,Sungai Johor,Sungai Sayong,4,83,Clean,II,84,Clean,II,83,Clean,II
+Johor,Sungai Johor,Sungai Johor,4,80,Slightly Polluted,II,83,Clean,II,81,Clean,II
+Johor,Sungai Johor,Sungai Santi,1,82,Clean,II,80,Slightly Polluted,II,82,Clean,II
+Johor,Sungai Johor,Sungai Layau,1,86,Clean,II,83,Clean,II,82,Clean,II
+Johor,Sungai Johor,Sungai Belitong,1,84,Clean,II,81,Clean,II,81,Clean,II
+Johor,Sungai Paloi,Sungai Paloi,1,78,Slightly Polluted,II,84,Clean,II,78,Slightly Polluted,II
+Johor,Sungai Sedili Besar,Sungai Ambat,1,79,Slightly Polluted,II,83,Clean,II,79,Slightly Polluted,II
+Johor,Sungai Sedili Besar,Sungai Dohol,1,83,Clean,II,82,Clean,II,84,Clean,II
+Johor,Sungai Sedili Besar,Sungai Temubor Kanan,1,79,Slightly Polluted,II,81,Clean,II,75,Slightly Polluted,III
+Johor,Sungai Muar,Sungai Air Panas,1,92,Clean,II,90,Clean,II,91,Clean,II
+Johor,Sungai Muar,Sungai Juasseh,1,92,Clean,II,88,Clean,II,90,Clean,II
+Johor,Sungai Muar,Sungai Muar,8,83,Clean,II,81,Clean,II,80,Slightly Polluted,II
+Johor,Sungai Endau,Sungai Jasin,1,91,Clean,II,90,Clean,II,91,Clean,II
+Johor,Sungai Endau,Sungai Tamok,1,84,Clean,II,80,Slightly Polluted,II,82,Clean,II
+Johor,Sungai Endau,Sungai Selai,1,86,Clean,II,88,Clean,II,88,Clean,II
+Johor,Sungai Endau,Sungai Endau,3,85,Clean,II,83,Clean,II,84,Clean,II
+Johor,Sungai Endau,Sungai Kahang,1,84,Clean,II,83,Clean,II,84,Clean,II
+Pahang,Sungai Pahang,Sungai Teranum,1,91,Clean,II,91,Clean,II,92,Clean,II
+Pahang,Sungai Pahang,Sungai Teras,1,92,Clean,II,90,Clean,II,91,Clean,II
+Pahang,Sungai Pahang,Sungai Benus,2,90,Clean,II,89,Clean,II,89,Clean,II
+Pahang,Sungai Pahang,Sungai Kelau,1,91,Clean,II,89,Clean,II,89,Clean,II
+Pahang,Sungai Pahang,Sungai Lipis,3,90,Clean,II,88,Clean,II,89,Clean,II
+Pahang,Sungai Pahang,Sungai Telang,1,87,Clean,II,87,Clean,II,87,Clean,II
+Pahang,Sungai Pahang,Sungai Tembeling,1,88,Clean,II,87,Clean,II,87,Clean,II
+Pahang,Sungai Pahang,Sungai Perting,1,90,Clean,II,86,Clean,II,87,Clean,II
+Pahang,Sungai Pahang,Sungai Tahan,1,89,Clean,II,86,Clean,II,87,Clean,II
+Pahang,Sungai Pahang,Sungai Tanglir,1,87,Clean,II,86,Clean,II,85,Clean,II
+Pahang,Sungai Pahang,Sungai Koyan,1,88,Clean,II,85,Clean,II,85,Clean,II
+Pahang,Sungai Pahang,Sungai Lepar,3,85,Clean,II,85,Clean,II,86,Clean,II
+Pahang,Sungai Pahang,Sungai Luit,1,81,Clean,II,85,Clean,II,85,Clean,II
+Pahang,Sungai Pahang,Sungai Bentong,1,90,Clean,II,84,Clean,II,82,Clean,II
+Pahang,Sungai Pahang,Sungai Maran,1,85,Clean,II,84,Clean,II,85,Clean,II
+Pahang,Sungai Pahang,Sungai Semantan,4,85,Clean,II,84,Clean,II,82,Clean,II
+Pahang,Sungai Pahang,Sungai Tekal,1,83,Clean,II,84,Clean,II,83,Clean,II
+Pahang,Sungai Pahang,Sungai Jempul,2,86,Clean,II,83,Clean,II,83,Clean,II
+Pahang,Sungai Pahang,Sungai Kertam,1,86,Clean,II,83,Clean,II,81,Clean,II
+Pahang,Sungai Pahang,Sungai Kundang,1,84,Clean,II,83,Clean,II,82,Clean,II
+Pahang,Sungai Pahang,Sungai T. Paya Bungor,1,80,Slightly Polluted,II,83,Clean,II,84,Clean,II
+Pahang,Sungai Pahang,Sungai Triang,2,83,Clean,II,83,Clean,II,82,Clean,II
+Pahang,Sungai Pahang,Sungai Jelai,2,86,Clean,II,82,Clean,II,84,Clean,II
+Pahang,Sungai Pahang,Sungai Pahang,8,83,Clean,II,82,Clean,II,84,Clean,II
+Pahang,Sungai Pahang,Sungai Teris,3,84,Clean,II,82,Clean,II,82,Clean,II
+Pahang,Sungai Pahang,Sungai Berkapor,1,86,Clean,II,81,Clean,II,81,Clean,II
+Pahang,Sungai Pahang,Sungai Chini,1,78,Slightly Polluted,II,81,Clean,II,81,Clean,II
+Pahang,Sungai Pahang,Sungai Tasik Chini,1,80,Slightly Polluted,II,77,Slightly Polluted,II,87,Clean,II
+Pahang,Sungai Bertam,Sungai Burung,1,89,Clean,II,90,Clean,II,91,Clean,II
+Pahang,Sungai Bertam,Sungai Habu,1,90,Clean,II,87,Clean,II,89,Clean,II
+Pahang,Sungai Bertam,Sungai Tringkap,1,85,Clean,II,87,Clean,II,86,Clean,II
+Pahang,Sungai Bertam,Sungai Lenggok,1,80,Slightly Polluted,II,85,Clean,II,88,Clean,II
+Pahang,Sungai Bertam,Sungai Ringlet,1,83,Clean,II,84,Clean,II,82,Clean,II
+Pahang,Sungai Bertam,Sungai Terla,1,84,Clean,II,83,Clean,II,86,Clean,II
+Pahang,Sungai Bertam,Sungai Telom,2,77,Slightly Polluted,II,82,Clean,II,81,Clean,II
+Pahang,Sungai Cherating,Sungai Cherating,1,77,Slightly Polluted,II,82,Clean,II,82,Clean,II
+Pahang,Sungai Kuantan,Sungai Kenau,1,90,Clean,II,82,Clean,II,81,Clean,II
+Pahang,Sungai Kuantan,Sungai Pandan,1,89,Clean,II,82,Clean,II,83,Clean,II
+Pahang,Sungai Merchong,Sungai Merchong,1,81,Clean,II,82,Clean,II,77,Slightly Polluted,II
+Pahang,Sungai Rompin,Sungai Pontian,1,80,Slightly Polluted,II,85,Clean,II,85,Clean,II
+Pahang,Sungai Rompin,Sungai Pukin,1,83,Clean,II,85,Clean,II,83,Clean,II
+Pahang,Sungai Rompin,Sungai Aur,1,81,Clean,II,80,Slightly Polluted,II,83,Clean,II
+Pahang,Sungai Rompin,Sungai Keratong,2,83,Clean,II,82,Clean,II,80,Slightly Polluted,II
+Terengganu,Sungai Besut,Sungai Besut,2,86,Clean,II,86,Clean,II,86,Clean,II
+Terengganu,Sungai Dungun,Sungai Dungun,4,88,Clean,II,85,Clean,II,85,Clean,II
+Terengganu,Sungai Kemaman,Sungai Cherul,1,81,Clean,II,81,Clean,II,81,Clean,II
+Terengganu,Sungai Kemaman,Sungai Kemaman,2,85,Clean,II,81,Clean,II,82,Clean,II
+Terengganu,Sungai Setiu,Sungai Setiu,2,90,Clean,II,82,Clean,II,83,Clean,II
+Terengganu,Sungai Terengganu,Sungai Berang,1,86,Clean,II,89,Clean,II,88,Clean,II
+Terengganu,Sungai Terengganu,Sungai Pueh,1,87,Clean,II,87,Clean,II,88,Clean,II
+Terengganu,Sungai Terengganu,Sungai Telemong,1,86,Clean,II,87,Clean,II,88,Clean,II
+Terengganu,Sungai Terengganu,Sungai Nerus,1,82,Clean,II,84,Clean,II,81,Clean,II
+Terengganu,Sungai Terengganu,Sungai Terengganu,3,83,Clean,II,84,Clean,II,83,Clean,II
+Kelantan,Sungai Golok,Sungai Golok,5,88,Clean,II,86,Clean,II,88,Clean,II
+Kelantan,Sungai Golok,Sungai Lanas,1,87,Clean,II,84,Clean,II,88,Clean,II
+Kelantan,Sungai Kelantan,Sungai Ber,1,92,Clean,II,91,Clean,II,88,Clean,II
+Kelantan,Sungai Kelantan,Sungai Pergau,6,89,Clean,II,89,Clean,II,90,Clean,II
+Kelantan,Sungai Kelantan,Sungai Tuang,1,90,Clean,II,88,Clean,II,89,Clean,II
+Kelantan,Sungai Kelantan,Sungai Belatop,2,87,Clean,II,87,Clean,II,87,Clean,II
+Kelantan,Sungai Kelantan,Sungai Betis,1,89,Clean,II,87,Clean,II,88,Clean,II
+Kelantan,Sungai Kelantan,Sungai Berok,3,85,Clean,II,84,Clean,II,85,Clean,II
+Kelantan,Sungai Kelantan,Sungai Galas,5,86,Clean,II,84,Clean,II,85,Clean,II
+Kelantan,Sungai Kelantan,Sungai Kelantan,1,89,Clean,II,84,Clean,II,87,Clean,II
+Kelantan,Sungai Kelantan,Sungai Lebir,3,82,Clean,II,84,Clean,II,83,Clean,II
+Kelantan,Sungai Kelantan,Sungai Nal,2,87,Clean,II,83,Clean,II,84,Clean,II
+Kelantan,Sungai Kelantan,Sungai Nenggiri,3,83,Clean,II,83,Clean,II,84,Clean,II
+Kelantan,Sungai Kelantan,Sungai Relai,1,82,Clean,II,82,Clean,II,84,Clean,II
+Kelantan,Sungai Kelantan,Sungai Sokor,1,83,Clean,II,79,Slightly Polluted,II,82,Clean,II
+Kelantan,Sungai Kemasin,Sungai Semerak,2,84,Clean,II,79,Slightly Polluted,II,81,Clean,II
+Sabah,Sungai Apas,Sungai Apas,1,85,Clean,II,83,Clean,II,83,Clean,II
+Sabah,Sungai Balung,Sungai Balung,1,78,Slightly Polluted,II,83,Clean,II,83,Clean,II
+Sabah,Sungai Bongawan,Sungai Bongawan,1,76,Slightly Polluted,III,76,Slightly Polluted,III,82,Clean,II
+Sabah,Sungai Bengkoka,Sungai Bengkoka,2,88,Clean,II,82,Clean,II,86,Clean,II
+Sabah,Sungai Bingkongan,Sungai Menggaris,2,90,Clean,II,86,Clean,II,89,Clean,II
+Sabah,Sungai Bingkongan,Sungai Bandau,1,89,Clean,II,85,Clean,II,88,Clean,II
+Sabah,Sungai Bingkongan,Sungai Bingkongan,2,90,Clean,II,85,Clean,II,88,Clean,II
+Sabah,Sungai Bingkongan,Sungai Tandek,1,88,Clean,II,85,Clean,II,87,Clean,II
+Sabah,Sungai Kalabakan,Sungai Kalabakan,3,80,Slightly Polluted,II,78,Slightly Polluted,II,82,Clean,II
+Sabah,Sungai Brantian,Sungai Brantian,1,84,Clean,II,82,Clean,II,85,Clean,II
+Sabah,Sungai Kalumpang,Sungai Kalumpang,3,76,Slightly Polluted,III,81,Clean,II,80,Slightly Polluted,II
+Sabah,Sungai Kedamaian,Sungai Kedamaian,1,83,Clean,II,88,Clean,II,89,Clean,II
+Sabah,Sungai Kedamaian,Sungai Wariu,1,85,Clean,II,87,Clean,II,88,Clean,II
+Sabah,Sungai Kedamaian,Sungai Tempasuk,2,84,Clean,II,85,Clean,II,87,Clean,II
+Sabah,Sungai Kinabatangan,Sungai Koyah,1,81,Clean,II,87,Clean,II,86,Clean,II
+Sabah,Sungai Kinabatangan,Sungai Karamuak,1,88,Clean,II,86,Clean,II,89,Clean,II
+Sabah,Sungai Kinabatangan,Sungai Menanggul,1,81,Clean,II,85,Clean,II,83,Clean,II
+Sabah,Sungai Kinabatangan,Sungai Kinabatangan,3,78,Slightly Polluted,II,81,Clean,II,82,Clean,II
+Sabah,Sungai Labuk,Sungai Kinipir,2,90,Clean,II,89,Clean,II,89,Clean,II
+Sabah,Sungai Labuk,Sungai Liwagu,2,87,Clean,II,88,Clean,II,89,Clean,II
+Sabah,Sungai Labuk,Sungai Maliau,1,88,Clean,II,88,Clean,II,90,Clean,II
+Sabah,Sungai Labuk,Sungai Labuk,1,83,Clean,II,85,Clean,II,85,Clean,II
+Sabah,Sungai Labuk,Sungai Tungud,1,79,Slightly Polluted,II,84,Clean,II,86,Clean,II
+Sabah,Sungai Lakutan,Sungai Lakutan,1,91,Clean,II,86,Clean,II,87,Clean,II
+Sabah,Sungai Likas,Sungai Menggatal,2,88,Clean,II,85,Clean,II,85,Clean,II
+Sabah,Sungai Lingkungan,Sungai Bukau,1,74,Slightly Polluted,III,86,Clean,II,86,Clean,II
+Sabah,Sungai Lingkungan,Sungai Lingkungan,1,86,Clean,II,84,Clean,II,88,Clean,II
+Sabah,Sungai Menggalong,Sungai Menggalong,2,88,Clean,II,87,Clean,II,88,Clean,II
+Sabah,Sungai Merotai,Sungai Merotai,3,86,Clean,II,85,Clean,II,86,Clean,II
+Sabah,Sungai Mounad,Sungai Mounad,2,87,Clean,II,86,Clean,II,86,Clean,II
+Sabah,Sungai Moyog,Sungai Moyog,4,86,Clean,II,87,Clean,II,88,Clean,II
+Sabah,Sungai Padas,Sungai Bunsit,1,92,Clean,II,90,Clean,II,92,Clean,II
+Sabah,Sungai Padas,Sungai Liawan,1,91,Clean,II,88,Clean,II,90,Clean,II
+Sabah,Sungai Padas,Sungai Padas,3,79,Slightly Polluted,II,78,Slightly Polluted,II,82,Clean,II
+Sabah,Sungai Padas,Sungai Pegalan,3,85,Clean,II,87,Clean,II,88,Clean,II
+Sabah,Sungai Padas,Sungai Tandulu,1,92,Clean,II,87,Clean,II,90,Clean,II
+Sabah,Sungai Paitan,Sungai Paitan,1,80,Slightly Polluted,II,78,Slightly Polluted,II,82,Clean,II
+Sabah,Sungai Papar,Sungai Papar,3,84,Clean,II,85,Clean,II,85,Clean,II
+Sabah,Sungai Sapi,Sungai Sapi,3,76,Slightly Polluted,III,79,Slightly Polluted,II,81,Clean,II
+Sabah,Sungai Sapi,Sungai Sualong,1,90,Clean,II,87,Clean,II,88,Clean,II
+Sabah,Sungai Segama,Sungai Segama,3,83,Clean,II,87,Clean,II,85,Clean,II
+Sabah,Sungai Segaliud,Sungai Segaliud,2,77,Slightly Polluted,II,80,Slightly Polluted,II,81,Clean,II
+Sabah,Sungai Silabukan,Sungai Silabukan,2,83,Clean,II,87,Clean,II,87,Clean,II
+Sabah,Sungai Sugut,Sungai Merali,1,90,Clean,II,92,Clean,II,92,Clean,II
+Sabah,Sungai Sugut,Sungai Bongkud,1,91,Clean,II,91,Clean,II,91,Clean,II
+Sabah,Sungai Sugut,Sungai Lohan,1,89,Clean,II,91,Clean,II,92,Clean,II
+Sabah,Sungai Sugut,Sungai Sugut,3,89,Clean,II,89,Clean,II,89,Clean,II
+Sabah,Sungai Tawau,Sungai Tawau,4,87,Clean,II,86,Clean,II,85,Clean,II
+Sabah,Sungai Telipok,Sungai Telipok,2,74,Slightly Polluted,III,86,Clean,II,79,Slightly Polluted,II
+Sabah,Sungai Tenghilan,Sungai Tenghilan,1,74,Slightly Polluted,III,83,Clean,II,87,Clean,II
+Sabah,Sungai Tingkayu,Sungai Tingkayu,2,76,Slightly Polluted,III,86,Clean,II,83,Clean,II
+Sabah,Sungai Tuaran,Sungai Song Sai,1,88,Clean,II,87,Clean,II,87,Clean,II
+Sabah,Sungai Tuaran,Sungai Tuaran,2,90,Clean,II,87,Clean,II,88,Clean,II
+Sabah,Sungai Tuaran,Sungai Damit,2,87,Clean,II,78,Slightly Polluted,II,82,Clean,II
+Sabah,Sungai Tungku,Sungai Tungku,2,82,Clean,II,83,Clean,II,86,Clean,II
+Sarawak,Sungai Baram,Sungai Baram,1,91,Clean,II,82,Clean,II,81,Clean,II
+Sarawak,Sungai Lawas,Sungai Lawas,3,84,Clean,II,82,Clean,II,83,Clean,II
+Sarawak,Sungai Lupar,Sungai Ai,2,91,Clean,II,87,Clean,II,86,Clean,II
+Sarawak,Sungai Lupar,Sungai Seterap,1,82,Clean,II,83,Clean,II,80,Slightly Polluted,II
+Sarawak,Sungai Lupar,Sungai Lupar,3,82,Clean,II,81,Clean,II,78,Slightly Polluted,II
+Sarawak,Sungai Miri,Sungai Padang Liku,1,84,Clean,II,88,Clean,II,82,Clean,II
+Sarawak,Sungai Niah,Sungai Niah,2,85,Clean,II,81,Clean,II,80,Slightly Polluted,II
+Sarawak,Sungai Rajang,Sungai Bintangor,1,84,Clean,II,85,Clean,II,83,Clean,II
+Sarawak,Sungai Rajang,Sungai Julau,1,81,Clean,II,79,Slightly Polluted,II,81,Clean,II
+Sarawak,Sungai Rajang,Sungai Kanowit,1,85,Clean,II,82,Clean,II,82,Clean,II
+Sarawak,Sungai Rajang,Sungai Sarikei,2,83,Clean,II,82,Clean,II,80,Slightly Polluted,II
+Sarawak,Sungai Sadong,Sungai Sadong,4,83,Clean,II,82,Clean,II,79,Slightly Polluted,II
+Sarawak,Sungai Sadong,Sungai Karangan,2,79,Slightly Polluted,II,81,Clean,II,77,Slightly Polluted,II
+Sarawak,Sungai Sarawak,Sungai Semadang,1,88,Clean,II,88,Clean,II,87,Clean,II
+Sarawak,Sungai Sarawak,Sungai Samarahan,2,81,Clean,II,81,Clean,II,79,Slightly Polluted,II
+Sarawak,Sungai Sarawak,Sungai Sarawak,6,84,Clean,II,80,Slightly Polluted,II,81,Clean,II
+Sarawak,Sungai Sarawak,Sungai Sarawak Kanan,1,82,Clean,II,81,Clean,II,81,Clean,II
+Sarawak,Sungai Layar,Sungai Layar,2,85,Clean,II,84,Clean,II,82,Clean,II
+Sarawak,Sungai Semunsam,Sungai Semunsam,1,84,Clean,II,83,Clean,II,84,Clean,II
+Sarawak,Sungai Sibuti,Sungai Sibuti,2,83,Clean,II,82,Clean,II,80,Slightly Polluted,II
+Sarawak,Sungai Sibuti,Sungai Satap,1,85,Clean,II,81,Clean,II,78,Slightly Polluted,II
+Sarawak,Sungai Tatau,Sungai Tatau,1,85,Clean,II,81,Clean,II,80,Slightly Polluted,II
+Sarawak,Sungai Trusan,Sungai Trusan,1,78,Slightly Polluted,II,82,Clean,II,83,Clean,II
+Sarawak,Sungai Limbang,Sungai Limbang,5,80,Slightly Polluted,II,81,Clean,II,82,Clean,II
+Perlis,Sungai Perlis,Sungai Ngulang,1,81,Clean,II,79,Slightly Polluted,II,79,Slightly Polluted,II
+Perlis,Sungai Perlis,Sungai Perlis,1,69,Slightly Polluted,III,70,Slightly Polluted,III,69,Slightly Polluted,III
+Kedah,Sungai Kedah,Sungai Tekai,1,85,Clean,II,77,Slightly Polluted,II,80,Slightly Polluted,II
+Kedah,Sungai Kedah,Sungai Pendang,1,78,Slightly Polluted,II,72,Slightly Polluted,III,74,Slightly Polluted,III
+Kedah,Sungai Kedah,Sungai Kedah,1,77,Slightly Polluted,II,68,Slightly Polluted,III,66,Slightly Polluted,III
+Kedah,Sungai Merbok,Sungai Merbok,1,69,Slightly Polluted,III,70,Slightly Polluted,III,71,Slightly Polluted,III
+Kedah,Sungai Merbok,Sungai Petani,1,53,Polluted,III,54,Polluted,III,60,Polluted,III
+Kedah,Sungai Merbok,Sungai Bongkok,1,68,Slightly Polluted,III,68,Slightly Polluted,III,61,Slightly Polluted,III
+Kedah,Sungai Merbok,Sungai Jerong,1,78,Slightly Polluted,II,71,Slightly Polluted,III,71,Slightly Polluted,III
+Pulau Pinang,Sungai Bayan Lepas,Sungai Tiram,2,75,Slightly Polluted,III,72,Slightly Polluted,III,69,Slightly Polluted,III
+Pulau Pinang,Sungai Bayan Lepas,Sungai Bayan Lepas,1,68,Slightly Polluted,III,68,Slightly Polluted,III,65,Slightly Polluted,III
+Pulau Pinang,Sungai Jawi,Sungai Machang Bubok,1,78,Slightly Polluted,II,77,Slightly Polluted,II,71,Slightly Polluted,III
+Pulau Pinang,Sungai Juru,Sungai Kilang Ubi,4,71,Slightly Polluted,III,69,Slightly Polluted,III,63,Slightly Polluted,III
+Pulau Pinang,Sungai Juru,Sungai Pasir,1,70,Slightly Polluted,III,63,Slightly Polluted,III,62,Slightly Polluted,III
+Pulau Pinang,Sungai Kluang,Sungai Relau,1,79,Slightly Polluted,II,67,Slightly Polluted,III,69,Slightly Polluted,III
+Pulau Pinang,Sungai Pinang,Sungai Dondang,1,66,Slightly Polluted,III,69,Slightly Polluted,III,69,Slightly Polluted,III
+Pulau Pinang,Sungai Pinang,Sungai Air Itam,5,67,Slightly Polluted,III,65,Slightly Polluted,III,67,Slightly Polluted,III
+Pulau Pinang,Sungai Perai,Sungai Kulim,2,82,Clean,II,79,Slightly Polluted,II,79,Slightly Polluted,II
+Pulau Pinang,Sungai Perai,Sungai Jarak,3,77,Slightly Polluted,II,74,Slightly Polluted,III,68,Slightly Polluted,III
+Kedah,Sungai Perai,Sungai Keladi,1,81,Clean,II,71,Slightly Polluted,III,70,Slightly Polluted,III
+Kedah,Sungai Kerian,Sungai Selama,2,81,Clean,II,76,Slightly Polluted,III,76,Slightly Polluted,III
+Perak,Sungai Kurau,Sungai Kurau,4,81,Clean,II,79,Slightly Polluted,II,80,Slightly Polluted,II
+Perak,Sungai Kurau,Sungai Kerdah,1,86,Clean,II,78,Slightly Polluted,II,70,Slightly Polluted,III
+Perak,Sungai Kurau,Sungai Kinta,6,82,Clean,II,74,Slightly Polluted,III,70,Slightly Polluted,III
+Perak,Sungai Kurau,Sungai Kepayang,2,75,Slightly Polluted,III,73,Slightly Polluted,III,72,Slightly Polluted,III
+Perak,Sungai Kurau,Sungai Pelus,2,79,Slightly Polluted,II,72,Slightly Polluted,III,79,Slightly Polluted,II
+Perak,Sungai Kurau,Sungai Pinji,2,72,Slightly Polluted,III,66,Slightly Polluted,III,61,Slightly Polluted,III
+Perak,Sungai Kurau,Sungai Seluang,1,61,Slightly Polluted,III,65,Slightly Polluted,III,65,Slightly Polluted,III
+Perak,Sungai Kurau,Sungai Tumboh,1,71,Slightly Polluted,III,65,Slightly Polluted,III,62,Slightly Polluted,III
+Perak,Sungai Kurau,Sungai Pari,1,78,Slightly Polluted,II,63,Slightly Polluted,III,66,Slightly Polluted,III
+Perak,Sungai Kurau,Sungai Serokai,1,75,Slightly Polluted,III,62,Slightly Polluted,III,58,Polluted,III
+Perak,Sungai Raja Hitam,Sungai Manjong,2,74,Slightly Polluted,III,71,Slightly Polluted,III,74,Slightly Polluted,III
+Perak,Sungai Raja Hitam,Sungai Raja Hitam,2,68,Slightly Polluted,III,63,Slightly Polluted,III,49,Polluted,IV
+Perak,Sungai Sepetang,Sungai Sepetang,2,79,Slightly Polluted,II,69,Slightly Polluted,III,73,Slightly Polluted,III
+Perak,Sungai Wangi,Sungai Deralik,1,71,Slightly Polluted,III,71,Slightly Polluted,III,65,Slightly Polluted,III
+Perak,Sungai Wangi,Sungai Wangi,1,81,Clean,II,63,Slightly Polluted,III,56,Polluted,III
+Selangor,Sungai Selangor,Sungai Sembah,1,78,Slightly Polluted,II,74,Slightly Polluted,III,69,Slightly Polluted,III
+Selangor,Sungai Tengi,Sungai Tengi,3,76,Slightly Polluted,III,74,Slightly Polluted,III,77,Slightly Polluted,II
+Selangor,Sungai Buloh,Sungai Buloh,4,63,Slightly Polluted,III,61,Slightly Polluted,III,58,Polluted,III
+Negeri Sembilan,Sungai Langat,Sungai Jijan,1,84,Clean,II,76,Slightly Polluted,III,76,Slightly Polluted,III
+Selangor,Sungai Langat,Sungai Semenyih,1,81,Clean,II,76,Slightly Polluted,III,76,Slightly Polluted,III
+Selangor,Sungai Langat,Sungai Anak Chuau,1,77,Slightly Polluted,II,74,Slightly Polluted,III,74,Slightly Polluted,III
+Negeri Sembilan,Sungai Langat,Sungai Pajam,1,72,Slightly Polluted,III,72,Slightly Polluted,III,67,Slightly Polluted,III
+Negeri Sembilan,Sungai Langat,Sungai Batang Nilai,1,63,Slightly Polluted,III,64,Slightly Polluted,III,62,Slightly Polluted,III
+Selangor,Sungai Langat,Sungai Langat,7,70,Slightly Polluted,III,64,Slightly Polluted,III,64,Slightly Polluted,III
+Kuala Lumpur,Sungai Klang,Sungai Semelah,1,84,Clean,II,80,Slightly Polluted,II,80,Slightly Polluted,II
+Kuala Lumpur,Sungai Klang,Sungai Batu,4,81,Clean,II,75,Slightly Polluted,III,75,Slightly Polluted,III
+Kuala Lumpur,Sungai Klang,Sungai Anak Air Batu,1,77,Slightly Polluted,II,74,Slightly Polluted,III,72,Slightly Polluted,III
+Kuala Lumpur,Sungai Klang,Sungai Keroh,2,77,Slightly Polluted,II,73,Slightly Polluted,III,71,Slightly Polluted,III
+Kuala Lumpur,Sungai Klang,Sungai Gombak,3,75,Slightly Polluted,III,72,Slightly Polluted,III,72,Slightly Polluted,III
+Selangor,Sungai Klang,Sungai Rasau,1,80,Slightly Polluted,II,72,Slightly Polluted,III,72,Slightly Polluted,III
+Selangor,Sungai Klang,Sungai Damansara,2,78,Slightly Polluted,II,70,Slightly Polluted,III,64,Slightly Polluted,III
+Selangor,Sungai Klang,Sungai Ampang,2,71,Slightly Polluted,III,63,Slightly Polluted,III,62,Slightly Polluted,III
+Kuala Lumpur,Sungai Klang,Sungai Jinjang,3,67,Slightly Polluted,III,63,Slightly Polluted,III,61,Slightly Polluted,III
+Kuala Lumpur,Sungai Klang,Sungai Klang,8,68,Slightly Polluted,III,63,Slightly Polluted,III,60,Polluted,III
+Kuala Lumpur,Sungai Klang,Sungai Toba,1,58,Polluted,III,62,Slightly Polluted,III,61,Slightly Polluted,III
+Kuala Lumpur,Sungai Klang,Sungai Gombak,1,60,Polluted,III,61,Slightly Polluted,III,60,Polluted,III
+Melaka,Sungai Kesang,Sungai Kesang,3,76,Slightly Polluted,III,76,Slightly Polluted,III,75,Slightly Polluted,III
+Melaka,Sungai Duyong,Sungai Duyong,3,72,Slightly Polluted,III,67,Slightly Polluted,III,64,Slightly Polluted,III
+Melaka,Sungai Merlimau,Sungai Merlimau,2,64,Slightly Polluted,III,60,Polluted,III,53,Polluted,III
+Melaka,Sungai Merlimau,Sungai Rembia,1,63,Slightly Polluted,III,57,Polluted,III,61,Slightly Polluted,III
+Melaka,Sungai Merlimau,Sungai Durian Tunggal,1,80,Slightly Polluted,II,73,Slightly Polluted,III,73,Slightly Polluted,III
+Melaka,Sungai Merlimau,Sungai Melaka,1,77,Slightly Polluted,II,71,Slightly Polluted,III,69,Slightly Polluted,III
+Negeri Sembilan,Sungai Linggi,Sungai Kepayong,1,74,Slightly Polluted,III,80,Slightly Polluted,II,72,Slightly Polluted,III
+Negeri Sembilan,Sungai Linggi,Sungai Simin,1,73,Slightly Polluted,III,80,Slightly Polluted,II,77,Slightly Polluted,II
+Negeri Sembilan,Sungai Linggi,Sungai Linggi,5,74,Slightly Polluted,III,76,Slightly Polluted,III,74,Slightly Polluted,III
+Johor,Sungai Batu Pahat,Sungai Lenik,1,82,Clean,II,80,Slightly Polluted,II,77,Slightly Polluted,II
+Johor,Sungai Batu Pahat,Sungai Semberong,2,57,Polluted,III,78,Slightly Polluted,II,59,Polluted,III
+Johor,Sungai Batu Pahat,Sungai Amran,1,65,Slightly Polluted,III,74,Slightly Polluted,III,74,Slightly Polluted,III
+Johor,Sungai Batu Pahat,Sungai Bekok,5,76,Slightly Polluted,III,73,Slightly Polluted,III,78,Slightly Polluted,II
+Johor,Sungai Batu Pahat,Sungai Berlian,1,70,Slightly Polluted,III,69,Slightly Polluted,III,70,Slightly Polluted,III
+Johor,Sungai Batu Pahat,Sungai Batu Pahat,1,61,Slightly Polluted,III,66,Slightly Polluted,III,66,Slightly Polluted,III
+Johor,Sungai Batu Pahat,Sungai Simpang Kiri,3,65,Slightly Polluted,III,66,Slightly Polluted,III,61,Slightly Polluted,III
+Johor,Sungai Batu Pahat,Sungai Merpo,1,65,Slightly Polluted,III,64,Slightly Polluted,III,72,Slightly Polluted,III
+Johor,Sungai Benut,Sungai Ulu Benut,1,76,Slightly Polluted,III,72,Slightly Polluted,III,74,Slightly Polluted,III
+Johor,Sungai Benut,Sungai Parit Haji Yassin,1,77,Slightly Polluted,II,71,Slightly Polluted,III,74,Slightly Polluted,III
+Johor,Sungai Benut,Sungai Benut,4,64,Slightly Polluted,III,68,Slightly Polluted,III,69,Slightly Polluted,III
+Johor,Sungai Benut,Sungai Pinggan,1,61,Slightly Polluted,III,64,Slightly Polluted,III,65,Slightly Polluted,III
+Johor,Sungai Air Baloi,Sungai Air Baloi,3,62,Slightly Polluted,III,57,Polluted,III,61,Slightly Polluted,III
+Johor,Sungai Jemaluang,Sungai Jemaluang,2,78,Slightly Polluted,II,79,Slightly Polluted,II,77,Slightly Polluted,II
+Johor,Sungai Johor,Sungai Panti,1,80,Slightly Polluted,II,80,Slightly Polluted,II,79,Slightly Polluted,II
+Johor,Sungai Johor,Sungai Penggeli,2,81,Clean,II,79,Slightly Polluted,II,80,Slightly Polluted,II
+Johor,Sungai Johor,Sungai Anak Sungai Sayong,1,77,Slightly Polluted,II,77,Slightly Polluted,II,68,Slightly Polluted,III
+Johor,Sungai Johor,Sungai Seluyut,1,79,Slightly Polluted,II,77,Slightly Polluted,II,76,Slightly Polluted,III
+Johor,Sungai Johor,Sungai Tiram,4,76,Slightly Polluted,III,73,Slightly Polluted,III,73,Slightly Polluted,III
+Johor,Sungai Johor,Sungai Lebam,1,68,Slightly Polluted,III,71,Slightly Polluted,III,71,Slightly Polluted,III
+Johor,Sungai Johor,Sungai Papan,1,78,Slightly Polluted,II,69,Slightly Polluted,III,70,Slightly Polluted,III
+Johor,Sungai Johor,Sungai Sebol,1,70,Slightly Polluted,III,69,Slightly Polluted,III,65,Slightly Polluted,III
+Johor,Sungai Johor,Sungai Chemangar,1,68,Slightly Polluted,III,64,Slightly Polluted,III,58,Polluted,III
+Johor,Sungai Johor,Sungai Temoh,1,60,Polluted,III,61,Slightly Polluted,III,65,Slightly Polluted,III
+Johor,Sungai Mersing,Sungai Mersing,2,77,Slightly Polluted,II,77,Slightly Polluted,II,77,Slightly Polluted,II
+Johor,Sungai Pontian,Sungai Air Hitam,1,64,Slightly Polluted,III,66,Slightly Polluted,III,64,Slightly Polluted,III
+Johor,Sungai Pontian,Sungai Pontian,5,67,Slightly Polluted,III,62,Slightly Polluted,III,60,Polluted,III
+Johor,Sungai Pontian Kecil,Sungai Pontian Kecil,2,71,Slightly Polluted,III,72,Slightly Polluted,III,72,Slightly Polluted,III
+Johor,Sungai Pulai,Sungai Pulai,2,73,Slightly Polluted,III,68,Slightly Polluted,III,64,Slightly Polluted,III
+Johor,Sungai Rambah,Sungai Rambah,2,67,Slightly Polluted,III,65,Slightly Polluted,III,66,Slightly Polluted,III
+Johor,Sungai Sedili Besar,Sungai Pasir Panjang,1,84,Clean,II,75,Slightly Polluted,III,75,Slightly Polluted,III
+Johor,Sungai Sedili Besar,Sungai Sedili Besar,5,76,Slightly Polluted,III,75,Slightly Polluted,III,77,Slightly Polluted,II
+Johor,Sungai Sedili Kecil,Sungai Sedili Kecil,2,81,Clean,II,72,Slightly Polluted,III,73,Slightly Polluted,III
+Johor,Sungai Sedili Kecil,Sungai Anak Sedili Kecil,1,73,Slightly Polluted,III,69,Slightly Polluted,III,53,Polluted,III
+Johor,Sungai Sedili Kecil,Sungai Bahan,2,67,Slightly Polluted,III,67,Slightly Polluted,III,67,Slightly Polluted,III
+Johor,Sungai Skudai,Sungai Skudai,9,65,Slightly Polluted,III,60,Polluted,III,59,Polluted,III
+Johor,Sungai Muar,Sungai Gemencheh,1,71,Slightly Polluted,III,80,Slightly Polluted,II,80,Slightly Polluted,II
+Johor,Sungai Muar,Sungai Labis,1,85,Clean,II,80,Slightly Polluted,II,79,Slightly Polluted,II
+Johor,Sungai Muar,Sungai Segamat,1,86,Clean,II,79,Slightly Polluted,II,79,Slightly Polluted,II
+Johor,Sungai Muar,Sungai Meda,1,75,Slightly Polluted,III,75,Slightly Polluted,III,77,Slightly Polluted,II
+Pahang,Sungai Anak Endau,Sungai Anak Endau,2,82,Clean,II,79,Slightly Polluted,II,80,Slightly Polluted,II
+Pahang,Sungai Baluk,Sungai Baluk,2,74,Slightly Polluted,III,72,Slightly Polluted,III,71,Slightly Polluted,III
+Pahang,Sungai Baluk,Sungai Panjang,1,70,Slightly Polluted,III,71,Slightly Polluted,III,69,Slightly Polluted,III
+Pahang,Sungai Bebar,Sungai Merba,1,82,Clean,II,78,Slightly Polluted,II,78,Slightly Polluted,II
+Pahang,Sungai Bebar,Sungai Bebar,1,68,Slightly Polluted,III,75,Slightly Polluted,III,73,Slightly Polluted,III
+Pahang,Sungai Bebar,Sungai Serai,2,76,Slightly Polluted,III,72,Slightly Polluted,III,74,Slightly Polluted,III
+Pahang,Sungai Bertam,Sungai Bertam,1,79,Slightly Polluted,II,74,Slightly Polluted,III,80,Slightly Polluted,II
+Pahang,Sungai Kuantan,Sungai Talam,1,80,Slightly Polluted,II,79,Slightly Polluted,II,79,Slightly Polluted,II
+Pahang,Sungai Kuantan,Sungai Belat,1,83,Clean,II,77,Slightly Polluted,II,79,Slightly Polluted,II
+Pahang,Sungai Kuantan,Sungai Charu,1,84,Clean,II,77,Slightly Polluted,II,80,Slightly Polluted,II
+Pahang,Sungai Kuantan,Sungai Kuantan,5,86,Clean,II,77,Slightly Polluted,II,79,Slightly Polluted,II
+Pahang,Sungai Kuantan,Sungai Riau,1,75,Slightly Polluted,III,75,Slightly Polluted,III,77,Slightly Polluted,II
+Pahang,Sungai Kuantan,Sungai Rompin,4,82,Clean,II,79,Slightly Polluted,II,80,Slightly Polluted,II
+Pahang,Sungai Tonggok,Sungai Tonggok,1,80,Slightly Polluted,II,74,Slightly Polluted,III,73,Slightly Polluted,III
+Johor,Sungai Endau,Sungai Lenggor,1,79,Slightly Polluted,II,80,Slightly Polluted,II,80,Slightly Polluted,II
+Johor,Sungai Endau,Sungai Mamai,1,81,Clean,II,77,Slightly Polluted,II,79,Slightly Polluted,II
+Johor,Sungai Endau,Sungai Paloh,1,83,Clean,II,76,Slightly Polluted,III,76,Slightly Polluted,III
+Johor,Sungai Endau,Sungai Semberong,5,77,Slightly Polluted,II,59,Polluted,III,77,Slightly Polluted,II
+Johor,Sungai Endau,Sungai Singol,1,59,Polluted,III,57,Polluted,III,61,Slightly Polluted,III
+Johor,Sungai Endau,Sungai Mengkibol,3,71,Slightly Polluted,III,72,Slightly Polluted,III,70,Slightly Polluted,III
+Johor,Sungai Endau,Sungai Pamol,1,62,Slightly Polluted,III,66,Slightly Polluted,III,61,Slightly Polluted,III
+Johor,Sungai Endau,Sungai Melatai,1,63,Slightly Polluted,III,61,Slightly Polluted,III,58,Polluted,III
+Pahang,Sungai Pahang,Sungai Jengka,2,83,Clean,II,80,Slightly Polluted,II,80,Slightly Polluted,II
+Pahang,Sungai Pahang,Sungai Tekam,2,85,Clean,II,78,Slightly Polluted,II,78,Slightly Polluted,II
+Pahang,Sungai Pahang,Sungai Bera,2,81,Clean,II,76,Slightly Polluted,III,79,Slightly Polluted,II
+Pahang,Sungai Pahang,Sungai Serting,2,75,Slightly Polluted,III,76,Slightly Polluted,III,74,Slightly Polluted,III
+Pahang,Sungai Pahang,Sungai Mentiga,1,81,Clean,II,74,Slightly Polluted,III,78,Slightly Polluted,II
+Pahang,Sungai Pahang,Sungai Tasik Bera,1,81,Clean,II,74,Slightly Polluted,III,78,Slightly Polluted,II
+Terengganu,Sungai Chukai,Sungai Ibok,1,84,Clean,II,79,Slightly Polluted,II,79,Slightly Polluted,II
+Terengganu,Sungai Chukai,Sungai Chukai,1,75,Slightly Polluted,III,77,Slightly Polluted,II,79,Slightly Polluted,II
+Terengganu,Sungai Chukai,Sungai Bungkus,1,76,Slightly Polluted,III,75,Slightly Polluted,III,76,Slightly Polluted,III
+Terengganu,Sungai Chukai,Sungai Ruang,1,72,Slightly Polluted,III,71,Slightly Polluted,III,71,Slightly Polluted,III
+Terengganu,Sungai Ibai,Sungai Ibai,3,79,Slightly Polluted,II,70,Slightly Polluted,III,70,Slightly Polluted,III
+Terengganu,Sungai Kemaman,Sungai Ransan,1,73,Slightly Polluted,III,68,Slightly Polluted,III,68,Slightly Polluted,III
+Terengganu,Sungai Kertih,Sungai Kertih,1,81,Clean,II,79,Slightly Polluted,II,78,Slightly Polluted,II
+Terengganu,Sungai Kluang,Sungai Kluang,1,75,Slightly Polluted,III,74,Slightly Polluted,III,75,Slightly Polluted,III
+Terengganu,Sungai Marang,Sungai Marang,1,80,Slightly Polluted,II,73,Slightly Polluted,III,75,Slightly Polluted,III
+Terengganu,Sungai Merang,Sungai Merang,1,67,Slightly Polluted,III,71,Slightly Polluted,III,68,Slightly Polluted,III
+Terengganu,Sungai Merchang,Sungai Merchang,1,68,Slightly Polluted,III,70,Slightly Polluted,III,71,Slightly Polluted,III
+Terengganu,Sungai Paka,Sungai Paka,1,87,Clean,II,76,Slightly Polluted,III,79,Slightly Polluted,II
+Terengganu,Sungai Paka,Sungai Rasau,1,81,Clean,II,73,Slightly Polluted,III,72,Slightly Polluted,III
+Terengganu,Sungai Setiu,Sungai Chalok,2,86,Clean,II,77,Slightly Polluted,II,79,Slightly Polluted,II
+Kelantan,Sungai Kelantan,Sungai Kelantan,3,84,Clean,II,79,Slightly Polluted,II,79,Slightly Polluted,II
+Kelantan,Sungai Kemasin,Sungai Kemasin,2,84,Clean,II,73,Slightly Polluted,III,76,Slightly Polluted,III
+Kelantan,Sungai Pengkalan Chepa,Sungai Raja Gali,1,75,Slightly Polluted,III,79,Slightly Polluted,II,78,Slightly Polluted,II
+Kelantan,Sungai Pengkalan Chepa,Sungai Pengkalan Chepa,2,78,Slightly Polluted,II,76,Slightly Polluted,III,70,Slightly Polluted,III
+Kelantan,Sungai Pengkalan Chepa,Sungai Keladi,1,80,Slightly Polluted,II,74,Slightly Polluted,III,76,Slightly Polluted,III
+Kelantan,Sungai Pengkalan Datu,Sungai Pengkalan Datu,3,78,Slightly Polluted,II,77,Slightly Polluted,II,77,Slightly Polluted,II
+Sabah,Sungai Kimanis,Sungai Kimanis,1,77,Slightly Polluted,II,73,Slightly Polluted,III,77,Slightly Polluted,II
+Sabah,Sungai Likas,Sungai Inanam,3,80,Slightly Polluted,II,77,Slightly Polluted,II,79,Slightly Polluted,II
+Sabah,Sungai Likas,Sungai Likas,2,73,Slightly Polluted,III,69,Slightly Polluted,III,72,Slightly Polluted,III
+Sabah,Sungai Membakut,Sungai Membakut,1,72,Slightly Polluted,III,80,Slightly Polluted,II,80,Slightly Polluted,II
+Sabah,Sungai Membakut,Sungai Pangatan,1,85,Clean,II,73,Slightly Polluted,III,78,Slightly Polluted,II
+Sabah,Sungai Sembulan,Sungai Sembulan,2,64,Slightly Polluted,III,65,Slightly Polluted,III,67,Slightly Polluted,III
+Sabah,Sungai Umas-Umas,Sungai Umas-Umas,1,84,Clean,II,76,Slightly Polluted,III,80,Slightly Polluted,II
+Sarawak,Sungai Balingian,Sungai Balingian,2,82,Clean,II,80,Slightly Polluted,II,78,Slightly Polluted,II
+Sarawak,Sungai Baram,Sungai Baram,4,83,Clean,II,79,Slightly Polluted,II,79,Slightly Polluted,II
+Sarawak,Sungai Kayan,Sungai Kayan,3,84,Clean,II,80,Slightly Polluted,II,79,Slightly Polluted,II
+Sarawak,Sungai Kemena,Sungai Kemena,3,83,Clean,II,77,Slightly Polluted,II,77,Slightly Polluted,II
+Sarawak,Sungai Kemena,Sungai Sibiu,1,81,Clean,II,76,Slightly Polluted,III,76,Slightly Polluted,III
+Sarawak,Sungai Kerian,Sungai Kerian,2,86,Clean,II,80,Slightly Polluted,II,79,Slightly Polluted,II
+Sarawak,Sungai Kerian,Sungai Seblak,1,83,Clean,II,78,Slightly Polluted,II,79,Slightly Polluted,II
+Sarawak,Sungai Lupar,Sungai Sekerang,1,88,Clean,II,80,Slightly Polluted,II,80,Slightly Polluted,II
+Sarawak,Sungai Lupar,Sungai Undup,1,88,Clean,II,77,Slightly Polluted,II,80,Slightly Polluted,II
+Sarawak,Sungai Miri,Sungai Lutong,1,74,Slightly Polluted,III,78,Slightly Polluted,II,75,Slightly Polluted,III
+Sarawak,Sungai Miri,Sungai Miri,2,74,Slightly Polluted,III,78,Slightly Polluted,II,75,Slightly Polluted,III
+Sarawak,Sungai Miri,Sungai Adong,1,78,Slightly Polluted,II,77,Slightly Polluted,II,74,Slightly Polluted,III
+Sarawak,Sungai Miri,Sungai Dalam,1,70,Slightly Polluted,III,75,Slightly Polluted,III,75,Slightly Polluted,III
+Sarawak,Sungai Mukah,Sungai Mukah,4,82,Clean,II,79,Slightly Polluted,II,76,Slightly Polluted,III
+Sarawak,Sungai Niah,Sungai Sekaloh,1,84,Clean,II,74,Slightly Polluted,III,74,Slightly Polluted,III
+Sarawak,Sungai Oya,Sungai Oya,3,82,Clean,II,80,Slightly Polluted,II,77,Slightly Polluted,II
+Sarawak,Sungai Rajang,Sungai Baloi,1,85,Clean,II,80,Slightly Polluted,II,79,Slightly Polluted,II
+Sarawak,Sungai Rajang,Sungai Meradong,1,82,Clean,II,79,Slightly Polluted,II,77,Slightly Polluted,II
+Sarawak,Sungai Rajang,Sungai Rajang,11,81,Clean,II,78,Slightly Polluted,II,77,Slightly Polluted,II
+Sarawak,Sungai Rajang,Sungai Salim,1,80,Slightly Polluted,II,73,Slightly Polluted,III,72,Slightly Polluted,III
+Sarawak,Sungai Sarawak,Sungai Sarawak Kiri,1,84,Clean,II,79,Slightly Polluted,II,80,Slightly Polluted,II
+Sarawak,Sungai Sarawak,Sungai Kuap,1,84,Clean,II,77,Slightly Polluted,II,77,Slightly Polluted,II
+Sarawak,Sungai Sarawak,Sungai Tabuan,1,82,Clean,II,74,Slightly Polluted,III,73,Slightly Polluted,III
+Sarawak,Sungai Sarawak,Sungai Semenggoh,1,75,Slightly Polluted,III,71,Slightly Polluted,III,68,Slightly Polluted,III
+Sarawak,Sungai Sarawak,Sungai Maong Kiri,1,65,Slightly Polluted,III,66,Slightly Polluted,III,64,Slightly Polluted,III
+Sarawak,Sungai Layar,Sungai Layar,1,88,Clean,II,79,Slightly Polluted,II,74,Slightly Polluted,III
+Sarawak,Sungai Sibuti,Sungai Kejapil,1,86,Clean,II,80,Slightly Polluted,II,80,Slightly Polluted,II
+Sarawak,Sungai Sibuti,Sungai Kabuloh,2,72,Slightly Polluted,III,68,Slightly Polluted,III,67,Slightly Polluted,III
+Sarawak,Sungai Similajau,Sungai Similajau,2,82,Clean,II,78,Slightly Polluted,II,79,Slightly Polluted,II
+Sarawak,Sungai Suai,Sungai Suai,1,82,Clean,II,77,Slightly Polluted,II,76,Slightly Polluted,III
+Pulau Pinang,Sungai Jawi,Sungai Jawi,1,50,Polluted,IV,47,Polluted,IV,44,Polluted,IV
+Pulau Pinang,Sungai Juru,Sungai Juru,2,63,Slightly Polluted,III,58,Polluted,III,53,Polluted,III
+Pulau Pinang,Sungai Juru,Sungai Rambai,1,52,Polluted,III,55,Polluted,III,49,Polluted,IV
+Pulau Pinang,Sungai Pinang,Sungai Pinang,1,54,Polluted,III,56,Polluted,III,57,Polluted,III
+Pulau Pinang,Sungai Pinang,Sungai Jelutong,1,49,Polluted,IV,44,Polluted,IV,49,Polluted,IV
+Pulau Pinang/Kedah,Sungai Perai,Sungai Perai,2,63,Slightly Polluted,III,58,Polluted,III,57,Polluted,III
+Pulau Pinang/Kedah,Sungai Perai,Sungai Kereh,2,56,Polluted,III,55,Polluted,III,50,Polluted,IV
+Pulau Pinang/Kedah,Sungai Perai,Sungai Pertama,1,50,Polluted,IV,49,Polluted,IV,49,Polluted,IV
+Perak,Sungai Perak,Sungai Nyamok,1,79,Slightly Polluted,II,57,Polluted,III,55,Polluted,III
+Selangor,Sungai Klang,Sungai Air Busuk,1,56,Polluted,III,57,Polluted,III,56,Polluted,III
+Selangor,Sungai Klang,Sungai Bunos,3,62,Slightly Polluted,III,57,Polluted,III,57,Polluted,III
+Selangor,Sungai Klang,Sungai Belongkong,1,66,Slightly Polluted,III,56,Polluted,III,55,Polluted,III
+Selangor,Sungai Klang,Sungai Kerayong,2,56,Polluted,III,53,Polluted,III,52,Polluted,III
+Selangor,Sungai Klang,Sungai Kuyoh,1,56,Polluted,III,50,Polluted,IV,48,Polluted,IV
+Melaka,Sungai Seri Melaka,Sungai Seri Melaka,1,58,Polluted,III,58,Polluted,III,56,Polluted,III
+Johor,Sungai Batu Pahat,Sungai Simpang Kanan,2,56,Polluted,III,58,Polluted,III,56,Polluted,III
+Johor,Sungai Danga,Sungai Danga,2,51,Polluted,IV,46,Polluted,IV,44,Polluted,IV
+Johor,Sungai Johor,Sungai Semenchu,1,45,Polluted,IV,44,Polluted,IV,54,Polluted,III
+Johor,Kawasan Pasir Gudang,Sungai Latoh,1,68,Slightly Polluted,III,57,Polluted,III,52,Polluted,III
+Johor,Kawasan Pasir Gudang,Sungai Perembi,1,46,Polluted,IV,51,Polluted,IV,49,Polluted,IV
+Johor,Kawasan Pasir Gudang,Sungai Masai,1,57,Polluted,III,48,Polluted,IV,48,Polluted,IV
+Johor,Kawasan Pasir Gudang,Sungai Buluh,1,42,Polluted,IV,35,Polluted,IV,34,Polluted,IV
+Johor,Kawasan Pasir Gudang,Sungai Tukang Batu,1,40,Polluted,IV,33,Polluted,IV,30,Polluted,V
+Johor,Sungai Kempas,Sungai Kempas,2,59,Polluted,III,47,Polluted,IV,47,Polluted,IV
+Johor,Sungai Kim-Kim,Sungai Kim-Kim,2,68,Slightly Polluted,III,58,Polluted,III,57,Polluted,III
+Johor,Sungai Pontian Besar,Sungai Ayer Merah,1,37,Polluted,IV,49,Polluted,IV,43,Polluted,IV
+Johor,Sungai Pulai,Sungai Ulu Choh,1,59,Polluted,III,58,Polluted,III,49,Polluted,IV
+Johor,Sungai Sanglang,Sungai Sanglang,1,59,Polluted,III,54,Polluted,III,57,Polluted,III
+Johor,Sungai Segget,Sungai Segget,5,49,Polluted,IV,47,Polluted,IV,46,Polluted,IV
+Johor,Sungai Skudai,Sungai Melana,2,59,Polluted,III,50,Polluted,IV,52,Polluted,III
+Johor,Sungai Tebrau,Sungai Bala,1,62,Slightly Polluted,III,48,Polluted,IV,48,Polluted,IV
+Johor,Sungai Tebrau,Sungai Sebulung,1,47,Polluted,IV,48,Polluted,IV,49,Polluted,IV
+Johor,Sungai Tebrau,Sungai Plentong,1,57,Polluted,III,46,Polluted,IV,46,Polluted,IV
+Johor,Sungai Tebrau,Sungai Pandan,1,62,Slightly Polluted,III,44,Polluted,IV,42,Polluted,IV
+Johor,Sungai Tebrau,Sungai Tampoi,1,52,Polluted,III,40,Polluted,IV,41,Polluted,IV
+Johor,Sungai Tebrau,Sungai Sengkuang,1,57,Polluted,III,39,Polluted,IV,40,Polluted,IV
+Johor,Sungai Tebrau,Sungai Tebrau,4,70,Slightly Polluted,III,35,Polluted,IV,41,Polluted,IV
+Johor,Sungai Muar,Sungai Sarang Buaya,1,58,Polluted,III,55,Polluted,III,57,Polluted,III
+Pahang,Sungai Endau,Sungai Jebong,1,59,Polluted,III,56,Polluted,III,58,Polluted,III
+Kelantan,Sungai Pengkalan Chepa,Sungai Alor Lintah,1,66,Slightly Polluted,III,56,Polluted,III,58,Polluted,III
+Kelantan,Sungai Pengkalan Chepa,Sungai Alor B,1,64,Slightly Polluted,III,50,Polluted,IV,52,Polluted,III
