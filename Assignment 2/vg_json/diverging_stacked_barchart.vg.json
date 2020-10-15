@@ -1,0 +1,81 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "background": "rgba(0,0,0,0)",
+    "height": 600,
+    "data": {
+      "url": "https://raw.githubusercontent.com/HYuanAi/FIT3179/master/Assignment 2/data/Change_percentage.csv"
+    },
+    "transform": [
+      {
+        "calculate": "if(datum.Change_categ === 'More Polluted',-1,0) + if(datum.Change_categ==='No Change',0,0) + if(datum.Change_categ =='Recovered',1,0)",
+        "as": "q_order"
+      },
+      {
+        "calculate": "if(datum.Change_categ === 'More Polluted', datum.percentage,0) + if(datum.Change_categ === 'No Change', datum.percentage / 2,0)",
+        "as": "signed_percentage"
+      },
+      {"stack": "percentage", "as": ["v1", "v2"], "groupby": ["State"]},
+      {
+        "joinaggregate": [
+          {
+            "field": "signed_percentage",
+            "op": "sum",
+            "as": "offset"
+          }
+        ],
+        "groupby": ["State"]
+      },
+      {"calculate": "datum.v1 - datum.offset", "as": "nx"},
+      {"calculate": "datum.v2 - datum.offset", "as": "nx2"}
+    ],
+    "layer": [{
+      "mark": {"type": "bar", "height": 10},
+      "encoding": {
+        "x": {
+          "field": "nx",
+          "type": "quantitative",
+          "title": null,
+          "axis": {
+            "grid": false,
+            "domain": false,
+            "ticks": false,
+            "titleX": 100,
+            "titleAlign": "center",
+            "orient": "top"
+          },
+          "scale": {
+            "domain": [-100, 100]
+          }
+        },
+        "x2": {"field": "nx2"},
+        "y": {
+          "field": "State",
+          "type": "nominal",
+          "title": null,
+          "scale": {"padding": 0},
+          "band": 0.5,
+          "axis": {
+            "domainColor": "darkgrey",
+            "ticks": false,
+            "labelFontSize": 12,
+            "labelAlign": "center",
+            "labelBaseline": "middle",
+            "labelPadding": 0,
+            "labelOffset": -12,
+            "offset": -100
+          }
+        },
+        "color": {
+          "field": "Change_categ",
+          "type": "nominal",
+          "title": "Response",
+          "scale": {
+            "domain": ["More Polluted", "No Change", "Less Polluted"],
+            "range": ["#60492C", "#898B80", "#208AAE"],
+            "type": "ordinal"
+          },
+          "legend": null
+        }
+      }
+    }]
+  }
