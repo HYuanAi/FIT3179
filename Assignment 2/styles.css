@@ -2,13 +2,6 @@ body {
     background: #E4E4E9;
 }
 
-.bg-img {
-    height: 300px;
-    background-image: url('resources/bg.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
 .container {
     font-family: Magra, sans-serif;
 }
@@ -18,11 +11,12 @@ body {
     margin-left: auto; 
     margin-right: auto;
     margin-bottom: 10px;
-    background-color: #F4F4F9;
+    color: #E4E4E9;
+    background-color: #0D2149;
     opacity: 0.8;
 }
 
 .header-left {
-    border-right: 2px solid rgba(0,0,0,.4); 
+    border-right: 2px solid #A4A4A9; 
 }
 

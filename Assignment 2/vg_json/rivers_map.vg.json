@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "background": "#E4E4E9",
-  "width": 960,
+  "width": 1100,
   "height": 350,
   "config": {"view": {"stroke": "transparent"}},
   "layer": [
@@ -37,22 +37,10 @@
         "color": {
           "field": "Category",
           "type": "nominal",
-          "legend": {
-            "title": null,
-            "orient": "bottom-right",
-            "offset": 0
-          },
+          "legend": {"title": null, "orient": "bottom-right", "offset": 0},
           "scale": {
-            "domain": [
-              "Clean",
-              "Slightly Polluted",
-              "Polluted"
-            ],
-            "range": [
-              "#208AAE",
-              "#898B80",
-              "#60492C"
-            ]
+            "domain": ["Clean", "Slightly Polluted", "Polluted"],
+            "range": ["#208AAE", "#898B80", "#60492C"]
           }
         }
       }
