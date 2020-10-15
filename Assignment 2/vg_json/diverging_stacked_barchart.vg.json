@@ -2,6 +2,7 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
     "background": "rgba(0,0,0,0)",
     "height": 600,
+    "width": 185,
     "data": {
       "url": "https://raw.githubusercontent.com/HYuanAi/FIT3179/master/Assignment 2/data/Change_percentage.csv"
     },
