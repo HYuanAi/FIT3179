@@ -27,7 +27,14 @@
                 <div class="col-2 my-auto"><h1>477</h1></div>    
             </div>
         </div>
-        <div id="donut-2015"></div>
+
+        <div class="semi-container row">
+            <div id="donut-2015" class="col-4"></div>
+            <div id="donut-2016" class="col-4"></div>
+            <div id="donut-2017" class="col-4"></div>
+        </div>
+
+        
         <div id="map" class='my-3 mx-auto'></div>
     </div>
 
@@ -39,6 +46,16 @@
 
         var don15 = "https://HYuanAi.github.io/FIT3179/Assignment 2/vg_json/donut_2015.vg.json";
         vegaEmbed('#donut-2015', don15).then(function(result) {
+            // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
+
+        var don16 = "https://HYuanAi.github.io/FIT3179/Assignment 2/vg_json/donut_2016.vg.json";
+        vegaEmbed('#donut-2016', don16).then(function(result) {
+            // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
+
+        var don17 = "https://HYuanAi.github.io/FIT3179/Assignment 2/vg_json/donut_2017.vg.json";
+        vegaEmbed('#donut-2017', don17).then(function(result) {
             // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
         }).catch(console.error);
     </script>

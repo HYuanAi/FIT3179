@@ -13,7 +13,7 @@
             "stack": true
         },
         "color": {
-            "field": "Category_2015",
+            "field": "Category_2017",
             "type": "nominal",
             "legend": null,
             "scale": {
@@ -44,7 +44,7 @@
             },
             "encoding": {
                 "text": {
-                    "field": "Category_2015",
+                    "field": "Category_2017",
                     "type": "nominal"
                 }
             }
