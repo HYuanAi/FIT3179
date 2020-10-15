@@ -7,7 +7,7 @@
     },
     "transform": [
       {
-        "calculate": "if(datum.Change_categ === 'More Polluted',-1,0) + if(datum.Change_categ==='No Change',0,0) + if(datum.Change_categ =='Recovered',1,0)",
+        "calculate": "if(datum.Change_categ === 'More Polluted',-1,0) + if(datum.Change_categ==='No Change',0,0) + if(datum.Change_categ =='Less Polluted',1,0)",
         "as": "q_order"
       },
       {

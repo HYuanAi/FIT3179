@@ -1,4 +1,13 @@
 State,Change_categ,count,state_count,percentage
+Johor,Less Polluted,9,98,9.18
+Kedah,Less Polluted,1,23,4.35
+Negeri Sembilan,Less Polluted,1,13,7.69
+Pahang,Less Polluted,5,64,7.81
+Perak,Less Polluted,1,42,2.38
+Perlis,Less Polluted,1,6,16.67
+Pulau Pinang,Less Polluted,1,22,4.55
+Sabah,Less Polluted,11,62,17.74
+Sarawak,Less Polluted,2,54,3.7
 Johor,More Polluted,32,98,32.65
 Kedah,More Polluted,10,23,43.48
 Kelantan,More Polluted,5,24,20.83
@@ -27,12 +36,3 @@ Sabah,No Change,49,62,79.03
 Sarawak,No Change,28,54,51.85
 Selangor,No Change,10,23,43.48
 Terengganu,No Change,16,24,66.67
-Johor,Recovered,9,98,9.18
-Kedah,Recovered,1,23,4.35
-Negeri Sembilan,Recovered,1,13,7.69
-Pahang,Recovered,5,64,7.81
-Perak,Recovered,1,42,2.38
-Perlis,Recovered,1,6,16.67
-Pulau Pinang,Recovered,1,22,4.55
-Sabah,Recovered,11,62,17.74
-Sarawak,Recovered,2,54,3.7
