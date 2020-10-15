@@ -7,8 +7,8 @@
   "layer": [
     {
       "data": {
-        "url": "https://raw.githubusercontent.com/HYuanAi/FIT3179/master/Assignment 2/vg_json/malaysian_states.json",
-        "format": {"type": "topojson", "feature": "malaysian_states"}
+        "url": "https://raw.githubusercontent.com/HYuanAi/FIT3179/master/Assignment 2/vg_json/msian_states.json",
+        "format": {"type": "topojson", "feature": "msian_states"}
       },
       "projection": {"type": "equirectangular"},
       "mark": {"type": "geoshape", "stroke": "#E4E4E9", "strokeWidth": 2},
@@ -17,7 +17,7 @@
     {
       "data": {
         "url": "https://raw.githubusercontent.com/HYuanAi/FIT3179/master/Assignment 2/vg_json/msian_rivers.json",
-        "format": {"type": "topojson", "feature": "filtered_msian_rivers"}
+        "format": {"type": "topojson", "feature": "msian_rivers"}
       },
       "transform": [
         {
@@ -37,6 +37,7 @@
         "color": {
           "field": "Category",
           "type": "nominal",
+          "legend": null,
           "scale": {
             "domain": ["Clean", "Slightly Polluted", "Polluted"],
             "range": ["#208AAE", "#898B80", "#60492C"]
