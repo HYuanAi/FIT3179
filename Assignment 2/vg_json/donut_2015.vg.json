@@ -34,7 +34,9 @@
         {
             "mark": {
                 "type": "arc",
-                "innerRadius": 80
+                "innerRadius": 80,
+                "cornerRadius": 50, 
+                "padAngle": 0.02
             }
         },
         {
