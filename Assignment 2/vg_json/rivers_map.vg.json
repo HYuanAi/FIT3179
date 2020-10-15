@@ -37,7 +37,6 @@
         "color": {
           "field": "Category",
           "type": "nominal",
-          // "legend": {"title": null, "orient": "bottom-right", "offset": 0},
           "scale": {
             "domain": ["Clean", "Slightly Polluted", "Polluted"],
             "range": ["#208AAE", "#898B80", "#60492C"]
