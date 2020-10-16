@@ -15,7 +15,7 @@
         "calculate": "if(datum.Change_categ === 'More Polluted', datum.percentage,0) + if(datum.Change_categ === 'No Change', datum.percentage / 2,0)",
         "as": "signed_percentage"
       },
-      {"stack": "percentage", "as": ["v1", "v2"], "groupby": ["State"]},
+      {"stack": "percentage", "as": ["v1", "v2"], "groupby": ["State"], "sort": [{"field": "q_order", "order": "ascending"}]},
       {
         "joinaggregate": [
           {
@@ -63,7 +63,7 @@
             "labelBaseline": "middle",
             "labelPadding": 0,
             "labelOffset": -12,
-            "offset": -100
+            "offset": -92
           }
         },
         "color": {

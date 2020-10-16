@@ -1,16 +1,181 @@
-﻿State,River,Length,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015
-Perlis,Sungai Perlis,9.5,III,III,III,III,III,III,III,III,III,III,III,III
-Kedah,Sungai Petani,12,III,IV,IV,III,III,III,III,III,III,III,III,III
-Pulau Pinang,Sungai Pinang,3.1,IV,IV,IV,IV,III,III,III,III,III,III,III,III
-Perak,Sungai Kinta,20,III,III,III,III,II,III,II,II,II,II,II,II
-Selangor,Sungai Penchala,12,IV,IV,IV,IV,IV,IV,III,III,III,III,IV,III
-Kuala Lumpur,Sungai Penchala,12,IV,IV,IV,IV,IV,IV,III,IV,IV,III,IV,III
-Negeri Sembilan,Sungai Temiang,9,II,III,III,II,III,III,III,III,III,III,III,III
-Melaka,Sungai Melaka,39,III,III,III,III,III,III,III,II,II,III,III,III
-Johor,Sungai Skudai,52.8,III,III,III,III,III,III,III,III,III,III,III,III
-Pahang,Sungai Galing,7,IV,IV,III,III,IV,III,III,III,III,III,III,III
-Terengganu,Sungai Hiliran,5.5,IV,IV,IV,IV,IV,IV,III,IV,III,III,III,III
-Kelantan,Sungai Pengkelan Chepa,10,II,III,III,II,II,II,II,III,III,III,III,III
-Sabah,Sungai Papar,45,II,II,II,II,II,II,II,II,II,IIB,II,II
-Sarawak,Sungai Miri,60,III,III,III,III,III,III,III,III,III,IV,IV,III
-Sarawak,Sungai Bintangor,0.63,-,-,-,-,-,-,III,III,III,III,III,III
+﻿State,River,Length,Year,Class
+Perlis,Sungai Perlis,9.5,2004,III
+Kedah,Sungai Petani,12,2004,III
+Pulau Pinang,Sungai Pinang,3.1,2004,IV
+Perak,Sungai Kinta,20,2004,III
+Selangor,Sungai Penchala,12,2004,IV
+Kuala Lumpur,Sungai Penchala,12,2004,IV
+Negeri Sembilan,Sungai Temiang,9,2004,II
+Melaka,Sungai Melaka,39,2004,III
+Johor,Sungai Skudai,52.8,2004,III
+Pahang,Sungai Galing,7,2004,IV
+Terengganu,Sungai Hiliran,5.5,2004,IV
+Kelantan,Sungai Pengkelan Chepa,10,2004,II
+Sabah,Sungai Papar,45,2004,II
+Sarawak,Sungai Miri,60,2004,III
+Sarawak,Sungai Bintangor,0.63,2004,-
+Perlis,Sungai Perlis,9.5,2005,III
+Kedah,Sungai Petani,12,2005,IV
+Pulau Pinang,Sungai Pinang,3.1,2005,IV
+Perak,Sungai Kinta,20,2005,III
+Selangor,Sungai Penchala,12,2005,IV
+Kuala Lumpur,Sungai Penchala,12,2005,IV
+Negeri Sembilan,Sungai Temiang,9,2005,III
+Melaka,Sungai Melaka,39,2005,III
+Johor,Sungai Skudai,52.8,2005,III
+Pahang,Sungai Galing,7,2005,IV
+Terengganu,Sungai Hiliran,5.5,2005,IV
+Kelantan,Sungai Pengkelan Chepa,10,2005,III
+Sabah,Sungai Papar,45,2005,II
+Sarawak,Sungai Miri,60,2005,III
+Sarawak,Sungai Bintangor,0.63,2005,-
+Perlis,Sungai Perlis,9.5,2006,III
+Kedah,Sungai Petani,12,2006,IV
+Pulau Pinang,Sungai Pinang,3.1,2006,IV
+Perak,Sungai Kinta,20,2006,III
+Selangor,Sungai Penchala,12,2006,IV
+Kuala Lumpur,Sungai Penchala,12,2006,IV
+Negeri Sembilan,Sungai Temiang,9,2006,III
+Melaka,Sungai Melaka,39,2006,III
+Johor,Sungai Skudai,52.8,2006,III
+Pahang,Sungai Galing,7,2006,III
+Terengganu,Sungai Hiliran,5.5,2006,IV
+Kelantan,Sungai Pengkelan Chepa,10,2006,III
+Sabah,Sungai Papar,45,2006,II
+Sarawak,Sungai Miri,60,2006,III
+Sarawak,Sungai Bintangor,0.63,2006,-
+Perlis,Sungai Perlis,9.5,2007,III
+Kedah,Sungai Petani,12,2007,III
+Pulau Pinang,Sungai Pinang,3.1,2007,IV
+Perak,Sungai Kinta,20,2007,III
+Selangor,Sungai Penchala,12,2007,IV
+Kuala Lumpur,Sungai Penchala,12,2007,IV
+Negeri Sembilan,Sungai Temiang,9,2007,II
+Melaka,Sungai Melaka,39,2007,III
+Johor,Sungai Skudai,52.8,2007,III
+Pahang,Sungai Galing,7,2007,III
+Terengganu,Sungai Hiliran,5.5,2007,IV
+Kelantan,Sungai Pengkelan Chepa,10,2007,II
+Sabah,Sungai Papar,45,2007,II
+Sarawak,Sungai Miri,60,2007,III
+Sarawak,Sungai Bintangor,0.63,2007,-
+Perlis,Sungai Perlis,9.5,2008,III
+Kedah,Sungai Petani,12,2008,III
+Pulau Pinang,Sungai Pinang,3.1,2008,III
+Perak,Sungai Kinta,20,2008,II
+Selangor,Sungai Penchala,12,2008,IV
+Kuala Lumpur,Sungai Penchala,12,2008,IV
+Negeri Sembilan,Sungai Temiang,9,2008,III
+Melaka,Sungai Melaka,39,2008,III
+Johor,Sungai Skudai,52.8,2008,III
+Pahang,Sungai Galing,7,2008,IV
+Terengganu,Sungai Hiliran,5.5,2008,IV
+Kelantan,Sungai Pengkelan Chepa,10,2008,II
+Sabah,Sungai Papar,45,2008,II
+Sarawak,Sungai Miri,60,2008,III
+Sarawak,Sungai Bintangor,0.63,2008,-
+Perlis,Sungai Perlis,9.5,2009,III
+Kedah,Sungai Petani,12,2009,III
+Pulau Pinang,Sungai Pinang,3.1,2009,III
+Perak,Sungai Kinta,20,2009,III
+Selangor,Sungai Penchala,12,2009,IV
+Kuala Lumpur,Sungai Penchala,12,2009,IV
+Negeri Sembilan,Sungai Temiang,9,2009,III
+Melaka,Sungai Melaka,39,2009,III
+Johor,Sungai Skudai,52.8,2009,III
+Pahang,Sungai Galing,7,2009,III
+Terengganu,Sungai Hiliran,5.5,2009,IV
+Kelantan,Sungai Pengkelan Chepa,10,2009,II
+Sabah,Sungai Papar,45,2009,II
+Sarawak,Sungai Miri,60,2009,III
+Sarawak,Sungai Bintangor,0.63,2009,-
+Perlis,Sungai Perlis,9.5,2010,III
+Kedah,Sungai Petani,12,2010,III
+Pulau Pinang,Sungai Pinang,3.1,2010,III
+Perak,Sungai Kinta,20,2010,II
+Selangor,Sungai Penchala,12,2010,III
+Kuala Lumpur,Sungai Penchala,12,2010,III
+Negeri Sembilan,Sungai Temiang,9,2010,III
+Melaka,Sungai Melaka,39,2010,III
+Johor,Sungai Skudai,52.8,2010,III
+Pahang,Sungai Galing,7,2010,III
+Terengganu,Sungai Hiliran,5.5,2010,III
+Kelantan,Sungai Pengkelan Chepa,10,2010,II
+Sabah,Sungai Papar,45,2010,II
+Sarawak,Sungai Miri,60,2010,III
+Sarawak,Sungai Bintangor,0.63,2010,III
+Perlis,Sungai Perlis,9.5,2011,III
+Kedah,Sungai Petani,12,2011,III
+Pulau Pinang,Sungai Pinang,3.1,2011,III
+Perak,Sungai Kinta,20,2011,II
+Selangor,Sungai Penchala,12,2011,III
+Kuala Lumpur,Sungai Penchala,12,2011,IV
+Negeri Sembilan,Sungai Temiang,9,2011,III
+Melaka,Sungai Melaka,39,2011,II
+Johor,Sungai Skudai,52.8,2011,III
+Pahang,Sungai Galing,7,2011,III
+Terengganu,Sungai Hiliran,5.5,2011,IV
+Kelantan,Sungai Pengkelan Chepa,10,2011,III
+Sabah,Sungai Papar,45,2011,II
+Sarawak,Sungai Miri,60,2011,III
+Sarawak,Sungai Bintangor,0.63,2011,III
+Perlis,Sungai Perlis,9.5,2012,III
+Kedah,Sungai Petani,12,2012,III
+Pulau Pinang,Sungai Pinang,3.1,2012,III
+Perak,Sungai Kinta,20,2012,II
+Selangor,Sungai Penchala,12,2012,III
+Kuala Lumpur,Sungai Penchala,12,2012,IV
+Negeri Sembilan,Sungai Temiang,9,2012,III
+Melaka,Sungai Melaka,39,2012,II
+Johor,Sungai Skudai,52.8,2012,III
+Pahang,Sungai Galing,7,2012,III
+Terengganu,Sungai Hiliran,5.5,2012,III
+Kelantan,Sungai Pengkelan Chepa,10,2012,III
+Sabah,Sungai Papar,45,2012,II
+Sarawak,Sungai Miri,60,2012,III
+Sarawak,Sungai Bintangor,0.63,2012,III
+Perlis,Sungai Perlis,9.5,2013,III
+Kedah,Sungai Petani,12,2013,III
+Pulau Pinang,Sungai Pinang,3.1,2013,III
+Perak,Sungai Kinta,20,2013,II
+Selangor,Sungai Penchala,12,2013,III
+Kuala Lumpur,Sungai Penchala,12,2013,III
+Negeri Sembilan,Sungai Temiang,9,2013,III
+Melaka,Sungai Melaka,39,2013,III
+Johor,Sungai Skudai,52.8,2013,III
+Pahang,Sungai Galing,7,2013,III
+Terengganu,Sungai Hiliran,5.5,2013,III
+Kelantan,Sungai Pengkelan Chepa,10,2013,III
+Sabah,Sungai Papar,45,2013,IIB
+Sarawak,Sungai Miri,60,2013,IV
+Sarawak,Sungai Bintangor,0.63,2013,III
+Perlis,Sungai Perlis,9.5,2014,III
+Kedah,Sungai Petani,12,2014,III
+Pulau Pinang,Sungai Pinang,3.1,2014,III
+Perak,Sungai Kinta,20,2014,II
+Selangor,Sungai Penchala,12,2014,IV
+Kuala Lumpur,Sungai Penchala,12,2014,IV
+Negeri Sembilan,Sungai Temiang,9,2014,III
+Melaka,Sungai Melaka,39,2014,III
+Johor,Sungai Skudai,52.8,2014,III
+Pahang,Sungai Galing,7,2014,III
+Terengganu,Sungai Hiliran,5.5,2014,III
+Kelantan,Sungai Pengkelan Chepa,10,2014,III
+Sabah,Sungai Papar,45,2014,II
+Sarawak,Sungai Miri,60,2014,IV
+Sarawak,Sungai Bintangor,0.63,2014,III
+Perlis,Sungai Perlis,9.5,2015,III
+Kedah,Sungai Petani,12,2015,III
+Pulau Pinang,Sungai Pinang,3.1,2015,III
+Perak,Sungai Kinta,20,2015,II
+Selangor,Sungai Penchala,12,2015,III
+Kuala Lumpur,Sungai Penchala,12,2015,III
+Negeri Sembilan,Sungai Temiang,9,2015,III
+Melaka,Sungai Melaka,39,2015,III
+Johor,Sungai Skudai,52.8,2015,III
+Pahang,Sungai Galing,7,2015,III
+Terengganu,Sungai Hiliran,5.5,2015,III
+Kelantan,Sungai Pengkelan Chepa,10,2015,III
+Sabah,Sungai Papar,45,2015,II
+Sarawak,Sungai Miri,60,2015,III
+Sarawak,Sungai Bintangor,0.63,2015,III
