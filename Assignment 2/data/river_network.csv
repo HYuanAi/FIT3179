@@ -13,290 +13,162 @@ Kelantan,NA,Kelantan,NA,NA,NA,NA
 Sabah,NA,Sabah,NA,NA,NA,NA
 Sarawak,NA,Sarawak,NA,NA,NA,NA
 Kuala Lumpur,NA,Kuala Lumpur,NA,NA,NA,NA
-Perlis,Perlis,Sungai Perlis,Clean,Clean,Clean,Clean
-Perlis,Perlis,Sungai Perlis,Slightly Polluted,Clean,Clean,Clean
-Kedah,Kedah,Sungai Kisap,Clean,Clean,Clean,Clean
-Kedah,Kedah,Sungai Kedah,Clean,Clean,Clean,Clean
-Kedah,Kedah,Sungai Merbok,Clean,Clean,Clean,Clean
-Kedah,Kedah,Sungai Merbok,Clean,Clean,Slightly Polluted,Clean
-Kedah,Kedah,Sungai Muda,Clean,Clean,Clean,Clean
-Kedah,Kedah,Sungai Muda,Clean,Slightly Polluted,Slightly Polluted,Clean
-Pulau Pinang,Pulau Pinang,Sungai Jawi,Clean,Clean,Slightly Polluted,Clean
-Pulau Pinang,Pulau Pinang,Sungai Pinang,Clean,Clean,Clean,Clean
-Pulau Pinang,Pulau Pinang,Sungai Kluang,Clean,Clean,Slightly Polluted,Clean
-Pulau Pinang,Pulau Pinang,Sungai Kerian,Clean,Clean,Clean,Clean
-Kedah,Kedah,Sungai Kerian,Clean,Clean,Clean,Clean
-Perak,Perak,Sungai Beruas,Clean,Clean,Clean,Clean
-Perak,Perak,Sungai Kurau,Clean,Clean,Clean,Clean
-Perak,Perak,Sungai Perak,Clean,Clean,Clean,Clean
-Perak,Perak,Sungai Perak,Clean,Slightly Polluted,Clean,Clean
-Perak,Perak,Sungai Perak,Clean,Slightly Polluted,Clean,Slightly Polluted
-Perak,Perak,Sungai Raja Hitam,Clean,Clean,Clean,Clean
-Perak,Perak,Sungai Sepetang,Clean,Clean,Clean,Clean
-Perak,Perak,Sungai Bernam,Clean,Clean,Clean,Clean
-Selangor,Selangor,Sungai Selangor,Clean,Clean,Clean,Clean
-Selangor,Selangor,Sungai Selangor,Slightly Polluted,Clean,Slightly Polluted,Clean
-Selangor,Selangor,Sungai Sepang,Slightly Polluted,Clean,Slightly Polluted,Slightly Polluted
-Selangor,Selangor,Sungai Klang,Clean,Clean,Clean,Clean
-Selangor,Selangor,Sungai Langat,Clean,Clean,Clean,Clean
-Negeri Sembilan,Negeri Sembilan,Sungai Melaka,Clean,Clean,Clean,Clean
-Melaka,Melaka,Sungai Melaka,Clean,Clean,Clean,Clean
-Melaka,Melaka,Sungai Melaka,Clean,Slightly Polluted,Clean,Clean
-Negeri Sembilan,Negeri Sembilan,Sungai Linggi,Clean,Clean,Clean,Clean
-Melaka,Melaka,Sungai Linggi,Clean,Clean,Slightly Polluted,Clean
-Negeri Sembilan,Negeri Sembilan,Sungai Linggi,Slightly Polluted,Clean,Clean,Slightly Polluted
-Melaka,Melaka,Sungai Kesang,Clean,Clean,Clean,Clean
-Melaka,Melaka,Sungai Duyong,Clean,Clean,Clean,Clean
-Johor,Johor,Sungai Batu Pahat,Clean,Clean,Clean,Clean
-Johor,Johor,Sungai Batu Pahat,Clean,Clean,Slightly Polluted,Clean
-Johor,Johor,Sungai Johor,Clean,Clean,Slightly Polluted,Clean
-Johor,Johor,Sungai Johor,Clean,Clean,Clean,Clean
-Johor,Johor,Sungai Johor,Slightly Polluted,Clean,Clean,Clean
-Johor,Johor,Sungai Johor,Clean,Slightly Polluted,Clean,Clean
-Johor,Johor,Sungai Paloi,Slightly Polluted,Clean,Slightly Polluted,Slightly Polluted
-Johor,Johor,Sungai Sedili Besar,Slightly Polluted,Clean,Slightly Polluted,Clean
-Johor,Johor,Sungai Sedili Besar,Clean,Clean,Clean,Clean
-Johor,Johor,Sungai Sedili Besar,Slightly Polluted,Clean,Slightly Polluted,Slightly Polluted
-Johor,Johor,Sungai Muar,Clean,Clean,Clean,Clean
-Johor,Johor,Sungai Muar,Clean,Clean,Slightly Polluted,Clean
-Johor,Johor,Sungai Endau,Clean,Clean,Clean,Clean
-Johor,Johor,Sungai Endau,Clean,Slightly Polluted,Clean,Clean
-Pahang,Pahang,Sungai Pahang,Clean,Clean,Clean,Clean
-Pahang,Pahang,Sungai Pahang,Slightly Polluted,Clean,Clean,Clean
-Pahang,Pahang,Sungai Pahang,Slightly Polluted,Clean,Clean,Slightly Polluted
-Pahang,Pahang,Sungai Pahang,Slightly Polluted,Slightly Polluted,Clean,Clean
-Pahang,Pahang,Sungai Bertam,Clean,Clean,Clean,Clean
-Pahang,Pahang,Sungai Bertam,Slightly Polluted,Clean,Clean,Clean
-Pahang,Pahang,Sungai Bertam,Slightly Polluted,Clean,Clean,Slightly Polluted
-Pahang,Pahang,Sungai Cherating,Slightly Polluted,Clean,Clean,Clean
-Pahang,Pahang,Sungai Kuantan,Clean,Clean,Clean,Clean
-Pahang,Pahang,Sungai Merchong,Clean,Clean,Slightly Polluted,Slightly Polluted
-Pahang,Pahang,Sungai Rompin,Slightly Polluted,Clean,Clean,Clean
-Pahang,Pahang,Sungai Rompin,Clean,Clean,Clean,Clean
-Pahang,Pahang,Sungai Rompin,Clean,Slightly Polluted,Clean,Clean
-Pahang,Pahang,Sungai Rompin,Clean,Clean,Slightly Polluted,Clean
-Terengganu,Terengganu,Sungai Besut,Clean,Clean,Clean,Clean
-Terengganu,Terengganu,Sungai Dungun,Clean,Clean,Clean,Clean
-Terengganu,Terengganu,Sungai Kemaman,Clean,Clean,Clean,Clean
-Terengganu,Terengganu,Sungai Setiu,Clean,Clean,Clean,Clean
-Terengganu,Terengganu,Sungai Terengganu,Clean,Clean,Clean,Clean
-Kelantan,Kelantan,Sungai Golok,Clean,Clean,Clean,Clean
-Kelantan,Kelantan,Sungai Kelantan,Clean,Clean,Clean,Clean
-Kelantan,Kelantan,Sungai Kelantan,Clean,Slightly Polluted,Clean,Clean
-Kelantan,Kelantan,Sungai Kemasin,Clean,Slightly Polluted,Clean,Clean
-Sabah,Sabah,Sungai Apas,Clean,Clean,Clean,Clean
-Sabah,Sabah,Sungai Balung,Slightly Polluted,Clean,Clean,Clean
-Sabah,Sabah,Sungai Bongawan,Slightly Polluted,Slightly Polluted,Clean,Slightly Polluted
-Sabah,Sabah,Sungai Bengkoka,Clean,Clean,Clean,Clean
-Sabah,Sabah,Sungai Bingkongan,Clean,Clean,Clean,Clean
-Sabah,Sabah,Sungai Kalabakan,Slightly Polluted,Slightly Polluted,Clean,Slightly Polluted
-Sabah,Sabah,Sungai Brantian,Clean,Clean,Clean,Clean
-Sabah,Sabah,Sungai Kalumpang,Slightly Polluted,Clean,Slightly Polluted,Slightly Polluted
-Sabah,Sabah,Sungai Kedamaian,Clean,Clean,Clean,Clean
-Sabah,Sabah,Sungai Kinabatangan,Clean,Clean,Clean,Clean
-Sabah,Sabah,Sungai Kinabatangan,Slightly Polluted,Clean,Clean,Clean
-Sabah,Sabah,Sungai Labuk,Clean,Clean,Clean,Clean
-Sabah,Sabah,Sungai Labuk,Slightly Polluted,Clean,Clean,Clean
-Sabah,Sabah,Sungai Lakutan,Clean,Clean,Clean,Clean
-Sabah,Sabah,Sungai Likas,Clean,Clean,Clean,Clean
-Sabah,Sabah,Sungai Lingkungan,Slightly Polluted,Clean,Clean,Clean
-Sabah,Sabah,Sungai Lingkungan,Clean,Clean,Clean,Clean
-Sabah,Sabah,Sungai Menggalong,Clean,Clean,Clean,Clean
-Sabah,Sabah,Sungai Merotai,Clean,Clean,Clean,Clean
-Sabah,Sabah,Sungai Mounad,Clean,Clean,Clean,Clean
-Sabah,Sabah,Sungai Moyog,Clean,Clean,Clean,Clean
-Sabah,Sabah,Sungai Padas,Clean,Clean,Clean,Clean
-Sabah,Sabah,Sungai Padas,Slightly Polluted,Slightly Polluted,Clean,Slightly Polluted
-Sabah,Sabah,Sungai Paitan,Slightly Polluted,Slightly Polluted,Clean,Slightly Polluted
-Sabah,Sabah,Sungai Papar,Clean,Clean,Clean,Clean
-Sabah,Sabah,Sungai Sapi,Slightly Polluted,Slightly Polluted,Clean,Slightly Polluted
-Sabah,Sabah,Sungai Sapi,Clean,Clean,Clean,Clean
-Sabah,Sabah,Sungai Segama,Clean,Clean,Clean,Clean
-Sabah,Sabah,Sungai Segaliud,Slightly Polluted,Slightly Polluted,Clean,Slightly Polluted
-Sabah,Sabah,Sungai Silabukan,Clean,Clean,Clean,Clean
-Sabah,Sabah,Sungai Sugut,Clean,Clean,Clean,Clean
-Sabah,Sabah,Sungai Tawau,Clean,Clean,Clean,Clean
-Sabah,Sabah,Sungai Telipok,Slightly Polluted,Clean,Slightly Polluted,Slightly Polluted
-Sabah,Sabah,Sungai Tenghilan,Slightly Polluted,Clean,Clean,Clean
-Sabah,Sabah,Sungai Tingkayu,Slightly Polluted,Clean,Clean,Clean
-Sabah,Sabah,Sungai Tuaran,Clean,Clean,Clean,Clean
-Sabah,Sabah,Sungai Tuaran,Clean,Slightly Polluted,Clean,Clean
-Sabah,Sabah,Sungai Tungku,Clean,Clean,Clean,Clean
-Sarawak,Sarawak,Sungai Baram,Clean,Clean,Clean,Clean
-Sarawak,Sarawak,Sungai Lawas,Clean,Clean,Clean,Clean
-Sarawak,Sarawak,Sungai Lupar,Clean,Clean,Clean,Clean
-Sarawak,Sarawak,Sungai Lupar,Clean,Clean,Slightly Polluted,Clean
-Sarawak,Sarawak,Sungai Miri,Clean,Clean,Clean,Clean
-Sarawak,Sarawak,Sungai Niah,Clean,Clean,Slightly Polluted,Clean
-Sarawak,Sarawak,Sungai Rajang,Clean,Clean,Clean,Clean
-Sarawak,Sarawak,Sungai Rajang,Clean,Slightly Polluted,Clean,Clean
-Sarawak,Sarawak,Sungai Rajang,Clean,Clean,Slightly Polluted,Clean
-Sarawak,Sarawak,Sungai Sadong,Clean,Clean,Slightly Polluted,Clean
-Sarawak,Sarawak,Sungai Sadong,Slightly Polluted,Clean,Slightly Polluted,Slightly Polluted
-Sarawak,Sarawak,Sungai Sarawak,Clean,Clean,Clean,Clean
-Sarawak,Sarawak,Sungai Sarawak,Clean,Clean,Slightly Polluted,Clean
-Sarawak,Sarawak,Sungai Sarawak,Clean,Slightly Polluted,Clean,Clean
-Sarawak,Sarawak,Sungai Layar,Clean,Clean,Clean,Clean
-Sarawak,Sarawak,Sungai Semunsam,Clean,Clean,Clean,Clean
-Sarawak,Sarawak,Sungai Sibuti,Clean,Clean,Slightly Polluted,Clean
-Sarawak,Sarawak,Sungai Tatau,Clean,Clean,Slightly Polluted,Clean
-Sarawak,Sarawak,Sungai Trusan,Slightly Polluted,Clean,Clean,Clean
-Sarawak,Sarawak,Sungai Limbang,Slightly Polluted,Clean,Clean,Clean
-Perlis,Perlis,Sungai Perlis,Clean,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Perlis,Perlis,Sungai Perlis,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Kedah,Kedah,Sungai Kedah,Clean,Slightly Polluted,Slightly Polluted,Clean
-Kedah,Kedah,Sungai Kedah,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Kedah,Kedah,Sungai Merbok,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Kedah,Kedah,Sungai Merbok,Polluted,Polluted,Polluted,Polluted
-Pulau Pinang,Pulau Pinang,Sungai Bayan Lepas,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Pulau Pinang,Pulau Pinang,Sungai Jawi,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Pulau Pinang,Pulau Pinang,Sungai Juru,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Pulau Pinang,Pulau Pinang,Sungai Kluang,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Pulau Pinang,Pulau Pinang,Sungai Pinang,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Pulau Pinang,Pulau Pinang,Sungai Perai,Clean,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Pulau Pinang,Pulau Pinang,Sungai Perai,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Kedah,Kedah,Sungai Perai,Clean,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Kedah,Kedah,Sungai Kerian,Clean,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Perak,Perak,Sungai Kurau,Clean,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Perak,Perak,Sungai Kurau,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Perak,Perak,Sungai Kurau,Slightly Polluted,Slightly Polluted,Polluted,Slightly Polluted
-Perak,Perak,Sungai Raja Hitam,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Perak,Perak,Sungai Raja Hitam,Slightly Polluted,Slightly Polluted,Polluted,Polluted
-Perak,Perak,Sungai Sepetang,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Perak,Perak,Sungai Wangi,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Perak,Perak,Sungai Wangi,Clean,Slightly Polluted,Polluted,Slightly Polluted
-Selangor,Selangor,Sungai Selangor,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Selangor,Selangor,Sungai Tengi,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Selangor,Selangor,Sungai Buloh,Slightly Polluted,Slightly Polluted,Polluted,Slightly Polluted
-Negeri Sembilan,Negeri Sembilan,Sungai Langat,Clean,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Selangor,Selangor,Sungai Langat,Clean,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Selangor,Selangor,Sungai Langat,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Negeri Sembilan,Negeri Sembilan,Sungai Langat,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Kuala Lumpur,Kuala Lumpur,Sungai Klang,Clean,Slightly Polluted,Slightly Polluted,Clean
-Kuala Lumpur,Kuala Lumpur,Sungai Klang,Clean,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Kuala Lumpur,Kuala Lumpur,Sungai Klang,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Selangor,Selangor,Sungai Klang,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Kuala Lumpur,Kuala Lumpur,Sungai Klang,Slightly Polluted,Slightly Polluted,Polluted,Slightly Polluted
-Kuala Lumpur,Kuala Lumpur,Sungai Klang,Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Kuala Lumpur,Kuala Lumpur,Sungai Klang,Polluted,Slightly Polluted,Polluted,Slightly Polluted
-Melaka,Melaka,Sungai Kesang,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Melaka,Melaka,Sungai Duyong,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Melaka,Melaka,Sungai Merlimau,Slightly Polluted,Polluted,Polluted,Polluted
-Melaka,Melaka,Sungai Merlimau,Slightly Polluted,Polluted,Slightly Polluted,Slightly Polluted
-Melaka,Melaka,Sungai Merlimau,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Negeri Sembilan,Negeri Sembilan,Sungai Linggi,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Johor,Johor,Sungai Batu Pahat,Clean,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Johor,Johor,Sungai Batu Pahat,Polluted,Slightly Polluted,Polluted,Slightly Polluted
-Johor,Johor,Sungai Batu Pahat,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Johor,Johor,Sungai Benut,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Johor,Johor,Sungai Air Baloi,Slightly Polluted,Polluted,Slightly Polluted,Polluted
-Johor,Johor,Sungai Jemaluang,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Johor,Johor,Sungai Johor,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Johor,Johor,Sungai Johor,Clean,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Johor,Johor,Sungai Johor,Slightly Polluted,Slightly Polluted,Polluted,Slightly Polluted
-Johor,Johor,Sungai Johor,Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Johor,Johor,Sungai Mersing,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Johor,Johor,Sungai Pontian,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Johor,Johor,Sungai Pontian,Slightly Polluted,Slightly Polluted,Polluted,Slightly Polluted
-Johor,Johor,Sungai Pontian Kecil,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Johor,Johor,Sungai Pulai,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Johor,Johor,Sungai Rambah,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Johor,Johor,Sungai Sedili Besar,Clean,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Johor,Johor,Sungai Sedili Besar,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Johor,Johor,Sungai Sedili Kecil,Clean,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Johor,Johor,Sungai Sedili Kecil,Slightly Polluted,Slightly Polluted,Polluted,Slightly Polluted
-Johor,Johor,Sungai Sedili Kecil,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Johor,Johor,Sungai Skudai,Slightly Polluted,Polluted,Polluted,Slightly Polluted
-Johor,Johor,Sungai Muar,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Johor,Johor,Sungai Muar,Clean,Slightly Polluted,Slightly Polluted,Clean
-Pahang,Pahang,Sungai Anak Endau,Clean,Slightly Polluted,Slightly Polluted,Clean
-Pahang,Pahang,Sungai Baluk,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Pahang,Pahang,Sungai Bebar,Clean,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Pahang,Pahang,Sungai Bebar,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Pahang,Pahang,Sungai Bertam,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Pahang,Pahang,Sungai Kuantan,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Pahang,Pahang,Sungai Kuantan,Clean,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Pahang,Pahang,Sungai Kuantan,Clean,Slightly Polluted,Slightly Polluted,Clean
-Pahang,Pahang,Sungai Tonggok,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Johor,Johor,Sungai Endau,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Johor,Johor,Sungai Endau,Clean,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Johor,Johor,Sungai Endau,Slightly Polluted,Polluted,Slightly Polluted,Slightly Polluted
-Johor,Johor,Sungai Endau,Polluted,Polluted,Slightly Polluted,Polluted
-Johor,Johor,Sungai Endau,Slightly Polluted,Slightly Polluted,Polluted,Slightly Polluted
-Pahang,Pahang,Sungai Pahang,Clean,Slightly Polluted,Slightly Polluted,Clean
-Pahang,Pahang,Sungai Pahang,Clean,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Pahang,Pahang,Sungai Pahang,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Terengganu,Terengganu,Sungai Chukai,Clean,Slightly Polluted,Slightly Polluted,Clean
-Terengganu,Terengganu,Sungai Chukai,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Terengganu,Terengganu,Sungai Ibai,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Terengganu,Terengganu,Sungai Kemaman,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Terengganu,Terengganu,Sungai Kertih,Clean,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Terengganu,Terengganu,Sungai Kluang,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Terengganu,Terengganu,Sungai Marang,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Terengganu,Terengganu,Sungai Merang,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Terengganu,Terengganu,Sungai Merchang,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Terengganu,Terengganu,Sungai Paka,Clean,Slightly Polluted,Slightly Polluted,Clean
-Terengganu,Terengganu,Sungai Paka,Clean,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Terengganu,Terengganu,Sungai Setiu,Clean,Slightly Polluted,Slightly Polluted,Clean
-Kelantan,Kelantan,Sungai Kelantan,Clean,Slightly Polluted,Slightly Polluted,Clean
-Kelantan,Kelantan,Sungai Kemasin,Clean,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Kelantan,Kelantan,Sungai Pengkalan Chepa,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Kelantan,Kelantan,Sungai Pengkalan Datu,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Sabah,Sabah,Sungai Kimanis,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Sabah,Sabah,Sungai Likas,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Sabah,Sabah,Sungai Membakut,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Sabah,Sabah,Sungai Membakut,Clean,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Sabah,Sabah,Sungai Sembulan,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Sabah,Sabah,Sungai Umas-Umas,Clean,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Sarawak,Sarawak,Sungai Balingian,Clean,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Sarawak,Sarawak,Sungai Baram,Clean,Slightly Polluted,Slightly Polluted,Clean
-Sarawak,Sarawak,Sungai Kayan,Clean,Slightly Polluted,Slightly Polluted,Clean
-Sarawak,Sarawak,Sungai Kemena,Clean,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Sarawak,Sarawak,Sungai Kerian,Clean,Slightly Polluted,Slightly Polluted,Clean
-Sarawak,Sarawak,Sungai Kerian,Clean,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Sarawak,Sarawak,Sungai Lupar,Clean,Slightly Polluted,Slightly Polluted,Clean
-Sarawak,Sarawak,Sungai Miri,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Sarawak,Sarawak,Sungai Mukah,Clean,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Sarawak,Sarawak,Sungai Niah,Clean,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Sarawak,Sarawak,Sungai Oya,Clean,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Sarawak,Sarawak,Sungai Rajang,Clean,Slightly Polluted,Slightly Polluted,Clean
-Sarawak,Sarawak,Sungai Rajang,Clean,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Sarawak,Sarawak,Sungai Rajang,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Sarawak,Sarawak,Sungai Sarawak,Clean,Slightly Polluted,Slightly Polluted,Clean
-Sarawak,Sarawak,Sungai Sarawak,Clean,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Sarawak,Sarawak,Sungai Sarawak,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Sarawak,Sarawak,Sungai Layar,Clean,Slightly Polluted,Slightly Polluted,Clean
-Sarawak,Sarawak,Sungai Sibuti,Clean,Slightly Polluted,Slightly Polluted,Clean
-Sarawak,Sarawak,Sungai Sibuti,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Sarawak,Sarawak,Sungai Similajau,Clean,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Sarawak,Sarawak,Sungai Suai,Clean,Slightly Polluted,Slightly Polluted,Slightly Polluted
-Pulau Pinang,Pulau Pinang,Sungai Jawi,Polluted,Polluted,Polluted,Polluted
-Pulau Pinang,Pulau Pinang,Sungai Juru,Slightly Polluted,Polluted,Polluted,Polluted
-Pulau Pinang,Pulau Pinang,Sungai Juru,Polluted,Polluted,Polluted,Polluted
-Pulau Pinang,Pulau Pinang,Sungai Pinang,Polluted,Polluted,Polluted,Polluted
-Pulau Pinang,Pulau Pinang,Sungai Perai,Slightly Polluted,Polluted,Polluted,Polluted
-Pulau Pinang,Pulau Pinang,Sungai Perai,Polluted,Polluted,Polluted,Polluted
-Perak,Perak,Sungai Perak,Slightly Polluted,Polluted,Polluted,Slightly Polluted
-Selangor,Selangor,Sungai Klang,Polluted,Polluted,Polluted,Polluted
-Selangor,Selangor,Sungai Klang,Slightly Polluted,Polluted,Polluted,Polluted
-Melaka,Melaka,Sungai Seri Melaka,Polluted,Polluted,Polluted,Polluted
-Johor,Johor,Sungai Batu Pahat,Polluted,Polluted,Polluted,Polluted
-Johor,Johor,Sungai Danga,Polluted,Polluted,Polluted,Polluted
-Johor,Johor,Sungai Johor,Polluted,Polluted,Polluted,Polluted
-Johor,Johor,Kawasan Pasir Gudang,Slightly Polluted,Polluted,Polluted,Polluted
-Johor,Johor,Kawasan Pasir Gudang,Polluted,Polluted,Polluted,Polluted
-Johor,Johor,Sungai Kempas,Polluted,Polluted,Polluted,Polluted
-Johor,Johor,Sungai Kim-Kim,Slightly Polluted,Polluted,Polluted,Slightly Polluted
-Johor,Johor,Sungai Pontian Besar,Polluted,Polluted,Polluted,Polluted
-Johor,Johor,Sungai Pulai,Polluted,Polluted,Polluted,Polluted
-Johor,Johor,Sungai Sanglang,Polluted,Polluted,Polluted,Polluted
-Johor,Johor,Sungai Segget,Polluted,Polluted,Polluted,Polluted
-Johor,Johor,Sungai Skudai,Polluted,Polluted,Polluted,Polluted
-Johor,Johor,Sungai Tebrau,Slightly Polluted,Polluted,Polluted,Polluted
-Johor,Johor,Sungai Tebrau,Polluted,Polluted,Polluted,Polluted
-Johor,Johor,Sungai Muar,Polluted,Polluted,Polluted,Polluted
-Pahang,Pahang,Sungai Endau,Polluted,Polluted,Polluted,Polluted
-Kelantan,Kelantan,Sungai Pengkalan Chepa,Slightly Polluted,Polluted,Polluted,Polluted
+Sungai Air Baloi,Johor,Johor,Slightly Polluted,Polluted,Slightly Polluted,Polluted
+Sungai Anak Endau,Pahang,Pahang,Clean,Slightly Polluted,Slightly Polluted,Clean
+Sungai Apas,Sabah,Sabah,Clean,Clean,Clean,Clean
+Sungai Balingian,Sarawak,Sarawak,Clean,Slightly Polluted,Slightly Polluted,Slightly Polluted
+Sungai Baluk,Pahang,Pahang,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
+Sungai Balung,Sabah,Sabah,Slightly Polluted,Clean,Clean,Clean
+Sungai Baram,Sarawak,Sarawak,Clean,Clean,Clean,Clean
+Sungai Baram,Sarawak,Sarawak,Clean,Slightly Polluted,Slightly Polluted,Clean
+Sungai Batu Pahat,Johor,Johor,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
+Sungai Bayan Lepas,Pulau Pinang,Pulau Pinang,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
+Sungai Bebar,Pahang,Pahang,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
+Sungai Bengkoka,Sabah,Sabah,Clean,Clean,Clean,Clean
+Sungai Benut,Johor,Johor,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
+Sungai Bernam,Perak,Perak,Clean,Clean,Clean,Clean
+Sungai Bertam,Pahang,Pahang,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
+Sungai Beruas,Perak,Perak,Clean,Clean,Clean,Clean
+Sungai Besut,Terengganu,Terengganu,Clean,Clean,Clean,Clean
+Sungai Bingkongan,Sabah,Sabah,Clean,Clean,Clean,Clean
+Sungai Bongawan,Sabah,Sabah,Slightly Polluted,Slightly Polluted,Clean,Slightly Polluted
+Sungai Brantian,Sabah,Sabah,Clean,Clean,Clean,Clean
+Sungai Buloh,Selangor,Selangor,Slightly Polluted,Slightly Polluted,Polluted,Slightly Polluted
+Sungai Cherating,Pahang,Pahang,Slightly Polluted,Clean,Clean,Clean
+Sungai Chukai,Terengganu,Terengganu,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
+Sungai Danga,Johor,Johor,Polluted,Polluted,Polluted,Polluted
+Sungai Dungun,Terengganu,Terengganu,Clean,Clean,Clean,Clean
+Sungai Duyong,Melaka,Melaka,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
+Sungai Endau,Johor,Johor,Clean,Clean,Clean,Clean
+Sungai Endau,Pahang,Pahang,Clean,Clean,Clean,Clean
+Sungai Golok,Kelantan,Kelantan,Clean,Clean,Clean,Clean
+Sungai Ibai,Terengganu,Terengganu,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
+Sungai Jawi,Pulau Pinang,Pulau Pinang,Polluted,Polluted,Polluted,Polluted
+Sungai Jemaluang,Johor,Johor,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
+Sungai Johor,Johor,Johor,Slightly Polluted,Clean,Clean,Clean
+Sungai Juru,Pulau Pinang,Pulau Pinang,Slightly Polluted,Polluted,Polluted,Polluted
+Sungai Kalabakan,Sabah,Sabah,Slightly Polluted,Slightly Polluted,Clean,Slightly Polluted
+Sungai Kalumpang,Sabah,Sabah,Slightly Polluted,Clean,Slightly Polluted,Slightly Polluted
+Sungai Kayan,Sarawak,Sarawak,Clean,Slightly Polluted,Slightly Polluted,Clean
+Sungai Kedah,Kedah,Kedah,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
+Sungai Kedamaian,Sabah,Sabah,Clean,Clean,Clean,Clean
+Sungai Kelantan,Kelantan,Kelantan,Clean,Slightly Polluted,Slightly Polluted,Clean
+Sungai Kelantan,Kelantan,Kelantan,Clean,Clean,Clean,Clean
+Sungai Kemaman,Terengganu,Terengganu,Clean,Clean,Clean,Clean
+Sungai Kemasin,Kelantan,Kelantan,Clean,Slightly Polluted,Slightly Polluted,Slightly Polluted
+Sungai Kemena,Sarawak,Sarawak,Clean,Slightly Polluted,Slightly Polluted,Slightly Polluted
+Sungai Kempas,Johor,Johor,Polluted,Polluted,Polluted,Polluted
+Sungai Kerian,Pulau Pinang,Pulau Pinang,Clean,Slightly Polluted,Slightly Polluted,Clean
+Sungai Kerian,Pulau Pinang,Pulau Pinang,Clean,Clean,Clean,Clean
+Sungai Kerian,Kedah,Kedah,Clean,Slightly Polluted,Slightly Polluted,Clean
+Sungai Kerian,Kedah,Kedah,Clean,Clean,Clean,Clean
+Sungai Kerian,Sarawak,Sarawak,Clean,Slightly Polluted,Slightly Polluted,Clean
+Sungai Kerian,Sarawak,Sarawak,Clean,Clean,Clean,Clean
+Sungai Kertih,Terengganu,Terengganu,Clean,Slightly Polluted,Slightly Polluted,Slightly Polluted
+Sungai Kesang,Melaka,Melaka,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
+Sungai Kim-Kim,Johor,Johor,Slightly Polluted,Polluted,Polluted,Slightly Polluted
+Sungai Kimanis,Sabah,Sabah,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
+Sungai Kinabatangan,Sabah,Sabah,Slightly Polluted,Clean,Clean,Clean
+Sungai Kisap,Kedah,Kedah,Clean,Clean,Clean,Clean
+Sungai Klang,Kuala Lumpur,Kuala Lumpur,Slightly Polluted,Slightly Polluted,Polluted,Slightly Polluted
+Sungai Klang,Selangor,Selangor,Slightly Polluted,Slightly Polluted,Polluted,Slightly Polluted
+Sungai Kluang,Pulau Pinang,Pulau Pinang,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
+Sungai Kluang,Terengganu,Terengganu,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
+Sungai Kuantan,Pahang,Pahang,Clean,Slightly Polluted,Slightly Polluted,Clean
+Sungai Kurau,Perak,Perak,Clean,Slightly Polluted,Slightly Polluted,Slightly Polluted
+Sungai Labuk,Sabah,Sabah,Clean,Clean,Clean,Clean
+Sungai Lakutan,Sabah,Sabah,Clean,Clean,Clean,Clean
+Sungai Langat,Negeri Sembilan,Negeri Sembilan,Clean,Clean,Clean,Clean
+Sungai Langat,Negeri Sembilan,Negeri Sembilan,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
+Sungai Langat,Selangor,Selangor,Clean,Clean,Clean,Clean
+Sungai Langat,Selangor,Selangor,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
+Sungai Lawas,Sarawak,Sarawak,Clean,Clean,Clean,Clean
+Sungai Layar,Sarawak,Sarawak,Clean,Slightly Polluted,Slightly Polluted,Clean
+Sungai Layar,Sarawak,Sarawak,Clean,Clean,Clean,Clean
+Sungai Likas,Sabah,Sabah,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
+Sungai Limbang,Sarawak,Sarawak,Slightly Polluted,Clean,Clean,Clean
+Sungai Linggi,Melaka,Melaka,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
+Sungai Linggi,Negeri Sembilan,Negeri Sembilan,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
+Sungai Lingkungan,Sabah,Sabah,Clean,Clean,Clean,Clean
+Sungai Lupar,Sarawak,Sarawak,Clean,Clean,Slightly Polluted,Clean
+Sungai Marang,Terengganu,Terengganu,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
+Sungai Melaka,Negeri Sembilan,Negeri Sembilan,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
+Sungai Melaka,Melaka,Melaka,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
+Sungai Membakut,Sabah,Sabah,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
+Sungai Menggalong,Sabah,Sabah,Clean,Clean,Clean,Clean
+Sungai Merang,Terengganu,Terengganu,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
+Sungai Merbok,Kedah,Kedah,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
+Sungai Merchang,Terengganu,Terengganu,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
+Sungai Merchong,Pahang,Pahang,Clean,Clean,Slightly Polluted,Slightly Polluted
+Sungai Merlimau,Melaka,Melaka,Slightly Polluted,Polluted,Polluted,Polluted
+Sungai Merotai,Sabah,Sabah,Clean,Clean,Clean,Clean
+Sungai Mersing,Johor,Johor,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
+Sungai Miri,Sarawak,Sarawak,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
+Sungai Mounad,Sabah,Sabah,Clean,Clean,Clean,Clean
+Sungai Moyog,Sabah,Sabah,Clean,Clean,Clean,Clean
+Sungai Muar,Johor,Johor,Clean,Clean,Slightly Polluted,Clean
+Sungai Muda,Kedah,Kedah,Clean,Clean,Clean,Clean
+Sungai Mukah,Sarawak,Sarawak,Clean,Slightly Polluted,Slightly Polluted,Slightly Polluted
+Sungai Niah,Sarawak,Sarawak,Clean,Clean,Slightly Polluted,Clean
+Sungai Oya,Sarawak,Sarawak,Clean,Slightly Polluted,Slightly Polluted,Slightly Polluted
+Sungai Padas,Sabah,Sabah,Slightly Polluted,Slightly Polluted,Clean,Slightly Polluted
+Sungai Pahang,Pahang,Pahang,Clean,Clean,Clean,Clean
+Sungai Paitan,Sabah,Sabah,Slightly Polluted,Slightly Polluted,Clean,Slightly Polluted
+Sungai Paka,Terengganu,Terengganu,Clean,Slightly Polluted,Slightly Polluted,Clean
+Sungai Paloi,Johor,Johor,Slightly Polluted,Clean,Slightly Polluted,Slightly Polluted
+Sungai Papar,Sabah,Sabah,Clean,Clean,Clean,Clean
+Sungai Pengkalan Chepa,Kelantan,Kelantan,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
+Sungai Pengkalan Datu,Kelantan,Kelantan,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
+Sungai Perai,Pulau Pinang,Pulau Pinang,Slightly Polluted,Polluted,Polluted,Polluted
+Sungai Perai,Kedah,Kedah,Slightly Polluted,Polluted,Polluted,Polluted
+Sungai Perak,Perak,Perak,Clean,Clean,Clean,Clean
+Sungai Perlis,Perlis,Perlis,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
+Sungai Pinang,Pulau Pinang,Pulau Pinang,Polluted,Polluted,Polluted,Polluted
+Sungai Pontian,Johor,Johor,Slightly Polluted,Slightly Polluted,Polluted,Slightly Polluted
+Sungai Pontian,Johor,Johor,Slightly Polluted,Clean,Clean,Clean
+Sungai Pontian Kecil,Johor,Johor,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
+Sungai Pulai,Johor,Johor,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
+Sungai Raja Hitam,Perak,Perak,Slightly Polluted,Slightly Polluted,Polluted,Polluted
+Sungai Rajang,Sarawak,Sarawak,Clean,Slightly Polluted,Slightly Polluted,Slightly Polluted
+Sungai Rambah,Johor,Johor,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
+Sungai Rompin,Pahang,Pahang,Clean,Slightly Polluted,Slightly Polluted,Clean
+Sungai Sadong,Sarawak,Sarawak,Clean,Clean,Slightly Polluted,Clean
+Sungai Sanglang,Johor,Johor,Polluted,Polluted,Polluted,Polluted
+Sungai Sapi,Sabah,Sabah,Slightly Polluted,Slightly Polluted,Clean,Slightly Polluted
+Sungai Sarawak,Sarawak,Sarawak,Clean,Slightly Polluted,Clean,Clean
+Sungai Sedili Besar,Johor,Johor,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
+Sungai Sedili Kecil,Johor,Johor,Clean,Slightly Polluted,Slightly Polluted,Slightly Polluted
+Sungai Segaliud,Sabah,Sabah,Slightly Polluted,Slightly Polluted,Clean,Slightly Polluted
+Sungai Segama,Sabah,Sabah,Clean,Clean,Clean,Clean
+Sungai Segget,Johor,Johor,Polluted,Polluted,Polluted,Polluted
+Sungai Selangor,Selangor,Selangor,Slightly Polluted,Clean,Slightly Polluted,Clean
+Sungai Sembulan,Sabah,Sabah,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
+Sungai Semunsam,Sarawak,Sarawak,Clean,Clean,Clean,Clean
+Sungai Sepang,Selangor,Selangor,Slightly Polluted,Clean,Slightly Polluted,Slightly Polluted
+Sungai Sepetang,Perak,Perak,Clean,Clean,Clean,Clean
+Sungai Sepetang,Perak,Perak,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
+Sungai Seri Melaka,Melaka,Melaka,Polluted,Polluted,Polluted,Polluted
+Sungai Setiu,Terengganu,Terengganu,Clean,Clean,Clean,Clean
+Sungai Sibuti,Sarawak,Sarawak,Clean,Clean,Slightly Polluted,Clean
+Sungai Silabukan,Sabah,Sabah,Clean,Clean,Clean,Clean
+Sungai Similajau,Sarawak,Sarawak,Clean,Slightly Polluted,Slightly Polluted,Slightly Polluted
+Sungai Skudai,Johor,Johor,Slightly Polluted,Polluted,Polluted,Slightly Polluted
+Sungai Suai,Sarawak,Sarawak,Clean,Slightly Polluted,Slightly Polluted,Slightly Polluted
+Sungai Sugut,Sabah,Sabah,Clean,Clean,Clean,Clean
+Sungai Tatau,Sarawak,Sarawak,Clean,Clean,Slightly Polluted,Clean
+Sungai Tawau,Sabah,Sabah,Clean,Clean,Clean,Clean
+Sungai Tebrau,Johor,Johor,Slightly Polluted,Polluted,Polluted,Polluted
+Sungai Telipok,Sabah,Sabah,Slightly Polluted,Clean,Slightly Polluted,Slightly Polluted
+Sungai Tenghilan,Sabah,Sabah,Slightly Polluted,Clean,Clean,Clean
+Sungai Tengi,Selangor,Selangor,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
+Sungai Terengganu,Terengganu,Terengganu,Clean,Clean,Clean,Clean
+Sungai Tingkayu,Sabah,Sabah,Slightly Polluted,Clean,Clean,Clean
+Sungai Tonggok,Pahang,Pahang,Slightly Polluted,Slightly Polluted,Slightly Polluted,Slightly Polluted
+Sungai Trusan,Sarawak,Sarawak,Slightly Polluted,Clean,Clean,Clean
+Sungai Tuaran,Sabah,Sabah,Clean,Clean,Clean,Clean
+Sungai Tungku,Sabah,Sabah,Clean,Clean,Clean,Clean
+Sungai Umas-Umas,Sabah,Sabah,Clean,Slightly Polluted,Slightly Polluted,Slightly Polluted
+Sungai Wangi,Perak,Perak,Clean,Slightly Polluted,Polluted,Slightly Polluted
 Perlis,Sungai Perlis,Sungai Wang Kelian,Clean,Clean,Clean,Clean
 Perlis,Sungai Perlis,Sungai Pelarit,Clean,Clean,Clean,Clean
 Perlis,Sungai Perlis,Sungai Jarum,Slightly Polluted,Clean,Clean,Clean
