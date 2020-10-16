@@ -1,49 +1,82 @@
-State,River,Causes of Pollution
-Kedah,Sungai Korok,"Factories, Agriculture"
+State,River,Causes.of.Pollution
+Kedah,Sungai Korok,Factories
+Kedah,Sungai Korok,Agriculture
 Kedah,Sungai Petani,Factories
-Pulau Pinang,Sungai Dondang,"Rubber Factory, Sewage, Workshop"
-Pulau Pinang,Sungai Jelutong,"Sewage, Factories, Workshop, Food Court"
-Pulau Pinang,Sungai Ara,"Factories, Residential Waste"
-Pulau Pinang,Sungai Rambai,"Pig Farm, City Waste"
+Pulau Pinang,Sungai Dondang,Rubber Factory
+Pulau Pinang,Sungai Dondang,Sewage
+Pulau Pinang,Sungai Dondang,Workshop
+Pulau Pinang,Sungai Jelutong,Sewage
+Pulau Pinang,Sungai Jelutong,Factories
+Pulau Pinang,Sungai Jelutong,Workshop
+Pulau Pinang,Sungai Jelutong,Food Court
+Pulau Pinang,Sungai Ara,Factories
+Pulau Pinang,Sungai Ara,Residential Waste
+Pulau Pinang,Sungai Rambai,Pig Farm
+Pulau Pinang,Sungai Rambai,City Waste
 Pulau Pinang,Sungai Kereh,Pig Farm
 Pulau Pinang,Sungai Seluang,Factories
 Pulau Pinang,Sungai Cempedak,Factories
-Pulau Pinang,Sungai Jawi,"City Waste, Pig Farm, Factories"
+Pulau Pinang,Sungai Jawi,City Waste
+Pulau Pinang,Sungai Jawi,Pig Farm
+Pulau Pinang,Sungai Jawi,Factories
 Pulau Pinang,Sungai Tengah,Factories
-Perak,Sungai Seluang,"Agriculture, Sewage"
-Perak,Sungai Lidin,"City Waste, Factories, Workshop"
+Perak,Sungai Seluang,Agriculture
+Perak,Sungai Seluang,Sewage
+Perak,Sungai Lidin,City Waste
+Perak,Sungai Lidin,Factories
+Perak,Sungai Lidin,Workshop
 Selangor,Sungai Labu,Factories
-Selangor,Sungai Langat,"Agriculture, Animal Farm"
+Selangor,Sungai Langat,Agriculture
+Selangor,Sungai Langat,Animal Farm
 Selangor,Sungai Kundang,Disposal Site
-Selangor,Sungai Buloh,"Factories, Agriculture, Animal Farm, Sewage"
+Selangor,Sungai Buloh,Factories
+Selangor,Sungai Buloh,Agriculture
+Selangor,Sungai Buloh,Animal Farm
+Selangor,Sungai Buloh,Sewage
 Kuala Lumpur,Sungai Bunus,City Waste
-Selangor,Sungai Damansara,"Sewage, Factories"
-Kuala Lumpur,Sungai Jinjang,"Sewage, Residential Waste"
+Selangor,Sungai Damansara,Sewage
+Selangor,Sungai Damansara,Factories
+Kuala Lumpur,Sungai Jinjang,Sewage
+Kuala Lumpur,Sungai Jinjang,Residential Waste
 Kuala Lumpur,Sungai Kerayong,Factories
 Kuala Lumpur,Sungai Keroh,City Waste
 Kuala Lumpur,Sungai Penchala,Factories
 Melaka,Sungai Baru,Pig Farm
-Melaka,Sungai Ayer Salak,"Factories, Sewage"
+Melaka,Sungai Ayer Salak,Factories
+Melaka,Sungai Ayer Salak,Sewage
 Selangor,Sungai Gombak,Factories
-Johor,Sungai Merlimau,"Factories, Agriculture, Sewage"
+Johor,Sungai Merlimau,Factories
+Johor,Sungai Merlimau,Agriculture
+Johor,Sungai Merlimau,Sewage
 Negeri Sembilan,Sungai Kelamah,Factories
-Johor,Sungai Sarang Buaya,"Plantation, City Waste"
-Johor,Sungai Simpang Kanan,"Factories, City Waste"
+Johor,Sungai Sarang Buaya,Plantation
+Johor,Sungai Sarang Buaya,City Waste
+Johor,Sungai Simpang Kanan,Factories
+Johor,Sungai Simpang Kanan,City Waste
 Johor,Sungai Pontian,Factories
 Johor,Sungai Lenga,Factories
 Johor,Sungai Serai,Factories
-Johor,Sungai Ayer Baloi,"Plantation, Animal Farm, City Waste"
+Johor,Sungai Ayer Baloi,Plantation
+Johor,Sungai Ayer Baloi,Animal Farm
+Johor,Sungai Ayer Baloi,City Waste
 Johor,Sungai Segget,City Waste
-Johor,Sungai Bala,"Factories, City Waste"
-Johor,Sungai Plentong,"Sewage, Factories"
-Johor,Sungai Sebulung,"Sewage, Factories"
-Johor,Sungai Sengkuang,"Sewage, Factories"
-Johor,Sungai Tampoi,"Sewage, Factories"
+Johor,Sungai Bala,Factories
+Johor,Sungai Bala,City Waste
+Johor,Sungai Plentong,Sewage
+Johor,Sungai Plentong,Factories
+Johor,Sungai Sebulung,Sewage
+Johor,Sungai Sebulung,Factories
+Johor,Sungai Sengkuang,Sewage
+Johor,Sungai Sengkuang,Factories
+Johor,Sungai Tampoi,Sewage
+Johor,Sungai Tampoi,Factories
 Johor,Sungai Danga,City Waste
 Johor,Sungai Lebam,Factories
 Johor,Sungai Latoh,Factories
-Johor,Sungai Masai,"Sewage, Disposal Site"
-Johor,Sungai Kempas,"Sewage, Factories"
+Johor,Sungai Masai,Sewage
+Johor,Sungai Masai,Disposal Site
+Johor,Sungai Kempas,Sewage
+Johor,Sungai Kempas,Factories
 Pahang,Sungai Kepayang,Factories
 Sarawak,Sungai Adong,Factories
 Sabah,Sungai Kalumpang,Factories

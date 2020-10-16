@@ -1,32 +1,40 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-    "background": "rgba(0,0,0,0)",
-    "height": 400,
-    "width": 462.5,
-    "data": {
-      "url": "https://raw.githubusercontent.com/HYuanAi/FIT3179/master/Assignment 2/data/1N1S River Class Over Years.csv"
-    },
-    "transform": [{
-      "sort": [
-        {"field": "Class", "order": "descending"}
-      ],
-      "window": [{
-        "op": "rank",
-        "as": "rank"
-      }],
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "background": "rgba(0,0,0,0)",
+  "height": 400,
+  "width": 462.5,
+  "data": {
+    "url": "https://raw.githubusercontent.com/HYuanAi/FIT3179/master/Assignment 2/data/1N1S River Class Over Years.csv"
+  },
+  "transform": [
+    {
+      "sort": [{"field": "Class", "order": "descending"}],
+      "window": [{"op": "rank", "as": "rank"}],
       "groupby": ["River"]
-    }],
-    "mark": {"type": "rect", "orient": "vertical"},
-    "encoding": {
-      "x": {"field": "Year", "type": "ordinal", "title": null, "axis": {"grid": false, "labelAngle": 0, "ticks": false}},
-      "y": {"field": "River", "type": "nominal", "title": null, "axis": { "domain": false, "ticks": false, "labelPadding": 10 }},
-      "color": {
-        "field": "Class", "type": "ordinal",
-        "scale": {
-          "domain": ["II", "III", "IV"],
-          "range": ["#79C2CC", "#232ED1", "#101D42"],
-          "type": "ordinal"
-        }
+    }
+  ],
+  "mark": {"type": "rect", "orient": "vertical"},
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "ordinal",
+      "title": null,
+      "axis": {"grid": false, "labelAngle": 0, "ticks": false}
+    },
+    "y": {
+      "field": "River",
+      "type": "nominal",
+      "title": null,
+      "axis": {"domain": false, "ticks": false, "labelPadding": -450, "labelAlign": "right", "labelColor": "#E4E4E9"}
+    },
+    "color": {
+      "field": "Class",
+      "type": "ordinal",
+      "scale": {
+        "domain": ["II", "III", "IV"],
+        "range": ["#79C2CC", "#232ED1", "#101D42"],
+        "type": "ordinal"
       }
     }
   }
+}
