@@ -10,88 +10,94 @@
     <link rel="stylesheet" type="text/css" href="styles.css" media="all">
 </head>
 <body>
-    <div class="container px-7">
-        <div class="bg-img">
-            <div class="header row">
-                <div class="col-8 header-left">
-                    <p class="h3 pt-4 font-weight-bold">Go with the Flow</p>
-                    <p class="h2">Rivers in Malaysia</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, cum? Placeat est provident vel, officiis dolorem officia quidem, sed, tempora distinctio accusantium pariatur fuga beatae iure possimus nostrum amet tempore?</p>
+    <div class="row">
+        <nav class="col-2 sticky-left-bar">
+            <div class="mt-3 text-center top-border">
+                <form class="mt-3 form-inline caption">
+                    I want to focus on the state 
+                    <select class="custom-select mx-2" id="select-state" onchange="changeState(this.value)">
+                        <option selected value="All">All</option>
+                        <option value="Johor">Johor</option>
+                        <option value="Kedah">Kedah</option>
+                        <option value="Kelantan">Kelantan</option>
+                        <option value="Kuala Lumpur">Kuala Lumpur</option>
+                        <option value="Melaka">Melaka</option>
+                        <option value="Negeri Sembilan">Negeri Sembilan</option>
+                        <option value="Pahang">Pahang</option>
+                        <option value="Perak">Perak</option>
+                        <option value="Perlis">Perlis</option>
+                        <option value="Pulau Pinang">Pulau Pinang</option>
+                        <option value="Sabah">Sabah</option>
+                        <option value="Sarawak">Sarawak</option>
+                        <option value="Selangor">Selangor</option>
+                        <option value="Terengganu">Terengganu</option>
+                    </select>
+                </form>
+            </div>
+        </nav>
+        <div class="col-9">
+            <div class="bg-img">
+                <div class="header row">
+                    <div class="col-8 header-left">
+                        <p class="h3 pt-4 font-weight-bold">Go with the Flow</p>
+                        <p class="h2">Rivers in Malaysia</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, cum? Placeat est provident vel, officiis dolorem officia quidem, sed, tempora distinctio accusantium pariatur fuga beatae iure possimus nostrum amet tempore?</p>
+                    </div>
+                    <div class="col-2 text-right my-auto">
+                        <h3>
+                            Total <br/>
+                            Rivers
+                        </h3>
+                    </div>    
+                    <div class="col-2 my-auto"><h1>477</h1></div>    
                 </div>
-                <div class="col-2 text-right my-auto">
-                    <h3>
-                        Total <br/>
-                        Rivers
-                    </h3>
-                </div>    
-                <div class="col-2 my-auto"><h1>477</h1></div>    
+            </div>
+
+            <div class="mt-5 mx-auto row">
+                <div class="col-12 caption">Select a year or a classification of river to filter the rivers on the map.</div>
+                <div id="donut-2015" class="col-4 selectable" onclick="changeYear(2015)"></div>
+                <div id="donut-2016" class="col-4 selectable" onclick="changeYear(2016)"></div>
+                <div id="donut-2017" class="col-4 selectable" onclick="changeYear(2017)"></div>
+            </div>
+            
+            <div id="year-selector" hidden></div>
+
+            <div id="map" class='my-1 mx-auto'></div>
+
+            <div id="network" class="my-1 mx-auto" style="height: 0px"></div>
+
+            <div class="top-border pt-5 mt-3 mx-auto row">
+                <div class="col-5">
+                    <div class="text-center">
+                        <img src="resources/sad.png" width="64" height="64" />
+                        <span class=" h5 ml-3">More polluted...</span>
+                    </div>
+                    <div class="mt-3">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, cum? Placeat est provident vel, officiis dolorem officia quidem, sed, tempora distinctio accusantium pariatur fuga beatae iure possimus nostrum amet tempore?
+                    </div>
+                    <div id="causes" class="mt-3"></div>
+                </div>
+                <div class="col-2 p-0">
+                    <div id="diverging"></div>
+                </div>
+                <div class="col-5">
+                    <div class="text-center">
+                        <img src="resources/smiley.png" width="64" height="64" />
+                        <span class=" h5 ml-3">Recovery</span>
+                    </div>
+                    <div class="mt-3">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, cum? Placeat est provident vel, officiis dolorem officia quidem, sed, tempora distinctio accusantium pariatur fuga beatae iure possimus nostrum amet tempore?
+                    </div>
+                    <div id="heat" class="mt-3"></div>
+                </div>
             </div>
         </div>
-
-        <div class="mt-5 mx-auto row">
-            <div class="col-12 caption">Select a year or a classification of river to filter the rivers on the map.</div>
-            <div id="donut-2015" class="col-4 selectable" onclick="changeYear(2015)"></div>
-            <div id="donut-2016" class="col-4 selectable" onclick="changeYear(2016)"></div>
-            <div id="donut-2017" class="col-4 selectable" onclick="changeYear(2017)"></div>
-        </div>
-        
-        <div id="year-selector" hidden></div>
-
-        <div id="map" class='my-1 mx-auto'></div>
-
-        <div class="mt-3 text-center top-border">
-            <form class="mt-3 form-inline caption">
-                I want to focus on the state 
-                <select class="custom-select mx-2" id="select-state" onchange="changeState(this.value)">
-                    <option selected value="All">All</option>
-                    <option value="Johor">Johor</option>
-                    <option value="Kedah">Kedah</option>
-                    <option value="Kelantan">Kelantan</option>
-                    <option value="Kuala Lumpur">Kuala Lumpur</option>
-                    <option value="Melaka">Melaka</option>
-                    <option value="Negeri Sembilan">Negeri Sembilan</option>
-                    <option value="Pahang">Pahang</option>
-                    <option value="Perak">Perak</option>
-                    <option value="Perlis">Perlis</option>
-                    <option value="Pulau Pinang">Pulau Pinang</option>
-                    <option value="Sabah">Sabah</option>
-                    <option value="Sarawak">Sarawak</option>
-                    <option value="Selangor">Selangor</option>
-                    <option value="Terengganu">Terengganu</option>
-                </select>
-            </form>
-        </div>
-
-        <div class="mt-3 mx-auto row">
-            <div class="col-5">
-                <div class="text-center">
-                    <img src="resources/sad.png" width="64" height="64" />
-                    <span class=" h5 ml-3">More polluted...</span>
-                </div>
-                <div class="mt-3">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, cum? Placeat est provident vel, officiis dolorem officia quidem, sed, tempora distinctio accusantium pariatur fuga beatae iure possimus nostrum amet tempore?
-                </div>
-                <div id="causes" class="mt-3"></div>
-            </div>
-            <div class="col-2 p-0">
-                <div id="diverging"></div>
-            </div>
-            <div class="col-5">
-                <div class="text-center">
-                    <img src="resources/smiley.png" width="64" height="64" />
-                    <span class=" h5 ml-3">Recovery</span>
-                </div>
-                <div class="mt-3">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, cum? Placeat est provident vel, officiis dolorem officia quidem, sed, tempora distinctio accusantium pariatur fuga beatae iure possimus nostrum amet tempore?
-                </div>
-                <div id="heat" class="mt-3"></div>
-            </div>
-        </div>
+        <div class="col-1"></div>
     </div>
 
     <script type="text/javascript">
         var selectedYear = 'average';
-        var causes_view, diverging_view, heat_view;
+        var don15_view, don16_view, don17_view, map_view, network_view, causes_view, diverging_view, heat_view;
 
         function changeYear(year) {
             selectedYear = selectedYear == year ? 'average' : year;
@@ -105,32 +111,54 @@
         }
 
         function changeState(state) {
+            don15_view.signal("selected_state", state);
+            don15_view.runAsync();
+            don16_view.signal("selected_state", state);
+            don16_view.runAsync();
+            don17_view.signal("selected_state", state);
+            don17_view.runAsync();
+            map_view.signal("selected_state", state);
+            map_view.runAsync();
+            network_view.signal("selected_state", state);
+            network_view.runAsync();
             causes_view.signal("selected_state", state);
             causes_view.runAsync();
             diverging_view.signal("selected_state", state);
             diverging_view.runAsync();
             heat_view.signal("selected_state", state);
             heat_view.runAsync();
-        }
 
-        var spec = "https://HYuanAi.github.io/FIT3179/Assignment 2/vg_json/rivers_map.vg.json";
-        vegaEmbed('#map', spec).then(function(result) {
-            // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-        }).catch(console.error);
+            document.getElementById('network').style.height = state == 'All' ? '0px' : '1150';
+        }
 
         var don15 = "https://HYuanAi.github.io/FIT3179/Assignment 2/vg_json/donut_2015.vg.json";
         vegaEmbed('#donut-2015', don15).then(function(result) {
             // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view});
+            don15_view = result.view;
         }).catch(console.error);
 
         var don16 = "https://HYuanAi.github.io/FIT3179/Assignment 2/vg_json/donut_2016.vg.json";
         vegaEmbed('#donut-2016', don16).then(function(result) {
             // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+            don16_view = result.view;
         }).catch(console.error);
 
         var don17 = "https://HYuanAi.github.io/FIT3179/Assignment 2/vg_json/donut_2017.vg.json";
         vegaEmbed('#donut-2017', don17).then(function(result) {
             // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+            don17_view = result.view;
+        }).catch(console.error);
+
+        var spec = "https://HYuanAi.github.io/FIT3179/Assignment 2/vg_json/rivers_map.vg.json";
+        vegaEmbed('#map', spec).then(function(result) {
+            // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+            map_view = result.view;
+        }).catch(console.error);
+
+        var spec = "https://HYuanAi.github.io/FIT3179/Assignment 2/vg_json/river_tree.vg.json";
+        vegaEmbed('#network', spec).then(function(result) {
+            // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+            network_view = result.view;
         }).catch(console.error);
 
         var div = "https://HYuanAi.github.io/FIT3179/Assignment 2/vg_json/diverging_stacked_barchart.vg.json";

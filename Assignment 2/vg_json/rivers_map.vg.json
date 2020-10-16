@@ -20,6 +20,10 @@
           "force":  true
         }
       ]
+    },
+    {
+      "name": "selected_state",
+      "value": "All"
     }
   ],
   "data": [
@@ -90,7 +94,10 @@
           "stroke": {"value": "#E4E4E9"},
           "strokeWidth": {"value": 2},
           "fill": {"value": "white"},
-          "ariaRoleDescription": {"value": "geoshape"}
+          "ariaRoleDescription": {"value": "geoshape"},
+          "fillOpacity": {
+            "signal": "if(selected_state == 'All' || datum.properties.name == selected_State, 1, 0.3)"
+          }
         }
       },
       "transform": [{"type": "geoshape", "projection": "projection"}]
@@ -138,6 +145,7 @@
       "direction": "horizontal",
       "legendX": 400,
       "legendY": 40,
+      "symbolStrokeWidth": 4,
       "labelFontSize": 14,
       "encode": {
         "symbols": {
