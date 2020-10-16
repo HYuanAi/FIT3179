@@ -1,35 +1,141 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-    "background": "rgba(0,0,0,0)",
-    "height": 200,
-    "width": 300,
-    "data": {
-      "url": "https://raw.githubusercontent.com/HYuanAi/FIT3179/master/Assignment 2/data/Causes of Pollution.csv"
-    },
-    "transform": [{
-      "aggregate": [{"op": "count", "field": "River", "as": "count"}],
-        "groupby": ["Cause"]
-    }],
-    "encoding": {
-      "y": {"field": "Cause", "type": "nominal", "axis": { "ticks": false, "labelPadding": 10 }, "sort": "-x", "title": null },
-      "x": {"field": "count", "type": "quantitative",
-        "title": "Number of rivers", "axis": null }
-    },
-    "layer": [
-      {
-        "mark": {"type": "bar", "height": 5, "color": "#60492C" } 
-      },
-      {
-        "mark": {
-          "type": "text",
-          "align": "left",
-          "baseline": "middle",
-          "dx": 3,
-          "color": "#60492C"
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "background": "rgba(0,0,0,0)",
+  "padding": 5,
+  "width": 300,
+  "height": 200,
+  "style": "cell",
+  "signals": [
+    {
+      "name": "selected_state",
+      "value": "Kuala Lumpur"
+    }
+  ],
+  "data": [
+    {
+      "name": "source_0",
+      "url": "https://raw.githubusercontent.com/HYuanAi/FIT3179/master/Assignment 2/data/Causes of Pollution.csv",
+      "format": {"type": "csv", "delimiter": ","},
+      "transform": [
+        {
+          "type": "formula",
+          "expr": "if(datum.State == selected_state || selected_state == 'All', 'highlight', 'no_highlight')",
+          "as": "state_highlight"
         },
-        "encoding": {
-          "text": {"field": "count", "type": "quantitative"}
+        {
+          "type": "aggregate",
+          "groupby": ["Cause", "state_highlight"],
+          "ops": ["count"],
+          "fields": [null],
+          "as": ["count"]
+        },
+        {
+          "type": "filter",
+          "expr": "isValid(datum[\"count\"]) && isFinite(+datum[\"count\"])"
+        },
+        {
+          "type": "stack",
+          "groupby": ["Cause"],
+          "sort": {"field": "state_highlight"},
+          "field": "count"
+        }
+      ]
+    },
+    {
+      "name": "aggregated",
+      "source": "source_0",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "datum.state_highlight == 'highlight'"
+        },
+        {
+          "type": "aggregate",
+          "groupby": ["Cause"],
+          "ops": ["sum"],
+          "fields": ["count"],
+          "as": ["total"]
+        }
+      ]
+    }
+  ],
+  "marks": [
+    {
+      "name": "layer_0_marks",
+      "type": "rect",
+      "style": ["bar"],
+      "from": {"data": "source_0"},
+      "encode": {
+        "update": {
+          "height": {"value": 8},
+          "fill": {"scale": "color", "field": "state_highlight"},
+          "ariaRoleDescription": {"value": "bar"},
+          "description": {
+            "signal": "\"Cause: \" + (isValid(datum[\"Cause\"]) ? datum[\"Cause\"] : \"\"+datum[\"Cause\"]) + \"; Number of rivers: \" + (format(datum[\"count\"], \"\"))"
+          },
+          "x": {"scale": "x", "field": "y0"},
+          "x2": {"scale": "x", "field": "y1"},
+          "yc": {"scale": "y", "field": "Cause", "band": 0.5}
         }
       }
-    ]
-  }
+    },
+    {
+      "name": "layer_1_marks",
+      "type": "text",
+      "style": ["text"],
+      "from": {"data": "aggregated"},
+      "encode": {
+        "update": {
+          "align": {"value": "left"},
+          "baseline": {"value": "middle"},
+          "dx": {"value": 3},
+          "fill": {"value": "#60492C"},
+          "description": {
+            "signal": "\"Cause: \" + (isValid(datum[\"Cause\"]) ? datum[\"Cause\"] : \"\"+datum[\"Cause\"]) + \"; Number of rivers: \" + (format(datum[\"count\"], \"\")) + \"; count: \" + (format(datum[\"count\"], \"\"))"
+          },
+          "x": {"scale": "x", "field": "total"},
+          "y": {"scale": "y", "field": "Cause", "band": 0.5},
+          "text": {"signal": "format(datum[\"total\"], \"\")"}
+        }
+      }
+    }
+  ],
+  "scales": [
+    {
+      "name": "x",
+      "type": "linear",
+      "domain": {"data": "source_0", "field": "y1"},
+      "range": [0, {"signal": "width"}],
+      "nice": true,
+      "zero": true
+    },
+    {
+      "name": "y",
+      "type": "band",
+      "domain": {
+        "data": "source_0",
+        "field": "Cause",
+        "sort": {"op": "sum", "field": "count", "order": "descending"}
+      },
+      "range": [0, {"signal": "height"}],
+      "paddingInner": 0.1,
+      "paddingOuter": 0.05
+    },
+    {
+      "name": "color",
+      "type": "ordinal",
+      "domain": ["highlight", "no_highlight"],
+      "range": ["#60492C", "#FFFFFF"]
+    }
+  ],
+  "axes": [
+    {
+      "scale": "y",
+      "orient": "left",
+      "grid": false,
+      "labelPadding": 10,
+      "ticks": false,
+      "zindex": 0
+    }
+  ]
+}

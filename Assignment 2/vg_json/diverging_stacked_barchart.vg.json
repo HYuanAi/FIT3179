@@ -42,7 +42,8 @@
             "ticks": false,
             "titleX": 100,
             "titleAlign": "center",
-            "orient": "top"
+            "orient": "top",
+            "labelExpr": "datum.value + '%'"
           },
           "scale": {
             "domain": [-100, 100]
@@ -75,7 +76,12 @@
             "range": ["#60492C", "#898B80", "#208AAE"],
             "type": "ordinal"
           },
-          "legend": null
+          "legend": 
+          {
+            "orient": "top",
+            "title": null,
+            "direction": "horizontal", "gridAlign": "each"
+          }
         }
       }
     }]

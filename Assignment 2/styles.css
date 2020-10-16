@@ -35,3 +35,15 @@ body {
 .selectable > .chart-wrapper {
     cursor: pointer;
 }
+
+.caption {
+    font-size: 11pt;
+    color: darkgrey;
+}
+
+#select-state {
+    width: 150px;
+    height: 35px;
+    color: gray;
+    border: none;
+}
