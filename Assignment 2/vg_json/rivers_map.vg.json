@@ -10,9 +10,9 @@
         "name": "year",
         "value": 0,
         "on": [
-          {"source": "#donut-2015" ,"events": "mouseclick", "update": "year == 2015 ? 0 : 2015"},
-          {"source": "#donut-2016" ,"events": "mouseclick", "update": "year == 2016 ? 0 : 2016"},
-          {"source": "#donut-2017" ,"events": "mouseclick", "update": "year == 2017 ? 0 : 2017"}
+          {"source": "#donut-2015" ,"events": "click", "update": "year == 2015 ? 0 : 2015"},
+          {"source": "#donut-2016" ,"events": "click", "update": "year == 2016 ? 0 : 2016"},
+          {"source": "#donut-2017" ,"events": "click", "update": "year == 2017 ? 0 : 2017"}
         ]
       }
     ],
