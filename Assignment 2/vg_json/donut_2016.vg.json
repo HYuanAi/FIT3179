@@ -1,67 +1,48 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
     "background": "#E4E4E9",
-    "height": 180,
-    "description": "Proportion of rivers in 2015",
+    "height": 170,
+    "description": "Proportion of rivers in 2016",
     "data": {
-        "url": "https://raw.githubusercontent.com/HYuanAi/FIT3179/master/Assignment 2/data/Rivers_WQI.csv"
+      "url": "https://raw.githubusercontent.com/HYuanAi/FIT3179/master/Assignment 2/data/Rivers_WQI.csv"
     },
+    "transform": [
+      {
+        "aggregate": [{"op": "count", "field": "River", "as": "count"}],
+        "groupby": ["Category_2016"]
+      },
+      { "calculate": "datum.count + ' ' + datum.Category_2016", "as": "label" }
+    ],
     "encoding": {
-        "theta": {
-            "aggregate": "count",
-            "field": "value",
-            "type": "quantitative",
-            "stack": true
-        },
-        "color": {
-            "field": "Category_2016",
-            "type": "nominal",
-            "legend": null,
-            "scale": {
-                "domain": [
-                    "Clean",
-                    "Slightly Polluted",
-                    "Polluted"
-                ],
-                "range": [
-                    "#208AAE",
-                    "#898B80",
-                    "#60492C"
-                ]
-            }
+      "theta": {
+        "field": "count",
+        "type": "quantitative",
+        "stack": true
+      },
+      "color": {
+        "field": "Category_2016",
+        "type": "nominal",
+        "legend": null,
+        "scale": {
+          "domain": ["Clean", "Slightly Polluted", "Polluted"],
+          "range": ["#208AAE", "#898B80", "#60492C"]
         }
+      }
     },
     "layer": [
-        {
-            "mark": {
-                "type": "arc",
-                "innerRadius": 80,
-                "cornerRadius": 50, 
-                "padAngle": 0.02
-            }
-        },
-        {
-            "mark": {
-                "type": "text",
-                "radius": 140
-            },
-            "encoding": {
-                "text": {
-                    "field": "Category_2016",
-                    "type": "nominal"
-                }
-            }
-        },
-        {
-            "mark": {
-                "type": "text",
-                "text": "2016",
-                "size": 40,
-                "fill": "#0D2149"
-            }
+      {
+        "mark": {
+          "type": "arc",
+          "innerRadius": 75,
+          "cornerRadius": 50,
+          "padAngle": 0.02
         }
+      },
+      {
+        "mark": {"type": "text", "radius": 130},
+        "encoding": {"text": {"field": "label", "type": "nominal"}}
+      },
+      {"mark": {"type": "text", "text": "2016", "size": 36, "fill": "#0D2149"}}
     ],
-    "view": {
-        "stroke": null
-    }
-}
+    "view": {"stroke": null}
+  }
