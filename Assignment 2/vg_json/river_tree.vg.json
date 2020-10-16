@@ -142,7 +142,7 @@
             "path": {"field": "path"},
             "stroke": {"scale": "color", "signal": "if(selected_year == 'average', datum.target.WQI_AVE, if(selected_year == '2015', datum.target.WQI_2015, if(selected_year == '2016', datum.target.WQI_2016, datum.target.WQI_2017)))"},
             "strokeWidth": {"value": 4},
-            "tooltip": {"value": {"River": "target.Child", "Class": "target.WQI_AVE"}},
+            "tooltip": {"signal": "{\"River\": \"target.Child\", \"Class\": \"target.WQI_AVE\"}"},
             "opacity": [
               { "test": "clicked == '' || clicked == if(selected_year == 'average', datum.target.WQI_AVE, if(selected_year == '2015', datum.target.WQI_2015, if(selected_year == '2016', datum.target.WQI_2016, datum.target.WQI_2017)))", "value": 1.0},
               { "value": 0.30}
