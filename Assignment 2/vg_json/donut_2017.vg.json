@@ -39,7 +39,7 @@
         }
       },
       {
-        "mark": {"type": "text", "radius": 130},
+        "mark": {"type": "text", "radius": 100},
         "encoding": {"text": {"field": "label", "type": "nominal"}}
       },
       {"mark": {"type": "text", "text": "2017", "size": 36, "fill": "#0D2149"}}
