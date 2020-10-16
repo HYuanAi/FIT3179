@@ -96,7 +96,7 @@
           "fill": {"value": "white"},
           "ariaRoleDescription": {"value": "geoshape"},
           "fillOpacity": {
-            "signal": "if(selected_state == 'All' || datum.properties.name == selected_State, 1, 0.3)"
+            "signal": "if(selected_state == 'All' || datum.properties.name == selected_state, 1, 0.3)"
           }
         }
       },
