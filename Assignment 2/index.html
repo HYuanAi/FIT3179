@@ -14,7 +14,7 @@
         <nav class="col-2 sticky-left-bar">
             <div class="mt-3 text-center top-border">
                 <form class="mt-3 form-inline caption">
-                    I want to focus on the state 
+                    Focus on the state
                     <select class="custom-select mx-2" id="select-state" onchange="changeState(this.value)">
                         <option selected value="All">All</option>
                         <option value="Johor">Johor</option>
@@ -35,7 +35,17 @@
                 </form>
             </div>
 
-            <div id="year-selector" class="mt-3 form-inline caption"></div>
+            <div class="mt-3 text-center">
+                <form class="mt-3 form-inline caption">
+                    Focus on the year
+                    <select class="custom-select mx-2" id="select-state" onchange="selectYear(this.value)">
+                        <option selected value="average">average</option>
+                        <option value="2015">2015</option>
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                    </select>
+                </form>
+            </div>
         </nav>
         <div class="col-9">
             <div class="bg-img">
@@ -63,7 +73,7 @@
 
             <div id="map" class='my-1 mx-auto'></div>
 
-            <div id="network" class="my-1 mx-auto" style="height: 0px"></div>
+            <div id="network" class="my-1 mx-auto"></div>
 
             <div class="top-border pt-5 mt-3 mx-auto row">
                 <div class="col-5">
@@ -101,12 +111,19 @@
         function changeYear(year) {
             selectedYear = selectedYear == year ? 'average' : year;
 
+            document.querySelector('#year-selector>div>label>select').value = selectedYear;
+            document.querySelector('#year-selector>div>label>select').dispatchEvent(new Event('change'));
+        }
+        
+        function selectYear(year) {
             document.getElementById('donut-2015').style.opacity = selectedYear == 'average' || selectedYear == 2015 ? 1 : 0.5;
             document.getElementById('donut-2016').style.opacity = selectedYear == 'average' || selectedYear == 2016 ? 1 : 0.5;
             document.getElementById('donut-2017').style.opacity = selectedYear == 'average' || selectedYear == 2017 ? 1 : 0.5;
 
-            document.querySelector('#year-selector>div>label>select').value = selectedYear;
-            document.querySelector('#year-selector>div>label>select').dispatchEvent(new Event('change'));
+            map_view.signal("selected_year", year);
+            map_view.runAsync();
+            network_view.signal("selected_year", state);
+            network_view.runAsync();
         }
 
         function changeState(state) {

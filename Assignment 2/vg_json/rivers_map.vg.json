@@ -7,9 +7,8 @@
   "style": "cell",
   "signals": [
     {
-      "name": "year",
-      "value": "average",
-      "bind": {"input": "select", "element": "#year-selector", "options": ["2015", "2016", "2017", "average"]}
+      "name": "selected_year",
+      "value": "average"
     },
     {
       "name": "clicked", "value": "",
@@ -114,10 +113,10 @@
           "fill": {"value": "transparent"},
           "stroke": {
             "scale": "color",
-            "signal": "if(year == 'average', datum.average_Category, if(year == '2015', datum.Category_2015, if(year == '2016', datum.Category_2016, datum.Category_2017)))"
+            "signal": "if(selected_year == 'average', datum.average_Category, if(selected_year == '2015', datum.Category_2015, if(selected_year == '2016', datum.Category_2016, datum.Category_2017)))"
           },
           "opacity": [
-            { "test": "clicked == '' || clicked == if(year == 'average', datum.average_Category, if(year == '2015', datum.Category_2015, if(year == '2016', datum.Category_2016, datum.Category_2017)))", "value": 1.0},
+            { "test": "clicked == '' || clicked == if(selected_year == 'average', datum.average_Category, if(selected_year == '2015', datum.Category_2015, if(selected_year == '2016', datum.Category_2016, datum.Category_2017)))", "value": 1.0},
             { "value": 0.30}
           ],
           "ariaRoleDescription": {"value": "geoshape"},
