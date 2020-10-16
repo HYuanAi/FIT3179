@@ -61,6 +61,7 @@
                 <div class="mt-3">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, cum? Placeat est provident vel, officiis dolorem officia quidem, sed, tempora distinctio accusantium pariatur fuga beatae iure possimus nostrum amet tempore?
                 </div>
+                <div id="heat"></div>
             </div>
         </div>
     </div>
@@ -88,6 +89,11 @@
 
         var div = "https://HYuanAi.github.io/FIT3179/Assignment 2/vg_json/diverging_stacked_barchart.vg.json";
         vegaEmbed('#diverging', div).then(function(result) {
+            // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
+
+        var heat = "https://HYuanAi.github.io/FIT3179/Assignment 2/vg_json/1n1s_heat.vg.json";
+        vegaEmbed('#heat', heat).then(function(result) {
             // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
         }).catch(console.error);
     </script>
