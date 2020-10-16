@@ -29,9 +29,9 @@
         </div>
 
         <div class="mt-5 mx-auto row">
-            <div id="donut-2015" class="col-4"></div>
-            <div id="donut-2016" class="col-4"></div>
-            <div id="donut-2017" class="col-4"></div>
+            <div id="donut-2015" class="col-4 selectable" onclick="changeYear(2015)"></div>
+            <div id="donut-2016" class="col-4 selectable" onclick="changeYear(2016)"></div>
+            <div id="donut-2017" class="col-4 selectable" onclick="changeYear(2017)"></div>
         </div>
         
         <div id="map" class='my-1 mx-auto'></div>
@@ -68,6 +68,18 @@
     </div>
 
     <script type="text/javascript">
+        var selectedYear = 0;
+
+        function changeYear(year) {
+            selectedYear = selectedYear == year ? 0 : year;
+            console.log(selectedYear);
+            document.getElementById('donut-2015').style.opacity = selectedYear == 0 || selectedYear == 2015 ? 1 : 0.5;
+            document.getElementById('donut-2016').style.opacity = selectedYear == 0 || selectedYear == 2016 ? 1 : 0.5;
+            document.getElementById('donut-2017').style.opacity = selectedYear == 0 || selectedYear == 2017 ? 1 : 0.5;
+
+            return true;
+        }
+
         var spec = "https://HYuanAi.github.io/FIT3179/Assignment 2/vg_json/rivers_map.vg.json";
         vegaEmbed('#map', spec).then(function(result) {
             // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
@@ -75,7 +87,7 @@
 
         var don15 = "https://HYuanAi.github.io/FIT3179/Assignment 2/vg_json/donut_2015.vg.json";
         vegaEmbed('#donut-2015', don15).then(function(result) {
-            // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+            // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view});
         }).catch(console.error);
 
         var don16 = "https://HYuanAi.github.io/FIT3179/Assignment 2/vg_json/donut_2016.vg.json";

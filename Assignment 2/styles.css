@@ -31,3 +31,7 @@ body {
 .main-color {
     color: #0D2149;
 }
+
+.selectable > .chart-wrapper {
+    cursor: pointer;
+}

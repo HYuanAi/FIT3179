@@ -11,7 +11,7 @@
         "aggregate": [{"op": "count", "field": "River", "as": "count"}],
         "groupby": ["Category_2015"]
       },
-      { "calculate": "datum.count + ' ' + datum.Category_2015", "as": "label" }
+      { "calculate": "datum.count", "as": "label" }
     ],
     "encoding": {
       "theta": {
