@@ -62,9 +62,6 @@
             "height": {"value": 10},
             "fill": {"scale": "color", "field": "Change_categ"},
             "ariaRoleDescription": {"value": "bar"},
-            "description": {
-              "signal": "\"nx: \" + (format(datum[\"nx\"], \"\")) + \"; nx2: \" + (format(datum[\"nx2\"], \"\")) + \"; State: \" + (isValid(datum[\"State\"]) ? datum[\"State\"] : \"\"+datum[\"State\"]) + \"; Response: \" + (isValid(datum[\"Change_categ\"]) ? datum[\"Change_categ\"] : \"\"+datum[\"Change_categ\"])"
-            },
             "x": {"scale": "x", "field": "nx"},
             "x2": {"scale": "x", "field": "nx2"},
             "yc": {"scale": "y", "field": "State", "band": 0.5},

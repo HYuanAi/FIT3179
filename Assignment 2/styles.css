@@ -55,3 +55,7 @@ body {
     height: 100%;
     position: sticky;
 }
+
+#network {
+    transition: display 1s;
+}
