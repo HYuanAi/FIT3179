@@ -34,6 +34,8 @@
             <div id="donut-2017" class="col-4 selectable" onclick="changeYear(2017)"></div>
         </div>
         
+        <div id="year-selector"></div>
+
         <div id="map" class='my-1 mx-auto'></div>
 
         <div class="mt-3 text-center top-border">
@@ -77,7 +79,7 @@
             document.getElementById('donut-2016').style.opacity = selectedYear == 0 || selectedYear == 2016 ? 1 : 0.5;
             document.getElementById('donut-2017').style.opacity = selectedYear == 0 || selectedYear == 2017 ? 1 : 0.5;
 
-            return true;
+            document.querySelector('#year-selector > select').value(year);
         }
 
         var spec = "https://HYuanAi.github.io/FIT3179/Assignment 2/vg_json/rivers_map.vg.json";
