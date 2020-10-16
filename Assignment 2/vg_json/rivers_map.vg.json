@@ -1,49 +1,110 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
   "background": "#E4E4E9",
+  "padding": 5,
   "width": 1100,
   "height": 450,
-  "config": {"view": {"stroke": "transparent"}},
-  "layer": [
+  "style": "cell",
+  "signals": [
+      {
+        "name": "year",
+        "value": 0,
+        "on": [
+          {"source": "#donut-2015" ,"events": "mouseclick", "update": "year == 2015 ? 0 : 2015"},
+          {"source": "#donut-2016" ,"events": "mouseclick", "update": "year == 2016 ? 0 : 2016"},
+          {"source": "#donut-2017" ,"events": "mouseclick", "update": "year == 2017 ? 0 : 2017"}
+        ]
+      }
+    ],
+  "data": [
     {
-      "data": {
-        "url": "https://raw.githubusercontent.com/HYuanAi/FIT3179/master/Assignment 2/vg_json/msian_states.json",
-        "format": {"type": "topojson", "feature": "msian_states"}
-      },
-      "projection": {"type": "equirectangular"},
-      "mark": {"type": "geoshape", "stroke": "#E4E4E9", "strokeWidth": 2},
-      "encoding": {"color": {"value": "white"}}
-    },
-    {
-      "data": {
-        "url": "https://raw.githubusercontent.com/HYuanAi/FIT3179/master/Assignment 2/vg_json/msian_rivers.json",
-        "format": {"type": "topojson", "feature": "msian_rivers"}
-      },
+      "name": "source_0",
+      "url": "https://raw.githubusercontent.com/HYuanAi/FIT3179/master/Assignment 2/data/Rivers_WQI.csv",
+      "format": {"type": "csv", "delimiter": ","},
       "transform": [
         {
-          "lookup": "properties.name",
-          "from": {
-            "data": {
-              "url": "https://raw.githubusercontent.com/HYuanAi/FIT3179/master/Assignment 2/data/Rivers_WQI.csv"
-            },
-            "key": "River",
-            "fields": ["Category_2017"]
-          }
+          "type": "formula",
+          "expr": "(parseInt(datum.WQI_2015) + parseInt(datum.WQI_2016) + parseInt(datum.WQI_2017)) / 3",
+          "as": "average_WQI"
         },
-        {"calculate": "datum.Category_2017", "as": "Category"}
-      ],
-      "mark": {"type": "geoshape", "filled": false, "strokeWidth": 1.5},
-      "encoding": {
-        "color": {
-          "field": "Category",
-          "type": "nominal",
-          "legend": null,
-          "scale": {
-            "domain": ["Clean", "Slightly Polluted", "Polluted"],
-            "range": ["#208AAE", "#898B80", "#60492C"]
+        {
+          "type": "formula",
+          "expr": "if(datum.average_WQI > 80, 'Clean', if(datum.average_WQI <= 60, 'Polluted', 'Slightly Polluted'))",
+          "as": "average_Category"
+        }
+      ]
+    },
+    {
+      "name": "source_1",
+      "url": "https://raw.githubusercontent.com/HYuanAi/FIT3179/master/Assignment 2/vg_json/msian_states.json",
+      "format": {"type": "topojson", "feature": "msian_states"}
+    },
+    {
+      "name": "source_2",
+      "url": "https://raw.githubusercontent.com/HYuanAi/FIT3179/master/Assignment 2/vg_json/msian_rivers.json",
+      "format": {"type": "topojson", "feature": "msian_rivers"},
+      "transform": [
+        {
+          "type": "lookup",
+          "from": "source_0",
+          "key": "River",
+          "fields": ["properties.name"],
+          "values": ["Category_2015", "Category_2016", "Category_2017", "average_Category"]
+        },
+        {"type": "formula", "expr": "if(datum.year == 0, datum.average_Category, if(datum.year == 2015, datum.Category_2015, if(datum.year == 2016, datum.Category_2016, datum.Category_2017)))", "as": "Category"}
+      ]
+    }
+  ],
+  "projections": [
+    {
+      "name": "projection",
+      "size": {"signal": "[width, height]"},
+      "fit": {"signal": "[data('source_1'), data('source_2')]"},
+      "type": "equirectangular"
+    }
+  ],
+  "marks": [
+    {
+      "name": "layer_0_marks",
+      "type": "shape",
+      "style": ["geoshape"],
+      "from": {"data": "source_1"},
+      "encode": {
+        "update": {
+          "stroke": {"value": "#E4E4E9"},
+          "strokeWidth": {"value": 2},
+          "fill": {"value": "white"},
+          "ariaRoleDescription": {"value": "geoshape"}
+        }
+      },
+      "transform": [{"type": "geoshape", "projection": "projection"}]
+    },
+    {
+      "name": "layer_1_marks",
+      "type": "shape",
+      "style": ["geoshape"],
+      "from": {"data": "source_2"},
+      "encode": {
+        "update": {
+          "strokeWidth": {"value": 1.5},
+          "fill": {"value": "transparent"},
+          "stroke": {"scale": "color", "field": "Category"},
+          "ariaRoleDescription": {"value": "geoshape"},
+          "description": {
+            "signal": "\"Category: \" + (isValid(datum[\"Category\"]) ? datum[\"Category\"] : \"\"+datum[\"Category\"])"
           }
         }
-      }
+      },
+      "transform": [{"type": "geoshape", "projection": "projection"}]
     }
-  ]
+  ],
+  "scales": [
+    {
+      "name": "color",
+      "type": "ordinal",
+      "domain": ["Clean", "Slightly Polluted", "Polluted"],
+      "range": ["#208AAE", "#898B80", "#60492C"]
+    }
+  ],
+  "config": {"style": {"cell": {"stroke": "transparent"}}}
 }
