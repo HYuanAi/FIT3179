@@ -1,4 +1,18 @@
 Parent,Child,WQI_2015,WQI_2016,WQI_2017,WQI_AVE
+NA,Perlis,NA,NA,NA,NA
+NA,Kedah,NA,NA,NA,NA
+NA,Pulau Pinang,NA,NA,NA,NA
+NA,Perak,NA,NA,NA,NA
+NA,Selangor,NA,NA,NA,NA
+NA,Negeri Sembilan,NA,NA,NA,NA
+NA,Melaka,NA,NA,NA,NA
+NA,Johor,NA,NA,NA,NA
+NA,Pahang,NA,NA,NA,NA
+NA,Terengganu,NA,NA,NA,NA
+NA,Kelantan,NA,NA,NA,NA
+NA,Sabah,NA,NA,NA,NA
+NA,Sarawak,NA,NA,NA,NA
+NA,Kuala Lumpur,NA,NA,NA,NA
 Perlis,Sungai Perlis,Clean,Clean,Clean,Clean
 Perlis,Sungai Perlis,Slightly Polluted,Clean,Clean,Clean
 Kedah,Sungai Kisap,Clean,Clean,Clean,Clean
