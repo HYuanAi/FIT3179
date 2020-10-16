@@ -59,11 +59,9 @@
                     <option value="Terengganu">Terengganu</option>
                 </select>
             </form>
-
-            <p class="h6 my-3 main-color">Proportion of Average Change in Water Quality Index (WQI) per Year by State</p>
         </div>
 
-        <div class="mt-1 mx-auto row">
+        <div class="mt-3 mx-auto row">
             <div class="col-5">
                 <div class="text-center">
                     <img src="resources/sad.png" width="64" height="64" />
@@ -107,8 +105,11 @@
 
         function changeState(state) {
             causes_view.signal("selected_state", state);
+            causes_view.runAsync();
             diverging_view.signal("selected_state", state);
+            diverging_view.runAsync();
             heat_view.signal("selected_state", state);
+            heat_view.runAsync();
         }
 
         var spec = "https://HYuanAi.github.io/FIT3179/Assignment 2/vg_json/rivers_map.vg.json";

@@ -1,40 +1,104 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
   "background": "rgba(0,0,0,0)",
-  "height": 400,
+  "padding": 5,
   "width": 462.5,
-  "data": {
-    "url": "https://raw.githubusercontent.com/HYuanAi/FIT3179/master/Assignment 2/data/1N1S River Class Over Years.csv"
-  },
-  "transform": [
+  "height": 400,
+  "style": "cell",
+  "signals": [
     {
-      "sort": [{"field": "Class", "order": "descending"}],
-      "window": [{"op": "rank", "as": "rank"}],
-      "groupby": ["River"]
+      "name": "selected_state",
+      "value": "All"
     }
   ],
-  "mark": {"type": "rect", "orient": "vertical"},
-  "encoding": {
-    "x": {
-      "field": "Year",
-      "type": "ordinal",
-      "title": null,
-      "axis": {"grid": false, "labelAngle": 0, "ticks": false}
-    },
-    "y": {
-      "field": "River",
-      "type": "nominal",
-      "title": null,
-      "axis": {"domain": false, "ticks": false, "labelPadding": -450, "labelAlign": "right", "labelColor": "#E4E4E9"}
-    },
-    "color": {
-      "field": "Class",
-      "type": "ordinal",
-      "scale": {
-        "domain": ["II", "III", "IV"],
-        "range": ["#79C2CC", "#232ED1", "#101D42"],
-        "type": "ordinal"
+  "data": [
+    {
+      "name": "source_0",
+      "url": "https://raw.githubusercontent.com/HYuanAi/FIT3179/master/Assignment 2/data/1N1S River Class Over Years.csv",
+      "format": {"type": "csv", "delimiter": ","},
+      "transform": [
+        {
+          "type": "window",
+          "params": [null],
+          "as": ["rank"],
+          "ops": ["rank"],
+          "fields": [null],
+          "sort": {"field": ["Class"], "order": ["descending"]},
+          "groupby": ["River"]
+        }
+      ]
+    }
+  ],
+  "marks": [
+    {
+      "name": "marks",
+      "type": "rect",
+      "style": ["rect"],
+      "from": {"data": "source_0"},
+      "encode": {
+        "update": {
+          "fill": {"scale": "color", "field": "Class"},
+          "description": {
+            "signal": "\"Year: \" + (isValid(datum[\"Year\"]) ? datum[\"Year\"] : \"\"+datum[\"Year\"]) + \"; River: \" + (isValid(datum[\"River\"]) ? datum[\"River\"] : \"\"+datum[\"River\"]) + \"; Class: \" + (isValid(datum[\"Class\"]) ? datum[\"Class\"] : \"\"+datum[\"Class\"])"
+          },
+          "x": {"scale": "x", "field": "Year"},
+          "width": {"scale": "x", "band": 1},
+          "y": {"scale": "y", "field": "River"},
+          "height": {"scale": "y", "band": 1},
+          "fillOpacity": {
+            "signal": "if(datum.State == selected_state || selected_state == 'All',1,0.3)"
+          }
+        }
       }
     }
-  }
+  ],
+  "scales": [
+    {
+      "name": "x",
+      "type": "band",
+      "domain": {"data": "source_0", "field": "Year", "sort": true},
+      "range": [0, {"signal": "width"}],
+      "paddingInner": 0,
+      "paddingOuter": 0
+    },
+    {
+      "name": "y",
+      "type": "band",
+      "domain": {"data": "source_0", "field": "River", "sort": true},
+      "range": [0, {"signal": "height"}],
+      "paddingInner": 0,
+      "paddingOuter": 0
+    },
+    {
+      "name": "color",
+      "type": "ordinal",
+      "domain": ["II", "III", "IV"],
+      "range": ["#79C2CC", "#232ED1", "#101D42"],
+      "interpolate": "hcl"
+    }
+  ],
+  "axes": [
+    {
+      "scale": "x",
+      "orient": "bottom",
+      "grid": false,
+      "labelAngle": 0,
+      "ticks": false,
+      "labelBaseline": "top",
+      "zindex": 1
+    },
+    {
+      "scale": "y",
+      "orient": "left",
+      "grid": false,
+      "domain": false,
+      "labelAlign": "right",
+      "labelColor": "#E4E4E9",
+      "labelPadding": -450,
+      "ticks": false,
+      "zindex": 1,
+      "labelFontSize": 14
+    }
+  ],
+  "legends": [{"fill": "color", "symbolType": "square", "title": "Class"}]
 }
