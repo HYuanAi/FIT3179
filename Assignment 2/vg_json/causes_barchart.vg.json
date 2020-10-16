@@ -1,0 +1,35 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "background": "rgba(0,0,0,0)",
+    "height": 200,
+    "width": 400,
+    "data": {
+      "url": "https://raw.githubusercontent.com/HYuanAi/FIT3179/master/Assignment 2/data/Causes of Pollution.csv"
+    },
+    "transform": [{
+      "aggregate": [{"op": "count", "field": "River", "as": "count"}],
+        "groupby": ["Cause"]
+    }],
+    "encoding": {
+      "y": {"field": "Cause", "type": "nominal", "axis": { "ticks": false, "labelPadding": 10 }, "sort": "-x", "title": null },
+      "x": {"field": "count", "type": "quantitative",
+        "title": "Number of rivers", "axis": null }
+    },
+    "layer": [
+      {
+        "mark": {"type": "bar", "height": 5, "color": "#60492C" } 
+      },
+      {
+        "mark": {
+          "type": "text",
+          "align": "left",
+          "baseline": "middle",
+          "dx": 3,
+          "color": "#60492C"
+        },
+        "encoding": {
+          "text": {"field": "count", "type": "quantitative"}
+        }
+      }
+    ]
+  }
