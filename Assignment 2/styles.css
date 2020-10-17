@@ -52,6 +52,13 @@ a {
     border: none;
 }
 
+#select-year {
+    width: 150px;
+    height: 35px;
+    color: gray;
+    border: none;
+}
+
 .sticky-left-bar {
     top: 0;
     left: 0;
@@ -73,7 +80,7 @@ a {
     font-size: 14px;
 }
 
-tr {
+.table-dark tr {
     background-color: #405071;
     color: #E4E4E9;
 }
@@ -83,5 +90,16 @@ th {
 }
 
 .height-130 {
-    height: 250px;
+    height: 200px;
+}
+
+.dark-background {
+    background-color: #0D2149;
+    color: #E4E4E9;
+    opacity: 0.8
+}
+
+.happy-background {
+    background-color: #ADC1E9;
+    color: #141419;
 }

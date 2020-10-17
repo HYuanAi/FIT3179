@@ -6,24 +6,19 @@
   "height": 450,
   "style": "cell",
   "signals": [
+    {"name": "selected_year", "value": "average"},
     {
-      "name": "selected_year",
-      "value": "average"
-    },
-    {
-      "name": "clicked", "value": "",
+      "name": "clicked",
+      "value": "",
       "on": [
         {
           "events": "@legendSymbol:click, @legendLabel:click",
           "update": "clicked == datum.value ? '' : datum.value",
-          "force":  true
+          "force": true
         }
       ]
     },
-    {
-      "name": "selected_state",
-      "value": "All"
-    }
+    {"name": "selected_state", "value": "All"}
   ],
   "data": [
     {
@@ -59,20 +54,18 @@
           "key": "River",
           "fields": ["properties.name"],
           "values": [
+            "WQI_2015",
             "Category_2015",
+            "WQI_2016",
             "Category_2016",
+            "WQI_2017",
             "Category_2017",
             "average_Category"
           ]
         }
       ]
     },
-    {
-      "name": "selected",
-      "on": [
-        {"trigger": "clicked", "insert": "clicked"}
-      ]
-    }
+    {"name": "selected", "on": [{"trigger": "clicked", "insert": "clicked"}]}
   ],
   "projections": [
     {
@@ -116,12 +109,15 @@
             "signal": "if(selected_year == 'average', datum.average_Category, if(selected_year == '2015', datum.Category_2015, if(selected_year == '2016', datum.Category_2016, datum.Category_2017)))"
           },
           "opacity": [
-            { "test": "clicked == '' || clicked == if(selected_year == 'average', datum.average_Category, if(selected_year == '2015', datum.Category_2015, if(selected_year == '2016', datum.Category_2016, datum.Category_2017)))", "value": 1.0},
-            { "value": 0.30}
+            {
+              "test": "clicked == '' || clicked == if(selected_year == 'average', datum.average_Category, if(selected_year == '2015', datum.Category_2015, if(selected_year == '2016', datum.Category_2016, datum.Category_2017)))",
+              "value": 1
+            },
+            {"value": 0.3}
           ],
           "ariaRoleDescription": {"value": "geoshape"},
-          "description": {
-            "signal": "\"Category: \" + (isValid(datum[\"Category\"]) ? datum[\"Category\"] : \"\"+datum[\"Category\"])"
+          "tooltip": {
+            "signal": "{\"River\": datum[\"properties\"][\"name\"], \"WQI in 2015\": format(datum[\"WQI_2015\"], \"\"), \"WQI in 2016\": format(datum[\"WQI_2016\"], \"\"), \"WQI in 2017\": format(datum[\"WQI_2017\"], \"\")}"
           }
         }
       },
@@ -140,10 +136,8 @@
     {
       "stroke": "color",
       "symbolType": "circle",
-      "orient": "none",
+      "orient": "bottom-right",
       "direction": "horizontal",
-      "legendX": 400,
-      "legendY": 40,
       "symbolStrokeWidth": 4,
       "labelFontSize": 14,
       "encode": {
@@ -152,18 +146,18 @@
           "interactive": true,
           "update": {
             "opacity": [
-              { "test": "clicked == '' || clicked == datum.value", "value": 1.0 },
-              { "value": 0.30 }
+              {"test": "clicked == '' || clicked == datum.value", "value": 1},
+              {"value": 0.3}
             ]
           }
         },
         "labels": {
-          "name": "legendLabel", 
+          "name": "legendLabel",
           "interactive": true,
           "update": {
             "opacity": [
-              { "test": "clicked == '' || clicked == datum.value", "value": 1.0 },
-              { "value": 0.30 }
+              {"test": "clicked == '' || clicked == datum.value", "value": 1},
+              {"value": 0.3}
             ]
           }
         }

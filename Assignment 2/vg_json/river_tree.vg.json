@@ -1,209 +1,193 @@
 {
-    "$schema": "https://vega.github.io/schema/vega/v5.json",
-    "description": "An example of a radial layout for a node-link diagram of hierarchical data.",
-    "background": "#E4E4E9",
-    "width": 1100,
-    "height": 1150,
-    "padding": {"top": -550},
-    "autosize": "none",
-  
-    "signals": [
-      {
-        "name": "labels", "value": true
-      },
-      {
-        "name": "radius", "value":430
-      },
-      {
-        "name": "extent", "value": 190
-      },
-      {
-        "name": "rotate", "value": 85
-      },
-      {
-        "name": "layout", "value": "tidy"
-      },
-      {
-        "name": "links", "value": "diagonal"
-      },
-      { "name": "originX", "update": "width / 2" },
-      { "name": "originY", "update": "height / 2" },
-      {
-        "name": "selected_state",
-        "value": "All"
-      },
-      {
-        "name": "selected_year",
-        "value": "average"
-      },
-      {
-        "name": "clicked", "value": "",
-        "on": [
-          {
-            "events": "@legendSymbol:click, @legendLabel:click",
-            "update": "clicked == datum.value ? '' : datum.value",
-            "force":  true
-          }
-        ]
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "description": "An example of a radial layout for a node-link diagram of hierarchical data.",
+  "background": "#E4E4E9",
+  "width": 1100,
+  "height": 1150,
+  "padding": {"top": -550},
+  "autosize": "none",
+  "signals": [
+    {"name": "labels", "value": true},
+    {"name": "radius", "value": 430},
+    {"name": "extent", "value": 190},
+    {"name": "rotate", "value": 85},
+    {"name": "layout", "value": "tidy"},
+    {"name": "links", "value": "diagonal"},
+    {"name": "originX", "update": "width / 2"},
+    {"name": "originY", "update": "height / 2"},
+    {"name": "selected_state", "value": "All"},
+    {"name": "selected_year", "value": "average"},
+    {
+      "name": "clicked",
+      "value": "",
+      "on": [
+        {
+          "events": "@legendSymbol:click, @legendLabel:click",
+          "update": "clicked == datum.value ? '' : datum.value",
+          "force": true
+        }
+      ]
+    }
+  ],
+  "data": [
+    {
+      "name": "tree",
+      "url": "https://raw.githubusercontent.com/HYuanAi/FIT3179/master/Assignment 2/data/river_network.csv",
+      "format": {"type": "csv", "delimiter": ","},
+      "transform": [
+        {"type": "filter", "expr": "selected_state == datum.State"},
+        {
+          "type": "formula",
+          "expr": "datum.Parent == 'NA' ? null : datum.Parent",
+          "as": "real_parent"
+        },
+        {"type": "stratify", "key": "Child", "parentKey": "real_parent"},
+        {
+          "type": "tree",
+          "method": {"signal": "layout"},
+          "size": [1, {"signal": "radius"}],
+          "as": ["alpha", "radius", "depth", "children"]
+        },
+        {
+          "type": "formula",
+          "expr": "(rotate + extent * datum.alpha + 270) % 360",
+          "as": "angle"
+        },
+        {"type": "formula", "expr": "PI * datum.angle / 180", "as": "radians"},
+        {
+          "type": "formula",
+          "expr": "inrange(datum.angle, [90, 270])",
+          "as": "leftside"
+        },
+        {
+          "type": "formula",
+          "expr": "originX + datum.radius * cos(datum.radians)",
+          "as": "x"
+        },
+        {
+          "type": "formula",
+          "expr": "originY + datum.radius * sin(datum.radians)",
+          "as": "y"
+        }
+      ]
+    },
+    {
+      "name": "links",
+      "source": "tree",
+      "transform": [
+        {"type": "treelinks"},
+        {
+          "type": "linkpath",
+          "shape": {"signal": "links"},
+          "orient": "radial",
+          "sourceX": "source.radians",
+          "sourceY": "source.radius",
+          "targetX": "target.radians",
+          "targetY": "target.radius"
+        }
+      ]
+    },
+    {"name": "selected", "on": [{"trigger": "clicked", "insert": "clicked"}]}
+  ],
+  "scales": [
+    {
+      "name": "color",
+      "type": "ordinal",
+      "domain": ["NA", "Clean", "Slightly Polluted", "Polluted"],
+      "range": ["#555555", "#208AAE", "#898B80", "#60492C"]
+    }
+  ],
+  "marks": [
+    {
+      "type": "path",
+      "from": {"data": "links"},
+      "encode": {
+        "update": {
+          "x": {"signal": "originX"},
+          "y": {"signal": "originY"},
+          "path": {"field": "path"},
+          "stroke": {
+            "scale": "color",
+            "signal": "if(selected_year == 'average', datum.target.WQI_AVE, if(selected_year == '2015', datum.target.WQI_2015, if(selected_year == '2016', datum.target.WQI_2016, datum.target.WQI_2017)))"
+          },
+          "strokeWidth": {"value": 4},
+          "tooltip": {
+            "signal": "{\"River\": datum[\"target\"][\"Child\"], \"WQI in 2015\": datum[\"target\"][\"WQI_2015\"], \"WQI in 2016\": datum[\"target\"][\"WQI_2016\"], \"WQI in 2017\": datum[\"target\"][\"WQI_2017\"], \"Average WQI\": datum[\"target\"][\"WQI_AVE\"]}"
+          },
+          "opacity": [
+            {
+              "test": "clicked == '' || clicked == if(selected_year == 'average', datum.target.WQI_AVE, if(selected_year == '2015', datum.target.WQI_2015, if(selected_year == '2016', datum.target.WQI_2016, datum.target.WQI_2017)))",
+              "value": 1
+            },
+            {"value": 0.3}
+          ]
+        }
       }
-    ],
-  
-    "data": [
-      {
-        "name": "tree",
-        "url": "https://raw.githubusercontent.com/HYuanAi/FIT3179/master/Assignment 2/data/river_network.csv",
-        "format": {"type": "csv", "delimiter": ","},
-        "transform": [
-          {
-            "type": "filter",
-            "expr": "selected_state == datum.State"
+    },
+    {
+      "type": "text",
+      "from": {"data": "tree"},
+      "encode": {
+        "enter": {
+          "text": {"field": "Child"},
+          "fontSize": {"value": 13},
+          "baseline": {"value": "middle"},
+          "fill": {"value": "#555555"}
+        },
+        "update": {
+          "x": {"field": "x"},
+          "y": {"field": "y"},
+          "dx": {
+            "signal": "(datum.leftside ? 1 : -1) * (datum.depth == 1 ? 60 : -6)"
           },
-          {
-            "type": "formula",
-            "expr": "datum.Parent == 'NA' ? null : datum.Parent",
-            "as": "real_parent"
+          "dy": {
+            "signal": "datum.real_parent == null || datum.depth == 1 ? -10 : 0"
           },
-          {
-            "type": "stratify",
-            "key": "Child",
-            "parentKey": "real_parent"
+          "angle": {
+            "signal": "datum.real_parent == null || datum.depth == 1 ? 0 : (datum.leftside ? datum.angle - 180 : datum.angle)"
           },
-          {
-            "type": "tree",
-            "method": {"signal": "layout"},
-            "size": [1, {"signal": "radius"}],
-            "as": ["alpha", "radius", "depth", "children"]
+          "align": {
+            "signal": "datum.real_parent == null ? 'center' : (datum.leftside ? 'right' : 'left')"
           },
-          {
-            "type": "formula",
-            "expr": "(rotate + extent * datum.alpha + 270) % 360",
-            "as":   "angle"
-          },
-          {
-            "type": "formula",
-            "expr": "PI * datum.angle / 180",
-            "as":   "radians"
-          },
-          {
-            "type": "formula",
-            "expr": "inrange(datum.angle, [90, 270])",
-            "as":   "leftside"
-          },
-          {
-            "type": "formula",
-            "expr": "originX + datum.radius * cos(datum.radians)",
-            "as":   "x"
-          },
-          {
-            "type": "formula",
-            "expr": "originY + datum.radius * sin(datum.radians)",
-            "as":   "y"
+          "opacity": {"signal": "labels ? 1 : 0"},
+           "tooltip": {
+            "signal": "{\"River\": datum[\"Child\"], \"WQI in 2015\": datum[\"WQI_2015\"], \"WQI in 2016\": datum[\"WQI_2016\"], \"WQI in 2017\": datum[\"WQI_2017\"], \"Average WQI\": datum[\"WQI_AVE\"]}"
           }
-        ]
-      },
-      {
-        "name": "links",
-        "source": "tree",
-        "transform": [
-          { "type": "treelinks" },
-          {
-            "type": "linkpath",
-            "shape": {"signal": "links"}, "orient": "radial",
-            "sourceX": "source.radians", "sourceY": "source.radius",
-            "targetX": "target.radians", "targetY": "target.radius"
-          }
-        ]
-      },
-      {
-        "name": "selected",
-        "on": [
-          {"trigger": "clicked", "insert": "clicked"}
-        ]
+        }
       }
-    ],
-  
-    "scales": [
-      {
-        "name": "color",
-        "type": "ordinal",
-        "domain": ["NA", "Clean", "Slightly Polluted", "Polluted"],
-        "range": ["#555555", "#208AAE", "#898B80", "#60492C"]
-      }
-    ],
-  
-    "marks": [
-      {
-        "type": "path",
-        "from": {"data": "links"},
-        "encode": {
+    }
+  ],
+  "legends": [
+    {
+      "stroke": "color",
+      "symbolType": "circle",
+      "orient": "bottom-right",
+      "direction": "vertical",
+      "symbolStrokeWidth": 4,
+      "labelFontSize": 14,
+      "rowPadding": 10,
+      "encode": {
+        "symbols": {
+          "name": "legendSymbol",
+          "interactive": true,
           "update": {
-            "x": {"signal": "originX"},
-            "y": {"signal": "originY"},
-            "path": {"field": "path"},
-            "stroke": {"scale": "color", "signal": "if(selected_year == 'average', datum.target.WQI_AVE, if(selected_year == '2015', datum.target.WQI_2015, if(selected_year == '2016', datum.target.WQI_2016, datum.target.WQI_2017)))"},
-            "strokeWidth": {"value": 4},
-            "tooltip": {"signal": "{\"River\": \"target.Child\", \"Class\": \"target.WQI_AVE\"}"},
             "opacity": [
-              { "test": "clicked == '' || clicked == if(selected_year == 'average', datum.target.WQI_AVE, if(selected_year == '2015', datum.target.WQI_2015, if(selected_year == '2016', datum.target.WQI_2016, datum.target.WQI_2017)))", "value": 1.0},
-              { "value": 0.30}
+              {"test": "clicked == '' || clicked == datum.value", "value": 1},
+              {"value": 0.3}
+            ]
+          }
+        },
+        "labels": {
+          "name": "legendLabel",
+          "interactive": true,
+          "update": {
+            "opacity": [
+              {"test": "clicked == '' || clicked == datum.value", "value": 1},
+              {"value": 0.3}
             ]
           }
         }
-      },
-      {
-        "type": "text",
-        "from": {"data": "tree"},
-        "encode": {
-          "enter": {
-            "text": {"field": "Child"},
-            "fontSize": {"value": 13},
-            "baseline": {"value": "middle"},
-            "fill": {"value": "#555555"}
-          },
-          "update": {
-            "x": {"field": "x"},
-            "y": {"field": "y"},
-            "dx": {"signal": "(datum.leftside ? 1 : -1) * (datum.depth == 1 ? 60 : -6)"},
-            "dy": {"signal": "datum.real_parent == null || datum.depth == 1 ? -10 : 0"},
-            "angle": {"signal": "datum.real_parent == null || datum.depth == 1 ? 0 : (datum.leftside ? datum.angle - 180 : datum.angle)"},
-            "align": {"signal": "datum.real_parent == null ? 'center' : (datum.leftside ? 'right' : 'left')"},
-            "opacity": {"signal": "labels ? 1 : 0"}
-          }
-        }
       }
-    ],
-    "legends": [
-      {
-        "stroke": "color",
-        "symbolType": "circle",
-        "orient": "bottom-right",
-        "direction": "vertical",
-        "symbolStrokeWidth": 4,
-        "labelFontSize": 14,
-        "rowPadding": 10,
-        "encode": {
-          "symbols": {
-            "name": "legendSymbol",
-            "interactive": true,
-            "update": {
-              "opacity": [
-                { "test": "clicked == '' || clicked == datum.value", "value": 1.0 },
-                { "value": 0.30 }
-              ]
-            }
-          },
-          "labels": {
-            "name": "legendLabel", 
-            "interactive": true,
-            "update": {
-              "opacity": [
-                { "test": "clicked == '' || clicked == datum.value", "value": 1.0 },
-                { "value": 0.30 }
-              ]
-            }
-          }
-        }
-      }
-    ]
-  }
-  
+    }
+  ]
+}

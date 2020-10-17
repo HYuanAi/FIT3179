@@ -2,15 +2,10 @@
   "$schema": "https://vega.github.io/schema/vega/v5.json",
   "background": "rgba(0,0,0,0)",
   "padding": 5,
-  "width": 300,
-  "height": 200,
+  "width": 400,
+  "height": 300,
   "style": "cell",
-  "signals": [
-    {
-      "name": "selected_state",
-      "value": "All"
-    }
-  ],
+  "signals": [{"name": "selected_state", "value": "Selangor"}],
   "data": [
     {
       "name": "source_0",
@@ -45,10 +40,7 @@
       "name": "aggregated",
       "source": "source_0",
       "transform": [
-        {
-          "type": "filter",
-          "expr": "datum.state_highlight == 'highlight'"
-        },
+        {"type": "filter", "expr": "datum.state_highlight == 'highlight'"},
         {
           "type": "aggregate",
           "groupby": ["Cause"],
@@ -67,7 +59,7 @@
       "from": {"data": "source_0"},
       "encode": {
         "update": {
-          "height": {"value": 8},
+          "height": {"value": 16},
           "fill": {"scale": "color", "field": "state_highlight"},
           "ariaRoleDescription": {"value": "bar"},
           "description": {
@@ -89,7 +81,8 @@
           "align": {"value": "left"},
           "baseline": {"value": "middle"},
           "dx": {"value": 3},
-          "fill": {"value": "#60492C"},
+          "fontSize": {"value": 13},
+          "fill": {"value": "#F9EbE0"},
           "description": {
             "signal": "\"Cause: \" + (isValid(datum[\"Cause\"]) ? datum[\"Cause\"] : \"\"+datum[\"Cause\"]) + \"; Number of rivers: \" + (format(datum[\"count\"], \"\")) + \"; count: \" + (format(datum[\"count\"], \"\"))"
           },
@@ -125,12 +118,14 @@
       "name": "color",
       "type": "ordinal",
       "domain": ["highlight", "no_highlight"],
-      "range": ["#60492C", "#FFFFFF"]
+      "range": ["#F9EBE0", "#968F8A"]
     }
   ],
   "axes": [
     {
       "scale": "y",
+      "labelFontSize": 13, 
+      "labelColor": "#F9EBE0",
       "orient": "left",
       "grid": false,
       "labelPadding": 10,

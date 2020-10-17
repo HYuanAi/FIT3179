@@ -2,15 +2,10 @@
   "$schema": "https://vega.github.io/schema/vega/v5.json",
   "background": "rgba(0,0,0,0)",
   "padding": 5,
-  "width": 450,
-  "height": 380,
+  "width": 400,
+  "height": 300,
   "style": "cell",
-  "signals": [
-    {
-      "name": "selected_state",
-      "value": "All"
-    }
-  ],
+  "signals": [{"name": "selected_state", "value": "All"}],
   "data": [
     {
       "name": "source_0",
@@ -47,6 +42,9 @@
           "height": {"scale": "y", "band": 1},
           "fillOpacity": {
             "signal": "if(datum.State == selected_state || selected_state == 'All',1,0.3)"
+          },
+          "tooltip": {
+            "signal": "{\"River\": datum[\"River\"], \"State\": datum[\"State\"], \"Length\": format(datum[\"Length\"], \"\"), \"Year\": datum[\"Year\"], \"Class\": datum[\"Class\"]}"
           }
         }
       }
@@ -73,8 +71,13 @@
       "name": "color",
       "type": "ordinal",
       "domain": ["II", "III", "IV"],
-      "range": ["#79C2CC", "#232ED1", "#101D42"],
-      "interpolate": "hcl"
+      "range": [" #CDE1F9", " #5D71B9", "#1D3159"]
+    },
+    {
+      "name": "text_color",
+      "type": "ordinal",
+      "domain": ["II", "III", "IV"],
+      "range": ["#1D3159", " #CDE1F9", "#CDE1F9"]
     }
   ],
   "axes": [
@@ -93,12 +96,12 @@
       "grid": false,
       "domain": false,
       "labelAlign": "right",
-      "labelColor": "#E4E4E9",
-      "labelPadding": -450,
+      "labelColor": "#444449",
+      "labelPadding": 10,
       "ticks": false,
       "zindex": 1,
-      "labelFontSize": 14
+      "labelFontSize": 13
     }
   ],
-  "legends": [{"fill": "color", "symbolType": "square", "title": "Class"}]
+  "legends": [{"fill": "color", "symbolType": "square", "orient": "bottom", "direction": "horizontal"}]
 }
