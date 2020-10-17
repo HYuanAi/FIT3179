@@ -3,7 +3,7 @@
   "background": "rgba(0,0,0,0)",
   "padding": 5,
   "width": 274,
-  "height": 249,
+  "height": 290,
   "style": "cell",
   "signals": [{"name": "selected_state", "value": "All"}],
   "data": [
@@ -79,9 +79,11 @@
       "scale": "x",
       "orient": "bottom",
       "grid": false,
-      "labelAngle": 0,
+      "labelAngle": 45,
+      "labelOffset": 10,
+      "labelPadding": 10,
       "ticks": false,
-      "labelBaseline": "top",
+      "labelBaseline": "line-top",
       "zindex": 1
     },
     {
