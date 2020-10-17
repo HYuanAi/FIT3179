@@ -163,8 +163,8 @@
           "update": {
             "x": {"field": "x"},
             "y": {"field": "y"},
-            "dx": {"signal": "(datum.leftside ? 1 : -1) * (datum.depth == 1 ? 50 : -6)"},
-            "dy": {"signal": "datum.real_parent == null || datum.depth == 1 ? 20 : 0"},
+            "dx": {"signal": "(datum.leftside ? 1 : -1) * (datum.depth == 1 ? 60 : -6)"},
+            "dy": {"signal": "datum.real_parent == null || datum.depth == 1 ? -10 : 0"},
             "angle": {"signal": "datum.real_parent == null || datum.depth == 1 ? 0 : (datum.leftside ? datum.angle - 180 : datum.angle)"},
             "align": {"signal": "datum.real_parent == null ? 'center' : (datum.leftside ? 'right' : 'left')"},
             "opacity": {"signal": "labels ? 1 : 0"}

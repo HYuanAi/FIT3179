@@ -2,6 +2,10 @@ body {
     background: #E4E4E9;
 }
 
+a {
+    color: #208AAE;
+}
+
 .container {
     font-family: Magra, sans-serif;
 }
@@ -11,7 +15,7 @@ body {
 }
 
 .header {
-    width: 80%;
+    width: 90%;
     margin-left: auto; 
     margin-right: auto;
     margin-bottom: 10px;
@@ -29,7 +33,7 @@ body {
 }
 
 .main-color {
-    color: #0D2149;
+    color: #405071;
 }
 
 .selectable > .chart-wrapper {
@@ -58,4 +62,26 @@ body {
 
 #network {
     transition: display 1s;
+}
+
+.small-text {
+    font-size: 11px;
+    font-weight: normal;
+}
+
+.smaller-text {
+    font-size: 14px;
+}
+
+tr {
+    background-color: #405071;
+    color: #E4E4E9;
+}
+
+th {
+    padding: 2px;
+}
+
+.height-130 {
+    height: 250px;
 }
