@@ -2,10 +2,10 @@
   "$schema": "https://vega.github.io/schema/vega/v5.json",
   "background": "rgba(0,0,0,0)",
   "padding": 5,
-  "width": 400,
-  "height": 300,
+  "width": 314,
+  "height": 290,
   "style": "cell",
-  "signals": [{"name": "selected_state", "value": "Selangor"}],
+  "signals": [{"name": "selected_state", "value": "All"}],
   "data": [
     {
       "name": "source_0",

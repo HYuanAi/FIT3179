@@ -99,7 +99,15 @@ th {
     opacity: 0.8
 }
 
+.dark-background a {
+    color: #40AACE;
+}
+
 .happy-background {
     background-color: #ADC1E9;
     color: #141419;
+}
+
+.happy-background a {
+    color: #006A8E;
 }

@@ -2,8 +2,8 @@
   "$schema": "https://vega.github.io/schema/vega/v5.json",
   "background": "rgba(0,0,0,0)",
   "padding": 5,
-  "width": 400,
-  "height": 300,
+  "width": 274,
+  "height": 249,
   "style": "cell",
   "signals": [{"name": "selected_state", "value": "All"}],
   "data": [
@@ -71,13 +71,7 @@
       "name": "color",
       "type": "ordinal",
       "domain": ["II", "III", "IV"],
-      "range": [" #CDE1F9", " #5D71B9", "#1D3159"]
-    },
-    {
-      "name": "text_color",
-      "type": "ordinal",
-      "domain": ["II", "III", "IV"],
-      "range": ["#1D3159", " #CDE1F9", "#CDE1F9"]
+      "range": ["#CDE1F9", "#5D71B9", "#1D3159"]
     }
   ],
   "axes": [
