@@ -3,7 +3,7 @@
   "background": "rgba(0,0,0,0)",
   "padding": 5,
   "width": 274,
-  "height": 290,
+  "height": 270,
   "style": "cell",
   "signals": [{"name": "selected_state", "value": "All"}],
   "data": [
