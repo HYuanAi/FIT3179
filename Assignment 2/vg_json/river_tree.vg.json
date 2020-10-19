@@ -94,7 +94,7 @@
       "name": "color",
       "type": "ordinal",
       "domain": ["NA", "Clean", "Slightly Polluted", "Polluted"],
-      "range": ["#555555", "#208AAE", "#898B80", "#60492C"]
+      "range": ["#FFFFFF", "#208AAE", "#898B80", "#60492C"]
     }
   ],
   "marks": [

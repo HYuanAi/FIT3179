@@ -1,0 +1,161 @@
+{
+    "$schema": "https://vega.github.io/schema/vega/v5.json",
+    "description": "Proportion of rivers in 2015",
+    "padding": 50,
+    "width": 200,
+    "height": 170,
+    "title": "Number of Rivers by Class",
+    "style": "cell",
+    "encode": {"update": {"stroke": {"value": null}}},
+    "signals":[{
+      "name": "year", "value": 2015,
+      "bind": {"input": "range", "min": 2015, "max": 2017, "step": 1}
+    }],
+    "data": [
+      {
+        "name": "source_0",
+        "url": "https://raw.githubusercontent.com/HYuanAi/FIT3179/master/Assignment 2/data/Rivers_WQI.csv",
+        "format": {"type": "csv", "delimiter": ","},
+        "transform": [
+          {
+            "type": "formula",
+            "expr": "if(year == 2015, datum.Category_2015, if(year == 2016, datum.Category_2016, datum.Category_2017))",
+            "as": "Categories"
+          },
+          {
+            "type": "aggregate",
+            "groupby": ["Categories"],
+            "ops": ["count"],
+            "fields": [null],
+            "as": ["count"]
+          },
+          {"type": "formula", "expr": "datum.count", "as": "label"}
+        ]
+      },
+      {
+        "name": "data_0",
+        "source": "source_0",
+        "transform": [
+          {
+            "type": "stack",
+            "groupby": [],
+            "field": "count",
+            "sort": {"field": ["Categories"], "order": ["ascending"]},
+            "as": ["count_start", "count_end"],
+            "offset": "zero"
+          },
+          {
+            "type": "filter",
+            "expr": "isValid(datum[\"count\"]) && isFinite(+datum[\"count\"])"
+          }
+        ]
+      },
+      {
+        "name": "data_1",
+        "source": "source_0",
+        "transform": [
+          {
+            "type": "stack",
+            "groupby": [],
+            "field": "count",
+            "sort": {
+              "field": ["Categories", "label"],
+              "order": ["ascending", "ascending"]
+            },
+            "as": ["count_start", "count_end"],
+            "offset": "zero"
+          },
+          {
+            "type": "filter",
+            "expr": "isValid(datum[\"count\"]) && isFinite(+datum[\"count\"])"
+          }
+        ]
+      }
+    ],
+    "marks": [
+      {
+        "name": "layer_0_marks",
+        "type": "arc",
+        "style": ["arc"],
+        "from": {"data": "data_0"},
+        "encode": {
+          "update": {
+            "innerRadius": {"value": 75},
+            "fill": {"scale": "color", "field": "Categories"},
+            "x": {"signal": "width", "mult": 0.5},
+            "y": {"signal": "height", "mult": 0.5},
+            "outerRadius": {"signal": "min(width,height)/2"},
+            "startAngle": {"scale": "theta", "field": "count_end"},
+            "endAngle": {"scale": "theta", "field": "count_start"},
+            "tooltip": {
+              "signal": "{\"Category\": datum[\"Categories\"], \"Number of Rivers\": format(datum[\"count\"], \"\")}"
+            }
+          }
+        }
+      },
+      {
+        "name": "layer_1_marks",
+        "type": "text",
+        "style": ["text"],
+        "from": {"data": "data_1"},
+        "encode": {
+          "update": {
+            "radius": {"value": 100},
+            "fill": {"scale": "color", "field": "Categories"},
+            "x": {"signal": "width", "mult": 0.5},
+            "y": {"signal": "height", "mult": 0.5},
+            "text": {
+              "signal": "isValid(datum[\"label\"]) ? datum[\"label\"] : \"\"+datum[\"label\"]"
+            },
+            "align": {"value": "center"},
+            "baseline": {"value": "middle"},
+            "theta": {
+              "signal": "scale(\"theta\", 0.5 * datum[\"count_start\"] + 0.5 * datum[\"count_end\"])"
+            }
+          }
+        }
+      },
+      {
+        "name": "layer_2_marks",
+        "type": "text",
+        "style": ["text"],
+        "from": {"data": "data_0"},
+        "encode": {
+          "update": {
+            "fill": {"value": "#0D2149"},
+            "text": {"signal": "if(year == 2015, '2015', if(year == 2016, '2016', '2017'))"},
+            "x": {"signal": "width", "mult": 0.5},
+            "y": {"signal": "height", "mult": 0.5},
+            "fontSize": {"value": 36},
+            "align": {"value": "center"},
+            "baseline": {"value": "middle"},
+            "theta": {
+              "signal": "scale(\"theta\", 0.5 * datum[\"count_start\"] + 0.5 * datum[\"count_end\"])"
+            }
+          }
+        }
+      }
+    ],
+    "scales": [
+      {
+        "name": "theta",
+        "type": "linear",
+        "domain": {
+          "fields": [
+            {"data": "data_0", "field": "count_start"},
+            {"data": "data_0", "field": "count_end"},
+            {"data": "data_1", "field": "count_start"},
+            {"data": "data_1", "field": "count_end"}
+          ]
+        },
+        "range": [0, 6.283185307179586],
+        "zero": true
+      },
+      {
+        "name": "color",
+        "type": "ordinal",
+        "domain": ["Clean", "Slightly Polluted", "Polluted"],
+        "range": ["#208AAE", "#898B80", "#60492C"]
+      }
+    ]
+  }
