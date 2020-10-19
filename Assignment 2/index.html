@@ -262,6 +262,10 @@
 
         var don15_view, don16_view, don17_view, map_view, network_view, causes_view, diverging_view, heat_view;
         const states = ["Johor", "Kedah", "Kelantan", "Kuala Lumpur", "Melaka", "Negeri Sembilan", "Pahang", "Perak", "Pulau Pinang", "Sarawak", "Selangor"];
+        const full_states = ["Johor", "Kedah", "Kelantan", "Kuala Lumpur", "Melaka", "Negeri Sembilan", "Pahang", "Perak", "Perlis", "Pulau Pinang", "Sabah", "Sarawak", "Selangor", "Terengganu"];
+        const zoom_lvls = [15924.339255683179, 15924.339255683179, 15500, 50000, 50000, 28919.850613509137, 11078.517935175274, 11078.517935175272, 38566.511712503205, 49021.76619973625, 8307.44263553608, 5937.687240853303, 19701.999023405944, 12793.483759020948];
+        const rotateX_values = [-108.34923307439438, -105.42405872359602, -106.85034335678658, -106.58656098091217, -107.15951877604296, -106.89332076712365, -107.41231736702763, -105.95963142819167, -104.92687670907564, -105.2128711683424, -117.13131044188025, -112.70524911220461, -106.23908080139708, -107.97305022890666];
+        const centreY_values = [2.0991011945577274, 5.790649637262673, 5.409881822493633, 3.1176440267608916, 2.3212326915290458, 2.848450833639557, 3.6366160466330895, 4.7755237442375105, 6.441561119976851, 5.358025007227503, 5.553398429030128, 2.930437177449687, 3.2188549365959567, 4.868949596457552];
 
         function changeYear(year) {
             document.querySelector('#select-year').value = document.querySelector('#select-year').value == year ? 'average' : year;
@@ -296,6 +300,39 @@
             diverging_view.runAsync();
             heat_view.signal("selected_state", state);
             heat_view.runAsync();
+
+            // zoom in to state
+            var initScale = map_view.signal("scale");
+            var initRotateX = map_view.signal("rotateX");
+            var initCenterY = map_view.signal("centerY");
+
+            var i = full_states.indexOf(state);
+            var finalScale = zoom_lvls[i];
+            var finalRotateX = rotateX_values[i];
+            var finalCenterY = centreY_values[i];
+
+            const max_change = Math.ceil(Math.max([finalRotateX - initRotateX, finalCenterY - initCenterY]) / 10);
+            var changed = 0;
+            let timer = setInterval(function() {
+                if (changed == max_change) 
+                {
+                    map_view.signal("scale", finalScale);
+                    map_view.signal("rotateX", finalRotateX);
+                    map_view.signal("centerY", finalCenterY);
+                    clearInterval(timer);
+                }
+                else
+                {
+                    if (changed < max_change / 4)
+                        initScale += 700;
+                    else
+                        initScale += (finalScale - initScale) / (max_change - changed);
+                    map_view.signal("scale", initScale);
+                    map_view.signal("rotateX", (finalRotateX - initRotateX) / (max_change - changed));
+                    map_view.signal("centerY", (finalCenterY - initCenterY) / (max_change - changed));
+                    changed++;
+                }
+            }, 20);
             
             var i = states.indexOf(state);
             if (i >= 0)

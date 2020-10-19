@@ -5,6 +5,7 @@
   "width": 1100,
   "height": 450,
   "style": "cell",
+  "autosize": "none",
   "signals": [
     {"name": "selected_year", "value": "average"},
     {
@@ -18,7 +19,69 @@
         }
       ]
     },
-    {"name": "selected_state", "value": "All"}
+    {"name": "selected_state", "value": "All"},
+    { "name": "tx", "update": "width / 2" },
+    { "name": "ty", "update": "height / 2" },
+    {
+      "name": "scale",
+      "value": 3800,
+      "on": [{
+        "events": {"type": "wheel", "consume": true},
+        "update": "clamp(scale * pow(1.001, -event.deltaY * pow(16, event.deltaMode)), 3800, 50000)"
+      }]
+    },
+    {
+      "name": "angles",
+      "value": [0, 0],
+      "on": [{
+        "events": "mousedown",
+        "update": "[rotateX, centerY]"
+      }]
+    },
+    {
+      "name": "cloned",
+      "value": null,
+      "on": [{
+        "events": "mousedown",
+        "update": "copy('projection')"
+      }]
+    },
+    {
+      "name": "start",
+      "value": null,
+      "on": [{
+        "events": "mousedown",
+        "update": "invert(cloned, xy())"
+      }]
+    },
+    {
+      "name": "drag", "value": null,
+      "on": [{
+        "events": "[mousedown, window:mouseup] > window:mousemove",
+        "update": "invert(cloned, xy())"
+      }]
+    },
+    {
+      "name": "delta", "value": null,
+      "on": [{
+        "events": {"signal": "drag"},
+        "update": "[drag[0] - start[0], start[1] - drag[1]]"
+      }]
+    },
+    {
+      "name": "rotateX", "value": -112.04762503390877,
+      "on": [{
+        "events": {"signal": "delta"},
+        "update": "angles[0] + delta[0]"
+      }]
+    },
+    {
+      "name": "centerY", "value": 4.079141137028495,
+      "on": [{
+        "events": {"signal": "delta"},
+        "update": "clamp(angles[1] + delta[1], -60, 60)"
+      }]
+    }
   ],
   "data": [
     {
@@ -70,9 +133,11 @@
   "projections": [
     {
       "name": "projection",
-      "size": {"signal": "[width, height]"},
-      "fit": {"signal": "[data('source_1'), data('source_2')]"},
-      "type": "equirectangular"
+      "type": "equirectangular",
+      "scale": {"signal": "scale"},
+      "rotate": [{"signal": "rotateX"}, 0, 0],
+      "center": [0, {"signal": "centerY"}],
+      "translate": [{"signal": "tx"}, {"signal": "ty"}]
     }
   ],
   "marks": [
@@ -102,7 +167,7 @@
       "from": {"data": "source_2"},
       "encode": {
         "update": {
-          "strokeWidth": {"value": 1.5},
+          "strokeWidth": {"signal": "if(scale < 15000, 1.5, 4)"},
           "fill": {"value": "transparent"},
           "stroke": {
             "scale": "color",
