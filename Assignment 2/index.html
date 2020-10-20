@@ -132,8 +132,6 @@
                 </div>
             </div>
 
-            <div id="map" class='my-1 mx-auto'></div>
-
             <p class="h5 text-center">Number of Rivers in <span id="state-name" class="font-weight-bold">Malaysia</span> in each category by Year</p>
 
             <div class="mx-auto row">
@@ -141,6 +139,8 @@
                 <div id="donut-2016" class="col-4 selectable" onclick="changeYear('2016')"></div>
                 <div id="donut-2017" class="col-4 selectable" onclick="changeYear('2017')"></div>
             </div>
+
+            <div id="map" class='my-1 mx-auto'></div>
 
             <div id="network" class="my-1 mx-auto" style="display: none;"></div>
 
@@ -258,7 +258,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script type="text/javascript">
-        $('.carousel').carousel();
+        $('.carousel').carousel({
+            interval: 10000
+        });
 
         var don15_view, don16_view, don17_view, map_view, network_view, causes_view, diverging_view, heat_view;
         const states = ["Johor", "Kedah", "Kelantan", "Kuala Lumpur", "Melaka", "Negeri Sembilan", "Pahang", "Perak", "Pulau Pinang", "Sarawak", "Selangor"];
@@ -302,37 +304,40 @@
             heat_view.runAsync();
 
             // zoom in to state
-            var initScale = map_view.signal("scale");
-            var initRotateX = map_view.signal("rotateX");
-            var initCenterY = map_view.signal("centerY");
+            // var initScale = +map_view.signal("scale");
+            // var initRotateX = +map_view.signal("rotateX");
+            // var initCenterY = +map_view.signal("centerY");
 
             var i = full_states.indexOf(state);
             var finalScale = zoom_lvls[i];
             var finalRotateX = rotateX_values[i];
             var finalCenterY = centreY_values[i];
 
-            const max_change = Math.ceil(Math.max([finalRotateX - initRotateX, finalCenterY - initCenterY]) / 10);
-            var changed = 0;
-            let timer = setInterval(function() {
-                if (changed == max_change) 
-                {
+            // const max_change = Math.ceil(Math.max(Math.abs(finalRotateX - initRotateX), Math.abs(finalCenterY - initCenterY)) * 10);
+            // console.log(max_change);
+            // var changed = 0;
+            // let timer = setInterval(function() {
+            //     if (changed == max_change) 
+            //     {
                     map_view.signal("scale", finalScale);
                     map_view.signal("rotateX", finalRotateX);
                     map_view.signal("centerY", finalCenterY);
-                    clearInterval(timer);
-                }
-                else
-                {
-                    if (changed < max_change / 4)
-                        initScale += 700;
-                    else
-                        initScale += (finalScale - initScale) / (max_change - changed);
-                    map_view.signal("scale", initScale);
-                    map_view.signal("rotateX", (finalRotateX - initRotateX) / (max_change - changed));
-                    map_view.signal("centerY", (finalCenterY - initCenterY) / (max_change - changed));
-                    changed++;
-                }
-            }, 20);
+            //         clearInterval(timer);
+            //     }
+            //     else
+            //     {
+            //         if (changed < max_change / 4 && initScale > 3800)
+            //             initScale -= 700;
+            //         else
+            //             initScale += (finalScale - initScale) / (max_change - changed);
+            //         initRotateX += (finalRotateX - initRotateX) / (max_change - changed);
+            //         initCenterY += (finalCenterY - initCenterY) / (max_change - changed);
+            //         map_view.signal("scale", initScale);
+            //         map_view.signal("rotateX", initRotateX);
+            //         map_view.signal("centerY", initCenterY);
+            //         changed++;
+            //     }
+            // }, 20);
             
             var i = states.indexOf(state);
             if (i >= 0)
