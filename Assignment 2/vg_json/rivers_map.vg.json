@@ -20,67 +20,67 @@
       ]
     },
     {"name": "selected_state", "value": "All"},
-    { "name": "tx", "update": "width / 2" },
-    { "name": "ty", "update": "height / 2" },
+    {"name": "tx", "update": "width / 2"},
+    {"name": "ty", "update": "height / 2"},
     {
       "name": "scale",
       "value": 3800,
-      "on": [{
-        "events": {"type": "wheel", "consume": true},
-        "update": "clamp(scale * pow(1.001, -event.deltaY * pow(16, event.deltaMode)), 3800, 50000)"
-      }]
+      "on": [
+        {
+          "events": {"type": "wheel", "consume": true},
+          "update": "clamp(scale * pow(1.005, -event.deltaY * pow(16, event.deltaMode)), 3800, 150000)"
+        }
+      ]
     },
     {
       "name": "angles",
       "value": [0, 0],
-      "on": [{
-        "events": "mousedown",
-        "update": "[rotateX, centerY]"
-      }]
+      "on": [{"events": "mousedown", "update": "[rotateX, centerY]"}]
     },
     {
       "name": "cloned",
       "value": null,
-      "on": [{
-        "events": "mousedown",
-        "update": "copy('projection')"
-      }]
+      "on": [{"events": "mousedown", "update": "copy('projection')"}]
     },
     {
       "name": "start",
       "value": null,
-      "on": [{
-        "events": "mousedown",
-        "update": "invert(cloned, xy())"
-      }]
+      "on": [{"events": "mousedown", "update": "invert(cloned, xy())"}]
     },
     {
-      "name": "drag", "value": null,
-      "on": [{
-        "events": "[mousedown, window:mouseup] > window:mousemove",
-        "update": "invert(cloned, xy())"
-      }]
+      "name": "drag",
+      "value": null,
+      "on": [
+        {
+          "events": "[mousedown, window:mouseup] > window:mousemove",
+          "update": "invert(cloned, xy())"
+        }
+      ]
     },
     {
-      "name": "delta", "value": null,
-      "on": [{
-        "events": {"signal": "drag"},
-        "update": "[drag[0] - start[0], start[1] - drag[1]]"
-      }]
+      "name": "delta",
+      "value": null,
+      "on": [
+        {
+          "events": {"signal": "drag"},
+          "update": "[drag[0] - start[0], start[1] - drag[1]]"
+        }
+      ]
     },
     {
-      "name": "rotateX", "value": -112.04762503390877,
-      "on": [{
-        "events": {"signal": "delta"},
-        "update": "angles[0] + delta[0]"
-      }]
+      "name": "rotateX",
+      "value": -112.04762503390877,
+      "on": [{"events": {"signal": "delta"}, "update": "angles[0] + delta[0]"}]
     },
     {
-      "name": "centerY", "value": 4.079141137028495,
-      "on": [{
-        "events": {"signal": "delta"},
-        "update": "clamp(angles[1] + delta[1], -60, 60)"
-      }]
+      "name": "centerY",
+      "value": 4.079141137028495,
+      "on": [
+        {
+          "events": {"signal": "delta"},
+          "update": "clamp(angles[1] + delta[1], -60, 60)"
+        }
+      ]
     }
   ],
   "data": [
@@ -108,8 +108,8 @@
     },
     {
       "name": "source_2",
-      "url": "https://raw.githubusercontent.com/HYuanAi/FIT3179/master/Assignment 2/vg_json/msian_rivers.json",
-      "format": {"type": "topojson", "feature": "msian_rivers"},
+      "url": "https://raw.githubusercontent.com/HYuanAi/FIT3179/master/Assignment 2/vg_json/merged_rivers.json",
+      "format": {"type": "topojson", "feature": "merged_rivers"},
       "transform": [
         {
           "type": "lookup",
@@ -128,7 +128,47 @@
         }
       ]
     },
-    {"name": "selected", "on": [{"trigger": "clicked", "insert": "clicked"}]}
+    {"name": "selected", "on": [{"trigger": "clicked", "insert": "clicked"}]},
+    {
+      "name": "states_labels",
+      "url": "https://raw.githubusercontent.com/HYuanAi/FIT3179/master/Assignment 2/vg_json/msian_states_labels.json",
+      "format": { "type": "topojson", "feature": "msian_states_labels"},
+      "transform": [
+        {
+          "type": "geopoint",
+          "projection": "projection",
+          "fields": ["geometry.coordinates[0]", "geometry.coordinates[1]"],
+          "as": ["long", "lat"]
+        },
+        {
+          "type": "formula",
+          "expr": "if(datum.properties.name == 'Sabah' || datum.properties.name == 'Sarawak' || datum.properties.name == 'Labuan', 0, if(datum.properties.name == 'Terengganu' || datum.properties.name == 'Pahang', 80, if(datum.properties.name == 'Kelantan', 60, if(datum.properties.name == 'Negeri Sembilan' || datum.properties.name == 'Pulau Pinang', -70, if(datum.properties.name == 'Melaka', -30,-60)))))", 
+          "as": "translate_x" 
+        },
+        {
+          "type": "formula",
+          "expr": "if(datum.properties.name == 'Selangor', -20, if(datum.properties.name == 'Kelantan', -50, if(datum.properties.name == 'Negeri Sembilan' || datum.properties.name == 'Johor', 15, 0)))", 
+          "as": "translate_y" 
+        },
+        {
+          "type": "filter",
+          "expr": "datum.properties.name != 'Labuan' && datum.properties.name != 'Putrajaya'" 
+        }
+      ]
+    },
+    {
+      "name": "rivers_labels",
+      "url": "https://raw.githubusercontent.com/HYuanAi/FIT3179/master/Assignment 2/vg_json/merged_rivers_centroids.json",
+      "format": { "type": "topojson", "feature": "merged_rivers_centroids"},
+      "transform": [
+        {
+          "type": "geopoint",
+          "projection": "projection",
+          "fields": ["geometry.coordinates[0]", "geometry.coordinates[1]"],
+          "as": ["long", "lat"]
+        }
+      ]
+    }
   ],
   "projections": [
     {
@@ -187,6 +227,46 @@
         }
       },
       "transform": [{"type": "geoshape", "projection": "projection"}]
+    },
+    {
+      "name": "labels_state",
+      "type": "text",
+      "style": ["text"],
+      "from": {"data": "states_labels"},
+      "encode": {
+        "update": {
+          "fill": {"value": "#999999"},
+          "opacity":{"value": 0.7},
+          "fontSize":{"value": 14},
+          "x": {"field": "long"},
+          "y": {"field": "lat"},
+          "dx": { "field": "translate_x" },
+          "dy": { "field": "translate_y" },
+          "text": {"field": "properties.name"},
+          "align": {"value": "center"},
+          "baseline": {"value": "middle"}
+        }
+      }
+    },
+    {
+      "name": "labels_rivers",
+      "type": "text",
+      "style": ["text"],
+      "from": {"data": "rivers_labels"},
+      "encode": {
+        "update": {
+          "fill": {"value": "#999999"},
+          "opacity":{"signal": "if(scale > 25000, 0.8, 0)"},
+          "fontSize":{"value": 14},
+          "x": {"field": "long"},
+          "y": {"field": "lat"},
+          "dx": { "field": "translate_x" },
+          "dy": { "field": "translate_y" },
+          "text": {"field": "properties.name"},
+          "align": {"value": "center"},
+          "baseline": {"value": "middle"}
+        }
+      }
     }
   ],
   "scales": [
