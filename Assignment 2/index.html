@@ -16,9 +16,9 @@
             <div class="mt-3 top-border">
                 <div class="row mt-3">
                     <div class="col-6">
-                        <h3>
+                        <h4>
                             Total Rivers Monitored
-                        </h3>
+                        </h4>
                     </div>    
                     <div class="col-6 text-right my-auto"><h1>477</h1></div> 
                 </div>
@@ -55,10 +55,84 @@
                     </select>
                 </form>
             </div>
+
+            <div class="mt-3 text-center">
+                <form class="mt-3 form-inline caption">
+                    Focus on rivers that were
+                    <select class="custom-select mx-2" id="select-rivers" onchange="selectRivers(this.value)">
+                        <option selected value="">all</option>
+                        <option value="Clean">clean</option>
+                        <option value="Slightly Polluted">slightly polluted</option>
+                        <option value="Polluted">polluted</option>
+                    </select>
+                </form>
+            </div>
+
+            <div class="mt-3 caption">
+                Zoom in the map for river names. 
+            </div>
+
+            <div class="mt-3 small-text">
+                <table class="table text-center table-sm">
+                    <thead class='thead-dark'>
+                        <tr>
+                            <th scope="col">Category</th>
+                            <th scope="col">WQI</th>
+                        </tr>
+                        <tbody>
+                            <tr style="color: #208AAE;">
+                                <th>Clean</th>
+                                <th>81 - 100</th>
+                            </tr>
+                            <tr style="color: #898B80;">
+                                <th>Slightly Polluted</th>
+                                <th>61 - 80</th>
+                            </tr>
+                            <tr style="color: #60492C;">
+                                <th>Polluted</th>
+                                <th>0 - 60</th>
+                            </tr>
+                        </tbody>
+                    </thead>
+                </table>
+            </div>
+            
+            <div class="mt-3 small-text">
+                <table class="table text-center table-sm">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Class</th>
+                            <th scope="col">WQI</th>
+                        </tr>
+                        <tbody>
+                            <tr>
+                                <th>I</th>
+                                <th>92.7 - 100</th>
+                            </tr>
+                            <tr>
+                                <th>II</th>
+                                <th>76.5 - 92.7</th>
+                            </tr>
+                            <tr>
+                                <th>III</th>
+                                <th>51.9 - 76.5</th>
+                            </tr>
+                            <tr>
+                                <th>IV</th>
+                                <th>31.0 - 51.9</th>
+                            </tr>
+                            <tr>
+                                <th>V</th>
+                                <th>0.0 - 31.0</th>
+                            </tr>
+                        </tbody>
+                    </thead>
+                </table>
+            </div>  
         </nav>
         <div class="col-9">
             <div class="bg-img">
-                <div class="header row">
+                <div class="header row mb-3 pb-3">
                     <div class="col-12">
                         <p class="h1 text-center pt-4 font-weight-bold">Go with the Flow</p>
                         <p class="text-center h2">Rivers in Malaysia</p>
@@ -69,66 +143,6 @@
                             The tables below shows the categories and classifications of rivers based on their WQI.
                         </div>
                     </div>
-                    <div class="col-3"></div>
-                    <div class="col-3 pt-3 small-text">
-                        <table class="table table-dark text-center table-sm">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Category</th>
-                                    <th scope="col">WQI</th>
-                                </tr>
-                                <tbody>
-                                    <tr>
-                                        <th>Clean</th>
-                                        <th>81 - 100</th>
-                                    </tr>
-                                    <tr>
-                                        <th>Slightly Polluted</th>
-                                        <th>61 - 80</th>
-                                    </tr>
-                                    <tr>
-                                        <th>Polluted</th>
-                                        <th>0 - 60</th>
-                                    </tr>
-                                </tbody>
-                            </thead>
-                        </table>
-                    </div>
-                    
-                    <div class="col-3 pt-3 small-text">
-                        <table class="table table-dark text-center table-sm">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Class</th>
-                                    <th scope="col">WQI</th>
-                                </tr>
-                                <tbody>
-                                    <tr>
-                                        <th>I</th>
-                                        <th>92.7 - 100</th>
-                                    </tr>
-                                    <tr>
-                                        <th>II</th>
-                                        <th>76.5 - 92.7</th>
-                                    </tr>
-                                    <tr>
-                                        <th>III</th>
-                                        <th>51.9 - 76.5</th>
-                                    </tr>
-                                    <tr>
-                                        <th>IV</th>
-                                        <th>31.0 - 51.9</th>
-                                    </tr>
-                                    <tr>
-                                        <th>V</th>
-                                        <th>0.0 - 31.0</th>
-                                    </tr>
-                                </tbody>
-                            </thead>
-                        </table>
-                    </div>  
-                    
-                    <div class="col-3"></div>
                 </div>
             </div>
 
@@ -218,8 +232,10 @@
                             </div>
                             <div class="carousel-item">
                                 <div class="height-130">
-                                    <p>Within a period of 1 month, residents in <strong>Selangor</strong> has experienced water disruption twice due to river pollution. Water pollution in <strong>Sungai Gong, Rawang</strong> was caused by a <strong>factory</strong>, while the pollution in <strong>Sungai Semenyih</strong> was caused by <strong>dumping of waste</strong> near the upstream of the river.</p>
-                                    From <a href="https://selangorjournal.my/2020/09/factory-behind-river-pollution-to-be-served-notice-to-cease-operations-mb/" class="stretched-link">Selangor Journal</a> and <a href="https://www.freemalaysiatoday.com/category/nation/2020/10/05/waste-dumped-at-nilai-industrial-area-source-of-sungai-semenyih-pollution/" class="stretched-link">Free Malaysia Today</a>
+                                    <p>Within a period of 2 months, residents in <strong>Selangor</strong> has experienced water disruption twice due to river pollution. Water pollution in <strong>Sungai Gong, Rawang</strong> was caused by a <strong>factory</strong>, while the pollution in <strong>Sungai Semenyih</strong> was caused by <strong>dumping of waste</strong> near the upstream of the river.</p>
+                                    From <a href="https://selangorjournal.my/2020/09/factory-behind-river-pollution-to-be-served-notice-to-cease-operations-mb/" class="stretched-link">Selangor Journal</a>, 
+                                    <a href="https://www.freemalaysiatoday.com/category/nation/2020/10/05/waste-dumped-at-nilai-industrial-area-source-of-sungai-semenyih-pollution/" class="stretched-link">Free Malaysia Today</a> and 
+                                    <a href="https://www.malaymail.com/news/malaysia/2020/10/20/police-open-investigation-paper-on-sungai-selangor-pollution/1914418" class="stretched-link">Malay Mail</a>
                                 </div>
                             </div>
                         </div>
@@ -259,15 +275,15 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script type="text/javascript">
         $('.carousel').carousel({
-            interval: 10000
+            interval: 7000
         });
 
         var don15_view, don16_view, don17_view, map_view, network_view, causes_view, diverging_view, heat_view;
         const states = ["Johor", "Kedah", "Kelantan", "Kuala Lumpur", "Melaka", "Negeri Sembilan", "Pahang", "Perak", "Pulau Pinang", "Sarawak", "Selangor"];
-        const full_states = ["Johor", "Kedah", "Kelantan", "Kuala Lumpur", "Melaka", "Negeri Sembilan", "Pahang", "Perak", "Perlis", "Pulau Pinang", "Sabah", "Sarawak", "Selangor", "Terengganu"];
-        const zoom_lvls = [15924.339255683179, 15924.339255683179, 15500, 50000, 50000, 28919.850613509137, 11078.517935175274, 11078.517935175272, 38566.511712503205, 49021.76619973625, 8307.44263553608, 5937.687240853303, 19701.999023405944, 12793.483759020948];
-        const rotateX_values = [-108.34923307439438, -105.42405872359602, -106.85034335678658, -106.58656098091217, -107.15951877604296, -106.89332076712365, -107.41231736702763, -105.95963142819167, -104.92687670907564, -105.2128711683424, -117.13131044188025, -112.70524911220461, -106.23908080139708, -107.97305022890666];
-        const centreY_values = [2.0991011945577274, 5.790649637262673, 5.409881822493633, 3.1176440267608916, 2.3212326915290458, 2.848450833639557, 3.6366160466330895, 4.7755237442375105, 6.441561119976851, 5.358025007227503, 5.553398429030128, 2.930437177449687, 3.2188549365959567, 4.868949596457552];
+        const full_states = ["All", "Johor", "Kedah", "Kelantan", "Kuala Lumpur", "Melaka", "Negeri Sembilan", "Pahang", "Perak", "Perlis", "Pulau Pinang", "Sabah", "Sarawak", "Selangor", "Terengganu"];
+        const zoom_lvls = [3800, 15924.339255683179, 15924.339255683179, 15500, 50000, 50000, 28919.850613509137, 11078.517935175274, 11078.517935175272, 38566.511712503205, 49021.76619973625, 8307.44263553608, 5937.687240853303, 19701.999023405944, 12793.483759020948];
+        const rotateX_values = [-112.04762503390877, -108.34923307439438, -105.42405872359602, -106.85034335678658, -106.58656098091217, -107.15951877604296, -106.89332076712365, -107.41231736702763, -105.95963142819167, -104.92687670907564, -105.2128711683424, -117.13131044188025, -112.70524911220461, -106.23908080139708, -107.97305022890666];
+        const centreY_values = [4.079141137028495, 2.0991011945577274, 5.790649637262673, 5.409881822493633, 3.1176440267608916, 2.3212326915290458, 2.848450833639557, 3.6366160466330895, 4.7755237442375105, 6.441561119976851, 5.358025007227503, 5.553398429030128, 2.930437177449687, 3.2188549365959567, 4.868949596457552];
 
         function changeYear(year) {
             document.querySelector('#select-year').value = document.querySelector('#select-year').value == year ? 'average' : year;
@@ -350,6 +366,13 @@
 
             document.getElementById('network').style.display = state == 'All' ? 'none' : 'block';
             document.getElementById('state-name').innerText = state == 'All' ? 'Malaysia' : state;
+        }
+
+        function selectRivers(category) {
+            map_view.signal("clicked", category);
+            map_view.runAsync();
+            network_view.signal("clicked", category);
+            network_view.runAsync();
         }
 
         var don15 = "https://HYuanAi.github.io/FIT3179/Assignment 2/vg_json/donut_2015.vg.json";

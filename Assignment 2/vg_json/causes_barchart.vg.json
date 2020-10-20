@@ -14,7 +14,7 @@
       "transform": [
         {
           "type": "formula",
-          "expr": "if(datum.State == selected_state || selected_state == 'All', 'highlight', 'no_highlight')",
+          "expr": "if(datum.State == selected_state || selected_state == 'All', selected_state, 'All')",
           "as": "state_highlight"
         },
         {
@@ -29,9 +29,14 @@
           "expr": "isValid(datum[\"count\"]) && isFinite(+datum[\"count\"])"
         },
         {
+          "type": "formula",
+          "expr": "if(datum.state_highlight == selected_state, 1, 2)",
+          "as": "sort_highlight"
+        },
+        {
           "type": "stack",
           "groupby": ["Cause"],
-          "sort": {"field": "state_highlight"},
+          "sort": {"field": "sort_highlight"},
           "field": "count"
         }
       ]
@@ -40,7 +45,7 @@
       "name": "aggregated",
       "source": "source_0",
       "transform": [
-        {"type": "filter", "expr": "datum.state_highlight == 'highlight'"},
+        {"type": "filter", "expr": "datum.state_highlight == selected_state"},
         {
           "type": "aggregate",
           "groupby": ["Cause"],
@@ -117,20 +122,28 @@
     {
       "name": "color",
       "type": "ordinal",
-      "domain": ["highlight", "no_highlight"],
+      "domain": {"signal": "[selected_state, 'All']"},
       "range": ["#F9EBE0", "#968F8A"]
     }
   ],
   "axes": [
     {
       "scale": "y",
-      "labelFontSize": 13, 
+      "labelFontSize": 13,
       "labelColor": "#F9EBE0",
       "orient": "left",
       "grid": false,
       "labelPadding": 10,
       "ticks": false,
       "zindex": 0
+    }
+  ],
+  "legends": [
+    {
+      "fill": "color",
+      "symbolType": "square",
+      "orient": "bottom",
+      "direction": "horizontal"
     }
   ]
 }
