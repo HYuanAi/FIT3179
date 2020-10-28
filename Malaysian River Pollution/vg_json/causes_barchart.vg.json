@@ -9,7 +9,7 @@
   "data": [
     {
       "name": "source_0",
-      "url": "https://raw.githubusercontent.com/HYuanAi/FIT3179/master/Malaysia River Pollution/data/causes_pollution.csv",
+      "url": "https://raw.githubusercontent.com/HYuanAi/FIT3179/master/Malaysian River Pollution/data/causes_pollution.csv",
       "format": {"type": "csv", "delimiter": ","},
       "transform": [
         {
