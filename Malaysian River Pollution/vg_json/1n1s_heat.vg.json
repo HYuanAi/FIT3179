@@ -9,7 +9,7 @@
   "data": [
     {
       "name": "source_0",
-      "url": "https://raw.githubusercontent.com/HYuanAi/FIT3179/master/Assignment 2/data/1N1S River Class Over Years.csv",
+      "url": "https://raw.githubusercontent.com/HYuanAi/FIT3179/master/Malaysian River Pollution/data/1n1s_rivers.csv",
       "format": {"type": "csv", "delimiter": ","},
       "transform": [
         {

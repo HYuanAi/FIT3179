@@ -86,7 +86,7 @@
   "data": [
     {
       "name": "source_0",
-      "url": "https://raw.githubusercontent.com/HYuanAi/FIT3179/master/Assignment 2/data/Rivers_WQI.csv",
+      "url": "https://raw.githubusercontent.com/HYuanAi/FIT3179/master/Malaysia River Pollution/data/rivers_wqi.csv",
       "format": {"type": "csv", "delimiter": ","},
       "transform": [
         {
@@ -103,12 +103,12 @@
     },
     {
       "name": "source_1",
-      "url": "https://raw.githubusercontent.com/HYuanAi/FIT3179/master/Assignment 2/vg_json/msian_states.json",
+      "url": "https://raw.githubusercontent.com/HYuanAi/FIT3179/master/Malaysia River Pollution/vg_json/msian_states.json",
       "format": {"type": "topojson", "feature": "msian_states"}
     },
     {
       "name": "source_2",
-      "url": "https://raw.githubusercontent.com/HYuanAi/FIT3179/master/Assignment 2/vg_json/merged_rivers.json",
+      "url": "https://raw.githubusercontent.com/HYuanAi/FIT3179/master/Malaysia River Pollution/vg_json/merged_rivers.json",
       "format": {"type": "topojson", "feature": "merged_rivers"},
       "transform": [
         {
@@ -131,7 +131,7 @@
     {"name": "selected", "on": [{"trigger": "clicked", "insert": "clicked"}]},
     {
       "name": "states_labels",
-      "url": "https://raw.githubusercontent.com/HYuanAi/FIT3179/master/Assignment 2/vg_json/msian_states_labels.json",
+      "url": "https://raw.githubusercontent.com/HYuanAi/FIT3179/master/Malaysia River Pollution/vg_json/msian_states_labels.json",
       "format": { "type": "topojson", "feature": "msian_states_labels"},
       "transform": [
         {
@@ -158,7 +158,7 @@
     },
     {
       "name": "rivers_labels",
-      "url": "https://raw.githubusercontent.com/HYuanAi/FIT3179/master/Assignment 2/vg_json/merged_rivers_centroids.json",
+      "url": "https://raw.githubusercontent.com/HYuanAi/FIT3179/master/Malaysia River Pollution/vg_json/merged_rivers_centroids.json",
       "format": { "type": "topojson", "feature": "merged_rivers_centroids"},
       "transform": [
         {

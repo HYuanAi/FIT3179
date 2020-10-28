@@ -32,7 +32,7 @@
   "data": [
     {
       "name": "tree",
-      "url": "https://raw.githubusercontent.com/HYuanAi/FIT3179/master/Assignment 2/data/river_network.csv",
+      "url": "https://raw.githubusercontent.com/HYuanAi/FIT3179/master/Malaysia River Pollution/data/river_network.csv",
       "format": {"type": "csv", "delimiter": ","},
       "transform": [
         {"type": "filter", "expr": "selected_state == datum.State"},

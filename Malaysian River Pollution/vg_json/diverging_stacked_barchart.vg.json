@@ -9,7 +9,7 @@
   "data": [
     {
       "name": "source_0",
-      "url": "https://raw.githubusercontent.com/HYuanAi/FIT3179/master/Assignment 2/data/Change_percentage.csv",
+      "url": "https://raw.githubusercontent.com/HYuanAi/FIT3179/master/Malaysia River Pollution/data/change_percentage.csv",
       "format": {"type": "csv", "delimiter": ","},
       "transform": [
         {
