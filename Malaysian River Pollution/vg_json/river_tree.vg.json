@@ -165,6 +165,7 @@
       "direction": "vertical",
       "symbolStrokeWidth": 4,
       "labelFontSize": 14,
+      "labelColor": "#646469",
       "rowPadding": 10,
       "encode": {
         "symbols": {

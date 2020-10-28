@@ -285,6 +285,7 @@
       "direction": "horizontal",
       "symbolStrokeWidth": 4,
       "labelFontSize": 14,
+      "labelColor": "#646469",
       "encode": {
         "symbols": {
           "name": "legendSymbol",
