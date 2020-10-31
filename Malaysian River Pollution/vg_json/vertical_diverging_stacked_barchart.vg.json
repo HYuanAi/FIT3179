@@ -1,7 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega/v5.json",
     "background": "rgba(0,0,0,0)",
-    "padding": 5,
+    "padding": {"left": 100},
     "width": 900,
     "height": 180,
     "style": "cell",
@@ -125,7 +125,8 @@
         "zindex": 0,
         "labelOpacity": {
           "signal": "if(datum.value == selected_state || selected_state == 'All',1,0.3)"
-        }
+        },
+        "encode": {"labels": { "update": {"text": {"signal": "if(datum.label == 'Kuala Lumpur', 'K.Lumpur', if(datum.label == 'Negeri Sembilan', 'N.Sembilan', if(datum.label == 'Pulau Pinang', 'P.Pinang', datum.label)))"}}}}
       }
     ],
     "legends": [

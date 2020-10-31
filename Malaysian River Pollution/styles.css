@@ -124,3 +124,28 @@ th {
 .happy-background a {
     color: #006A8E;
 }
+
+.improved-color {
+    color: #208AAE;
+}
+
+.pollution-color {
+    color: #60492C;
+}
+
+/* Scroll Snap */
+/* .scroll-snap-parent {
+    display: flex;
+    overflow: auto;
+    flex: none;
+    scroll-snap-type: y mandatory;
+    overflow-x: hidden;
+    flex-flow: column nowrap;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.scroll-snap-section {
+    scroll-snap-align: center;
+    flex: none;
+} */
