@@ -164,9 +164,16 @@
                 <div id="network" class="my-1 mx-auto" style="display: none;"></div>
             </section>
 
+            <section>
+                <div class="py-5 top-border">
+                    <p class="h5 text-center mb-3">Proportion of Change in WQI of Rivers in each State</p>
+                    <div id="diverging"></div>
+                </div>
+            </section>
+
             <section class="scroll-snap-section">
-                <div class="top-border mt-3 mx-auto row">
-                    <div class="col-5 pt-5 dark-background">
+                <div class="mt-3 pb-5 mx-auto row dark-background">
+                    <div class="col-6 pt-5">
                         <div>
                             <img src="resources/sad.png" width="50" height="50" class="ml-3" />
                             <span class=" h4 ml-3">Pollution</span>
@@ -248,14 +255,15 @@
                             </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="col-6 pt-5">
                         <p class="h5">Number of Rivers polluted by each Cause in 2009</p>
                         <div id="causes" class="mt-3"></div>
                     </div>
-                    <div class="col-2 px-0 pb-0 py-5">
-                        <p class="h5 text-center mb-3">Proportion of Change in WQI of Rivers in each State</p>
-                        <div id="diverging"></div>
-                    </div>
-                    <div class="col-5 pt-5 happy-background">
+                </div>
+
+                <div class="pb-5 mx-auto row happy-background">
+                    <div class="col-6 pt-5">
                         <div>
                             <img src="resources/smiley.png" width="50" height="50" class="ml-3" />
                             <span class=" h4 ml-3">Recovery</span>
@@ -266,6 +274,8 @@
                             In 2016, the then Minister of Natural Resources and Environment reported that <a href="http://www.ketsa.gov.my/parlimen/Lists/papar-Jawapan-Parlimen.aspx?ID=%20%20%20%201401" class="stretched-link">Sungai Kinta and Sungai Papar are recovered to cateogory clean</a> under the program. 
                             
                         </div>
+                    </div>
+                    <div class="col-6 pt-5">
                         <p class="h5">Class of Rivers under the 1N1S Program</p>
                         <div id="heat" class="mt-3"></div>
                     </div>
@@ -425,7 +435,7 @@
             network_view = result.view;
         }).catch(console.error);
 
-        var div = "https://HYuanAi.github.io/FIT3179/Malaysian River Pollution/vg_json/diverging_stacked_barchart.vg.json";
+        var div = "https://HYuanAi.github.io/FIT3179/Malaysian River Pollution/vg_json/vertical_diverging_stacked_barchart.vg.json";
         vegaEmbed('#diverging', div).then(function(result) {
             // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
             diverging_view = result.view;
