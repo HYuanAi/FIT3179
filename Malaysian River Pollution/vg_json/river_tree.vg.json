@@ -4,7 +4,7 @@
   "background": "#E4E4E9",
   "width": 1100,
   "height": 1100,
-  "padding": {"top": -500, "left": 100, "right": 100},
+  "padding": {"top": -500, "left": 50, "right": 50},
   "autosize": "none",
   "signals": [
     {"name": "labels", "value": true},
@@ -166,6 +166,7 @@
       "symbolStrokeWidth": 4,
       "labelFontSize": 11,
       "labelColor": "#646469",
+      "padding": 50, 
       "rowPadding": 10,
       "encode": {
         "symbols": {
