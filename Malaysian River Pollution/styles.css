@@ -25,6 +25,11 @@ a {
     opacity: 0.8;
 }
 
+.title {
+    font-family: 'Pacifico', cursive;
+    font-size: 41pt;
+}
+
 .header-left {
     border-right: 2px solid #A4A4A9; 
 }
