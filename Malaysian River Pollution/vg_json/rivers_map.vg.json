@@ -7,6 +7,7 @@
   "style": "cell",
   "autosize": "none",
   "signals": [
+    {"name": "dynamic_width", "value": 1000},
     {"name": "selected_year", "value": "average"},
     {
       "name": "clicked",
@@ -284,7 +285,7 @@
       "orient": "bottom-right",
       "direction": "horizontal",
       "symbolStrokeWidth": 4,
-      "labelFontSize": 14,
+      "labelFontSize": 11,
       "labelColor": "#646469",
       "encode": {
         "symbols": {

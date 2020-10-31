@@ -3,19 +3,19 @@
   "description": "An example of a radial layout for a node-link diagram of hierarchical data.",
   "background": "#E4E4E9",
   "width": 1100,
-  "height": 1150,
-  "padding": {"top": -500},
+  "height": 1100,
+  "padding": {"top": -500, "left": 100, "right": 100},
   "autosize": "none",
   "signals": [
     {"name": "labels", "value": true},
-    {"name": "radius", "value": 430},
+    {"name": "radius", "value": 380},
     {"name": "extent", "value": 190},
     {"name": "rotate", "value": 85},
     {"name": "layout", "value": "tidy"},
     {"name": "links", "value": "diagonal"},
     {"name": "originX", "update": "width / 2"},
     {"name": "originY", "update": "height / 2"},
-    {"name": "selected_state", "value": "All"},
+    {"name": "selected_state", "value": "Johor"},
     {"name": "selected_year", "value": "average"},
     {
       "name": "clicked",
@@ -130,7 +130,7 @@
       "encode": {
         "enter": {
           "text": {"field": "Child"},
-          "fontSize": {"value": 13},
+          "fontSize": {"value": 11},
           "baseline": {"value": "middle"},
           "fill": {"value": "#555555"}
         },
@@ -150,7 +150,7 @@
             "signal": "datum.real_parent == null ? 'center' : (datum.leftside ? 'right' : 'left')"
           },
           "opacity": {"signal": "labels ? 1 : 0"},
-           "tooltip": {
+          "tooltip": {
             "signal": "{\"River\": datum[\"Child\"], \"WQI in 2015\": datum[\"WQI_2015\"], \"WQI in 2016\": datum[\"WQI_2016\"], \"WQI in 2017\": datum[\"WQI_2017\"], \"Average WQI\": datum[\"WQI_AVE\"]}"
           }
         }
@@ -162,9 +162,9 @@
       "stroke": "color",
       "symbolType": "circle",
       "orient": "bottom-right",
-      "direction": "vertical",
+      "direction": "horizontal",
       "symbolStrokeWidth": 4,
-      "labelFontSize": 14,
+      "labelFontSize": 11,
       "labelColor": "#646469",
       "rowPadding": 10,
       "encode": {
