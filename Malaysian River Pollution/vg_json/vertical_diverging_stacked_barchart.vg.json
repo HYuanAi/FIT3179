@@ -1,0 +1,140 @@
+{
+    "$schema": "https://vega.github.io/schema/vega/v5.json",
+    "background": "rgba(0,0,0,0)",
+    "padding": 5,
+    "width": 1100,
+    "height": 200,
+    "style": "cell",
+    "signals": [{"name": "selected_state", "value": "All"}],
+    "data": [
+      {
+        "name": "source_0",
+        "url": "https://raw.githubusercontent.com/HYuanAi/FIT3179/master/Malaysian River Pollution/data/change_percentage.csv",
+        "format": {"type": "csv", "delimiter": ","},
+        "transform": [
+          {
+            "type": "formula",
+            "expr": "if(datum.Change_categ === 'More Polluted',-1,0) + if(datum.Change_categ==='No Change',0,0) + if(datum.Change_categ =='Less Polluted',1,0)",
+            "as": "q_order"
+          },
+          {
+            "type": "formula",
+            "expr": "if(datum.Change_categ === 'More Polluted', datum.percentage,0) + if(datum.Change_categ === 'No Change', datum.percentage / 2,0)",
+            "as": "signed_percentage"
+          },
+          {
+            "type": "stack",
+            "groupby": ["State"],
+            "field": "percentage",
+            "sort": {"field": ["q_order"], "order": ["ascending"]},
+            "as": ["v1", "v2"],
+            "offset": "zero"
+          },
+          {
+            "type": "joinaggregate",
+            "as": ["offset"],
+            "ops": ["sum"],
+            "fields": ["signed_percentage"],
+            "groupby": ["State"]
+          },
+          {"type": "formula", "expr": "datum.v1 - datum.offset", "as": "nx"},
+          {"type": "formula", "expr": "datum.v2 - datum.offset", "as": "nx2"},
+          {
+            "type": "filter",
+            "expr": "isValid(datum[\"nx\"]) && isFinite(+datum[\"nx\"])"
+          }
+        ]
+      }
+    ],
+    "marks": [
+      {
+        "name": "layer_0_marks",
+        "type": "rect",
+        "style": ["bar"],
+        "from": {"data": "source_0"},
+        "encode": {
+          "update": {
+            "width": {"value": 10},
+            "fill": {"scale": "color", "field": "Change_categ"},
+            "ariaRoleDescription": {"value": "bar"},
+            "y": {"scale": "y", "field": "nx"},
+            "y2": {"scale": "y", "field": "nx2"},
+            "xc": {"scale": "x", "field": "State", "band": 0.5},
+            "fillOpacity": {
+              "signal": "if(datum.State == selected_state || selected_state == 'All',1,0.3)"
+            },
+            "tooltip": {
+              "signal": "{\"State\": datum[\"State\"], \"Change\": datum[\"Change_categ\"], \"Number of Rivers\": format(datum[\"count\"], \"\"), \"Percentage within state\": format(datum[\"percentage\"], \"\")}"
+            }
+          }
+        }
+      }
+    ],
+    "scales": [
+      {
+        "name": "y",
+        "type": "linear",
+        "domain": [-100, 100],
+        "range": [0, {"signal": "height"}],
+        "nice": true,
+        "zero": true
+      },
+      {
+        "name": "x",
+        "type": "band",
+        "domain": {"data": "source_0", "field": "State", "sort": true},
+        "range": [0, {"signal": "width"}],
+        "padding": 0
+      },
+      {
+        "name": "color",
+        "type": "ordinal",
+        "domain": ["More Polluted", "No Change", "Less Polluted"],
+        "range": ["#60492C", "#898B80", "#208AAE"]
+      }
+    ],
+    "axes": [
+      {
+        "scale": "y",
+        "orient": "left",
+        "grid": false,
+        "domain": false,
+        "ticks": false,
+        "titleAlign": "center",
+        "titleX": 100,
+        "labelFlush": true,
+        "labelOverlap": true,
+        "tickCount": {"signal": "ceil(height/40)"},
+        "encode": {
+          "labels": {"update": {"text": {"signal": "datum.value + '%'"}}}
+        },
+        "zindex": 0
+      },
+      {
+        "scale": "x",
+        "orient": "bottom",
+        "grid": false,
+        "domainColor": "darkgrey",
+        "labelAlign": "center",
+        "labelBaseline": "middle",
+        "labelFontSize": 12,
+        "labelOffset": 0,
+        "labelPadding": 100,
+        "offset": -92,
+        "ticks": false,
+        "zindex": 0,
+        "labelOpacity": {
+          "signal": "if(datum.value == selected_state || selected_state == 'All',1,0.3)"
+        }
+      }
+    ],
+    "legends": [
+      {
+        "direction": "horizontal",
+        "gridAlign": "each",
+        "orient": "top",
+        "fill": "color",
+        "symbolType": "square"
+      }
+    ]
+  }
