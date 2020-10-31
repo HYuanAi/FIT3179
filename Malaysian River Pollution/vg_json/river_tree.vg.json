@@ -4,7 +4,7 @@
   "background": "#E4E4E9",
   "width": 1100,
   "height": 1100,
-  "padding": {"top": -500, "left": 50, "right": 50},
+  "padding": {"top": -500, "left": 45, "right": 50},
   "autosize": "none",
   "signals": [
     {"name": "labels", "value": true},
