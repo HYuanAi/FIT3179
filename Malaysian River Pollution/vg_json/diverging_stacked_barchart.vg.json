@@ -9,9 +9,37 @@
   "data": [
     {
       "name": "source_0",
-      "url": "https://raw.githubusercontent.com/HYuanAi/FIT3179/master/Malaysian River Pollution/data/change_percentage.csv",
+      "url": "https://raw.githubusercontent.com/HYuanAi/FIT3179/master/Malaysian River Pollution/data/rivers_wqi.csv",
       "format": {"type": "csv", "delimiter": ","},
       "transform": [
+        {
+          "type": "formula",
+          "expr": "(datum.WQI_2017 - datum.WQI_2015) / 2",
+          "as": "average_change"
+        },
+        {
+          "type": "formula",
+          "expr": "if (datum.average_change <-2, 'More Polluted', if(datum.average_change > 2, 'Less Polluted', 'No Change'))",
+          "as": "Change_categ"
+        },
+        {
+          "type": "aggregate",
+          "groupby": ["State", "Change_categ"],
+          "ops": ["count"],
+          "as": ["count"]
+        },
+        {
+          "type": "joinaggregate",
+          "groupby": ["State"],
+          "as": ["state_count"],
+          "fields": ["count"],
+          "ops": ["sum"]
+        },
+        {
+          "type": "formula",
+          "expr": "datum.count/datum.state_count*100",
+          "as": "percentage"
+        },
         {
           "type": "formula",
           "expr": "if(datum.Change_categ === 'More Polluted',-1,0) + if(datum.Change_categ==='No Change',0,0) + if(datum.Change_categ =='Less Polluted',1,0)",
