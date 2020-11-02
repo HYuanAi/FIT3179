@@ -4,6 +4,13 @@
   "padding": 5,
   "width": 314,
   "height": 270,
+  "config": {
+    "style": {
+      "cell": {
+        "stroke": "transparent"
+      }
+    }
+  },
   "style": "cell",
   "signals": [{"name": "selected_state", "value": "All"}],
   "data": [

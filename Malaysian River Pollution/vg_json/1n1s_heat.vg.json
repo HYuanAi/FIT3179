@@ -5,6 +5,13 @@
   "width": 274,
   "height": 270,
   "style": "cell",
+  "config": {
+    "style": {
+      "cell": {
+        "stroke": "transparent"
+      }
+    }
+  },
   "signals": [{"name": "selected_state", "value": "All"}],
   "data": [
     {
@@ -99,5 +106,12 @@
       "labelFontSize": 13
     }
   ],
-  "legends": [{"fill": "color", "symbolType": "square", "orient": "bottom", "direction": "horizontal"}]
+  "legends": [
+    {
+      "fill": "color",
+      "symbolType": "square",
+      "orient": "bottom",
+      "direction": "horizontal"
+    }
+  ]
 }
