@@ -44,7 +44,7 @@
             "signal": "if(datum.State == selected_state || selected_state == 'All',1,0.3)"
           },
           "tooltip": {
-            "signal": "{\"River\": datum[\"River\"], \"State\": datum[\"State\"], \"Length\": format(datum[\"Length\"], \"\"), \"Year\": datum[\"Year\"], \"Class\": datum[\"Class\"]}"
+            "signal": "{\"River\": datum[\"River\"], \"State\": datum[\"State\"], \"Length\": format(datum[\"Length\"], \"\") + \" km\", \"Year\": datum[\"Year\"], \"Class\": datum[\"Class\"]}"
           }
         }
       }

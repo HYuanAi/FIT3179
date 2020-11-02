@@ -92,7 +92,7 @@
             "signal": "if(datum.State == selected_state || selected_state == 'All',1,0.3)"
           },
           "tooltip": {
-            "signal": "{\"State\": datum[\"State\"], \"Change\": datum[\"Change_categ\"], \"Number of Rivers\": format(datum[\"count\"], \"\"), \"Percentage within state\": format(datum[\"percentage\"], \"\")}"
+            "signal": "{\"State\": datum[\"State\"], \"Change\": datum[\"Change_categ\"], \"Number of Rivers\": format(datum[\"count\"], \"\"), \"Percentage within state\": format(datum[\"percentage\"] / 100, \".2%\")}"
           }
         }
       }
