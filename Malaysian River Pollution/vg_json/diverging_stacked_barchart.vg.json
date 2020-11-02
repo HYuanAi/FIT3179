@@ -19,7 +19,7 @@
         },
         {
           "type": "formula",
-          "expr": "if (datum.average_change <-2, 'More Polluted', if(datum.average_change > 2, 'Less Polluted', 'Change by <2'))",
+          "expr": "if (datum.average_change <-2, 'More Polluted', if(datum.average_change > 2, 'Less Polluted', 'Change by < 2'))",
           "as": "Change_categ"
         },
         {
@@ -42,12 +42,12 @@
         },
         {
           "type": "formula",
-          "expr": "if(datum.Change_categ === 'More Polluted',-1,0) + if(datum.Change_categ==='Change by <2',0,0) + if(datum.Change_categ =='Less Polluted',1,0)",
+          "expr": "if(datum.Change_categ === 'More Polluted',-1,0) + if(datum.Change_categ==='Change by < 2',0,0) + if(datum.Change_categ =='Less Polluted',1,0)",
           "as": "q_order"
         },
         {
           "type": "formula",
-          "expr": "if(datum.Change_categ === 'More Polluted', datum.percentage,0) + if(datum.Change_categ === 'Change by <2', datum.percentage / 2,0)",
+          "expr": "if(datum.Change_categ === 'More Polluted', datum.percentage,0) + if(datum.Change_categ === 'Change by < 2', datum.percentage / 2,0)",
           "as": "signed_percentage"
         },
         {
@@ -117,7 +117,7 @@
     {
       "name": "color",
       "type": "ordinal",
-      "domain": ["More Polluted", "Change by <2", "Less Polluted"],
+      "domain": ["More Polluted", "Change by < 2", "Less Polluted"],
       "range": ["#60492C", "#898B80", "#208AAE"]
     }
   ],
